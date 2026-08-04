@@ -1,0 +1,18 @@
+# Inference service configuration.
+# The `predictor` key selects the implementation — this is the single line
+# that changes in Milestone 2 to switch from dummy to CodeBERT.
+
+api:
+  title: "Software Defect Prediction API"
+  version: "0.1.0"
+  host: "127.0.0.1"
+  port: 8000
+
+predictor:
+  type: "dummy"      # one of: dummy | codebert
+  seed: 42
+
+cors:
+  allow_origins:
+    - "http://localhost:8501"
+    - "http://127.0.0.1:8501"

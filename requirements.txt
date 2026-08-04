@@ -27,5 +27,6 @@ numpy~=2.5.1
 
 # --- Dev tooling ---
 pytest~=8.4.2
+httpx2~=2.9.1        # required by fastapi.testclient
 ruff~=0.16.1
 black~=24.10.0
