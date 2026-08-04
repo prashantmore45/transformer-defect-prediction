@@ -1,0 +1,31 @@
+# ============================================================
+# Transformer Defect Prediction — pinned 2026-08-04
+# Verified working on Python 3.12.10 / Windows
+# ============================================================
+
+# --- Web API ---
+fastapi~=0.141.1
+uvicorn[standard]~=0.52.1
+pydantic~=2.13.4
+pydantic-settings~=2.14.2
+
+# --- Frontend ---
+streamlit~=1.60.0
+
+# --- Utilities ---
+requests~=2.34.2
+pyyaml~=6.0.3
+
+# --- ML stack ---
+# torch is CPU-only. Install with:
+#   pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.5.1
+transformers==4.46.3
+scikit-learn~=1.9.0
+pandas~=2.3.3
+numpy~=2.5.1
+
+# --- Dev tooling ---
+pytest~=8.4.2
+ruff~=0.16.1
+black~=24.10.0

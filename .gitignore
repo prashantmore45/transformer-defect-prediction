@@ -216,3 +216,48 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# ==========================================================
+# Project-specific — Transformer Defect Prediction
+# ==========================================================
+
+# --- Data: downloaded or generated, never committed ---
+data/
+!data/README.md
+
+# --- Model artifacts: large binaries, regenerable by training ---
+artifacts/
+models/
+checkpoints/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+
+# --- Hugging Face / PyTorch caches ---
+.cache/
+transformers_cache/
+
+# --- Experiment outputs ---
+runs/
+logs/
+outputs/
+wandb/
+*.log
+
+# --- Secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Notebook checkpoints ---
+.ipynb_checkpoints/
+
+# --- OS noise ---
+Thumbs.db
+desktop.ini
+
+# --- IDE (we commit .vscode/settings.json deliberately — see Step 7) ---
+.idea/
