@@ -195,9 +195,9 @@ cython_debug/
 .abstra/
 
 # Visual Studio Code
-#   Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore 
+#   Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore
 #   that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
-#   and can be added to the global gitignore or merged into this file. However, if you prefer, 
+#   and can be added to the global gitignore or merged into this file. However, if you prefer,
 #   you could uncomment the following to ignore the entire vscode folder
 # .vscode/
 # Temporary file for partial code execution
@@ -223,8 +223,7 @@ __marimo__/
 # ==========================================================
 
 # --- Data: downloaded or generated, never committed ---
-data/
-!data/README.md
+# data/  — superseded by the explicit data block at the end of this file
 
 # --- Model artifacts: large binaries, regenerable by training ---
 artifacts/
@@ -261,3 +260,10 @@ desktop.ini
 
 # --- IDE (we commit .vscode/settings.json deliberately — see Step 7) ---
 .idea/
+
+# --- Data (never committed; regenerate via notebooks/01_metadata_acquisition.ipynb) ---
+data/
+data/**
+!data/**/
+!data/README.md
+!data/**/.gitkeep
