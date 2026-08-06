@@ -262,7 +262,6 @@ desktop.ini
 .idea/
 
 # --- Data (never committed; regenerate via notebooks/01_metadata_acquisition.ipynb) ---
-data/
 data/**
 !data/**/
 !data/README.md
