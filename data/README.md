@@ -22,7 +22,7 @@ the `.gitkeep` placeholders is excluded via `.gitignore`.
 
 **Option A — shared Drive (recommended).**
 Download both files from the group's shared folder into `data/raw/`.
-Link: *(to be added)*
+Link: *(https://drive.google.com/drive/folders/1vmrRCWze_2fXzbgdyJsmxlxVdrjD0ZKk?usp=sharing)*
 
 **Option B — regenerate from source.**
 1. Download `Project_CodeNet.tar.gz` (7.8 GB) from IBM Data Asset eXchange
