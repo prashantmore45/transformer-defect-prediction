@@ -1,0 +1,13 @@
+status,count,percent
+Accepted,4353049,54.36
+Wrong Answer,2571284,32.11
+Compile Error,376053,4.7
+Runtime Error,339670,4.24
+Time Limit Exceeded,326340,4.07
+WA: Presentation Error,26449,0.33
+Memory Limit Exceeded,14637,0.18
+Output Limit Exceeded,778,0.01
+Judge Not Available,94,0.0
+Query Limit Exceeded,88,0.0
+Internal error,78,0.0
+Judge System Error,7,0.0

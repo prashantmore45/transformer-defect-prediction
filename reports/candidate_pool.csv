@@ -1,0 +1,5 @@
+tier,verdict,target_classes,n,pct_of_cpp
+Tier 1,Accepted,ERROR-FREE,4353049,54.36
+Tier 1,Wrong Answer,LOGICAL,2571284,32.11
+Tier 2,Compile Error,SYNTAX / SEMANTIC / LINKER,376053,4.7
+Tier 3,Runtime Error,SIGSEGV / SIGFPE / SIGABRT / NZEC,339670,4.24
