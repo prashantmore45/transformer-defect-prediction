@@ -1,0 +1,9 @@
+,value
+files_hashed,75000.0
+files_missing,0.0
+unique_hashes,73615.0
+duplicate_groups,1070.0
+files_in_duplicate_groups,2455.0
+redundant_files,1385.0
+duplicate_rate_pct,1.8467
+rows_dropped_cross_split_dedup,150.0

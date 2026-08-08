@@ -266,3 +266,4 @@ data/**
 !data/**/
 !data/README.md
 !data/**/.gitkeep
+!data/processed/splits/split_config.json

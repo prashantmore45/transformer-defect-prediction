@@ -1,0 +1,54 @@
+{
+  "milestone": "M2",
+  "generated_at_utc": "2026-08-08T19:22:17.784822+00:00",
+  "taxonomy_version": "1.0",
+  "split": {
+    "method": "problem_level_split",
+    "seed": 42,
+    "ratios": {
+      "train": 0.6,
+      "val": 0.2,
+      "test": 0.2
+    }
+  },
+  "comparison_split": {
+    "method": "submission_level_split",
+    "seed": 42,
+    "note": "deliberately unsafe; used only to measure the leakage effect"
+  },
+  "sampling": {
+    "method": "draw_sample (round-robin per problem)",
+    "seed": 42,
+    "class_totals": {
+      "ERROR_FREE": 10000,
+      "COMPILE_ERROR": 30000,
+      "RUNTIME_ERROR": 25000,
+      "LOGICAL": 10000
+    }
+  },
+  "dedup": {
+    "method": "exact SHA-256 on normalized bytes (CRLF->LF, BOM stripped, trailing whitespace stripped)",
+    "raw_sample_size": 75000,
+    "cross_split_collisions_found": 66,
+    "rows_dropped": 150,
+    "final_size": 74850
+  },
+  "row_counts": {
+    "raw_metadata": 8008527,
+    "candidate_pool": 7640056,
+    "discarded": 368471,
+    "working_corpus_final": 74850
+  },
+  "findings": {
+    "chains_straddling_random_split": 979741,
+    "chains_straddling_problem_split": 0,
+    "linker_pilot_rate_pct": 1.24,
+    "linker_pilot_n_sampled": 500,
+    "linker_pilot_compiler": "g++ (MinGW.org GCC-6.3.0-1) 6.3.0",
+    "linker_pilot_note": "lower bound; re-measure with modern GCC at Tier 2"
+  },
+  "artifact_hashes": {
+    "sample_manifest_hashed.parquet": "5d86743bd387b529d6a638191bc22e60b8e2ca7d9c70c0acb1cdab8de9b07d59"
+  },
+  "environment_note": "Windows Defender real-time scanning must be excluded from data/ and the CodeNet archive directory, or per-file hashing and extraction throughput degrades by ~40x after the on-access scan cache fills (observed: 2,780 files/sec -> 70 files/sec)."
+}
