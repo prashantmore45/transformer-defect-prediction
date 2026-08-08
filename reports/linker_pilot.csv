@@ -1,0 +1,2392 @@
+submission_id,problem_id,outcome,classification,stderr_tail
+s269285035,p00244,COMPILED_CLEAN,,
+s312504681,p03269,FAILED,OTHER,"n\data\processed\sources\p03269\C++\s312504681.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03269\C++\s312504681.cpp:50:31: error: '_lzcnt_u64' was not declared in this scope
+     int mx = 64 - _lzcnt_u64(L) - 1;
+                               ^
+"
+s966843997,p03371,FAILED,OTHER,"               ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03371\C++\s966843997.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03371\C++\s966843997.cpp:12:3: error: 'dp' was not declared in this scope
+   dp[0][0]=0;
+   ^~
+"
+s827408217,p03543,FAILED,OTHER,"43\C++\s827408217.cpp:11:16: error: 'sz' was not declared in this scope
+  forn(i, sz(one)-1){
+                ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03543\C++\s827408217.cpp:11:19: error: 'forn' was not declared in this scope
+  forn(i, sz(one)-1){
+                   ^
+"
+s096307416,p00291,FAILED,OTHER,"sed\sources\p00291\C++\s096307416.cpp:21:5: error: 'cout' was not declared in this scope
+     cout << endl;
+     ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00291\C++\s096307416.cpp:21:13: error: 'endl' was not declared in this scope
+     cout << endl;
+             ^~~~
+"
+s466359164,p01427,COMPILED_CLEAN,,
+s486132026,p00691,FAILED,OTHER,"fect-prediction\data\processed\sources\p00691\C++\s486132026.cpp:4:7: error: expected unqualified-id before '?' token
+ ãƒ†ã�¤?
+       ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00691\C++\s486132026.cpp:9:7: error: expected unqualified-id before '?' token
+ ãƒ†ã�¤?
+       ^
+"
+s731402332,p01291,FAILED,OTHER,"iled:
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01291\C++\s731402332.cpp:102:69: note:   candidate expects 3 arguments, 1 provided
+  return min({dist(s, t.a), dist(s, t.b), dist(t, s.a), dist(t, s.b)});
+                                                                     ^
+"
+s063453103,p02266,FAILED,OTHER," does not have class type
+     ans.push_back(s2.top.second);
+                   ^~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02266\C++\s063453103.cpp:33:32: error: 'reverse' was not declared in this scope
+   reverse(ans.begin(),ans.end());
+                                ^
+"
+s196234627,p02978,FAILED,OTHER,"':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02978\C++\s196234627.cpp:12:74: error: 'min' was not declared in this scope
+   ans = min(ans, dp(l, i, x, x + y) + dp(i, r, x + y, y) + a[i] * (x + y));
+                                                                          ^
+"
+s546788847,p01977,COMPILED_CLEAN,,
+s986090220,p03254,FAILED,OTHER,"\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03254\C++\s986090220.cpp:1:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:590:5: note:   'std::endl'
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^~~~
+"
+s877667800,p00429,COMPILED_CLEAN,,
+s743005752,p02730,FAILED,OTHER,"er-defect-prediction\data\processed\sources\p02730\C++\s743005752.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02730\C++\s743005752.cpp:11:11: error: 'sub_a' was not declared in this scope
+   reverse(sub_a.begin(), sub_s.end());
+           ^~~~~
+"
+s002849607,p02670,FAILED,OTHER,"ct-prediction\data\processed\sources\p02670\C++\s002849607.cpp: In function 'void dfs(int, int)':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02670\C++\s002849607.cpp:313:7: error: 'sz' was not declared in this scope
+   if (sz >= 0 && sx < N && sy >= 0 && sy < N) {
+       ^~
+"
+s369071974,p02626,FAILED,OTHER,"b\transformer-defect-prediction\data\processed\sources\p02626\C++\s369071974.cpp:38:2: error: return-statement with a value, in function returning 'void' [-fpermissive]
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02626\C++\s369071974.cpp:38:2: error: expected ';' before 'if'
+"
+s669250357,p03911,FAILED,OTHER,"3.0\include\c++\iostream:39,
+                 from D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03911\C++\s669250357.cpp:1:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\type_traits:1482:12: note:                 template<class> struct std::rank
+     struct rank
+            ^~~~
+"
+s564068751,p02595,FAILED,OTHER,"fect-prediction\data\processed\sources\p02595\C++\s564068751.cpp:21:23: error: expected ';' before '{' token
+   for(int i; i<n;i++)a{
+                       ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02595\C++\s564068751.cpp:28:1: error: expected '}' at end of input
+ }
+ ^
+"
+s633010876,p03680,FAILED,OTHER,"Dev\Github\transformer-defect-prediction\data\processed\sources\p03680\C++\s633010876.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03680\C++\s633010876.cpp:20:7: error: 'now' was not declared in this scope
+       now = pushed.at(n-1);
+       ^~~
+"
+s355966270,p02670,COMPILED_CLEAN,,
+s489320218,p02861,FAILED,OTHER,"89320218.cpp:30:5: error: 'fact' was not declared in this scope
+     fact=fact*i;
+     ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02861\C++\s489320218.cpp:31:26: error: 'fact' was not declared in this scope
+   double ans=sum/(double)fact;
+                          ^~~~
+"
+s206849027,p00496,FAILED,OTHER,"ces\p00496\C++\s206849027.cpp:12:10: error: 't' was not declared in this scope
+     if(M[t] > newM){
+          ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00496\C++\s206849027.cpp:12:15: error: 'newM' was not declared in this scope
+     if(M[t] > newM){
+               ^~~~
+"
+s760560464,p01413,FAILED,OTHER,"
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01413\C++\s760560464.cpp:168:59: note:   mismatched types 'std::initializer_list<_Tp>' and 'long long int'
+    shop[i][num] = max(shop[i][num], max(0ll, item[num].s-p));
+                                                           ^
+"
+s399827897,p01340,COMPILED_CLEAN,,
+s905792550,p01638,COMPILED_CLEAN,,"b\gcc\mingw32\6.3.0\include\c++\mingw32\bits\stdc++.h:41,
+                 from D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01638\C++\s905792550.cpp:1:
+c:\mingw\include\math.h:75:0: note: this is the location of the previous definition
+ #define M_PI  3.14159265358979323846
+ 
+"
+s084359741,p03285,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03285\C++\s084359741.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03285\C++\s084359741.cpp:23:10: error: expected '}' at end of input
+  return 0;
+          ^
+"
+s737143362,p02679,COMPILED_CLEAN,,
+s858158787,p00468,FAILED,OTHER,"\Dev\Github\transformer-defect-prediction\data\processed\sources\p00468\C++\s858158787.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00468\C++\s858158787.cpp:5:11: error: expected unqualified-id before ',' token
+ int n,k,i,,c,x[501];
+           ^
+"
+s394722299,p03177,FAILED,OTHER,"
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03177\C++\s394722299.cpp:37:8: note: candidate: constexpr matrix::matrix(matrix&&)
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03177\C++\s394722299.cpp:37:8: note:   candidate expects 1 argument, 0 provided
+"
+s205521692,p00811,COMPILED_CLEAN,,
+s294730377,p03724,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03724\C++\s294730377.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03724\C++\s294730377.cpp:8:10: error: 'read' was not declared in this scope
+   c[read()]^=1;
+          ^
+"
+s143446320,p03986,FAILED,OTHER,"\transformer-defect-prediction\data\processed\sources\p03986\C++\s143446320.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03986\C++\s143446320.cpp:13:9: error: expected primary-expression before 'else'
+         else if(sum2) sum1++;
+         ^~~~
+"
+s529512006,p03220,FAILED,OTHER,"ude\c++\cstdlib:180:3: note: candidate: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdlib:172:3: note: candidate: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^~~
+"
+s973969153,p00915,FAILED,OTHER,"rces\p00915\C++\s973969153.cpp:13:7: error: 'i' was not declared in this scope
+   rep(i,n)cin>>d[i]>>x[i];
+       ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00915\C++\s973969153.cpp:13:10: error: 'rep' was not declared in this scope
+   rep(i,n)cin>>d[i]>>x[i];
+          ^
+"
+s077048229,p03182,FAILED,OTHER,"is scope
+   dat[k] = g(dat[k],p(lazy[k],len));
+                     ~^~~~~~~~~~~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03182\C++\s077048229.cpp:58:13: error: 'g' was not declared in this scope
+   dat[k] = g(dat[k],p(lazy[k],len));
+            ~^~~~~~~~~~~~~~~~~~~~~~~
+"
+s858831836,p03059,FAILED,OTHER,"ources\p03059\C++\s858831836.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03059\C++\s858831836.cpp:5:26: error: invalid operands of types 'double' and 'double' to binary 'operator%'
+   int n = ((t+0.5-(t+0.5)%a)/a)*b
+                   ~~~~~~~^~
+"
+s760610113,p03723,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03723\C++\s760610113.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03723\C++\s760610113.cpp:75:5: error: 'x' was not declared in this scope
+     x = nc;
+     ^
+"
+s747314486,p01772,COMPILED_CLEAN,,
+s679015821,p03284,FAILED,OTHER,"2\6.3.0\include\c++\mingw32\bits\stdc++.h:52,
+                 from D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03284\C++\s679015821.cpp:1:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:590:5: note:   'std::endl'
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^~~~
+"
+s702703047,p02493,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02493\C++\s702703047.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02493\C++\s702703047.cpp:5:16: error: 'n' was not declared in this scope
+    scanf(""/d"",&n);
+                ^
+"
+s720051996,p00483,FAILED,OTHER," - sums[i - 1][j - 1][k] + nums[i][j][k];
+                                                                                      ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00483\C++\s720051996.cpp:33:2: error: 'nums' was not declared in this scope
+  nums.clear();
+  ^~~~
+"
+s024874224,p01144,COMPILED_CLEAN,,
+s830777336,p03472,FAILED,OTHER," std::pair<long long int, long long int>]
+       operator()(const _Tp& __x, const _Tp& __y) const
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_function.h:375:7: note:   no known conversion for argument 1 from 'long long int' to 'const std::pair<long long int, long long int>&'
+"
+s273344152,p03023,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03023\C++\s273344152.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03023\C++\s273344152.cpp:23:5: error: expected ',' or ';' before 'cout'
+     cout << ans << endl;
+     ^~~~
+"
+s269900901,p00685,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00685\C++\s269900901.cpp:1:20: fatal error: stdafx.h: No such file or directory
+ #include ""stdafx.h""
+                    ^
+compilation terminated.
+"
+s490203601,p02663,FAILED,OTHER,"\Github\transformer-defect-prediction\data\processed\sources\p02663\C++\s490203601.cpp:8:42: error: invalid operands of types 'int' and '<unresolved overloaded function type>' to binary 'operator<<'
+     cout << (d2-k-d1 <= 0) ? 0 ! d2-k-d1 << endl;
+                                ~~~~~~~~~~^~~~~~~
+"
+s927590681,p01378,FAILED,OTHER,"~^~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:1253:19: error: '_M_replace' was not declared in this scope
+  return _M_replace(size_type(0), this->size(), __s,
+         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      traits_type::length(__s));
+      ~~~~~~~~~~~~~~~~~~~~~~~~~
+"
+s066234327,p00323,COMPILED_CLEAN,,
+s211856142,p00247,FAILED,OTHER,"arrowing]
+ uc dx[] = {1,0,-1,0};
+                    ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00247\C++\s211856142.cpp:34:20: error: narrowing conversion of '-1' from 'int' to 'uc {aka unsigned char}' inside { } [-Wnarrowing]
+ uc dy[] = {0,-1,0,1};
+                    ^
+"
+s629969077,p01488,COMPILED_CLEAN,,
+s761126819,p01318,FAILED,OTHER,"lib\gcc\mingw32\6.3.0\include\c++\complex:45,
+                 from D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01318\C++\s761126819.cpp:2:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:590:5: note:   'std::endl'
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^~~~
+"
+s186872032,p02775,COMPILED_CLEAN,,
+s187675723,p03104,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03104\C++\s187675723.cpp:3:11: error: '::main' must return 'int'
+ void main()
+           ^
+"
+s769497894,p02494,FAILED,OTHER,"data\processed\sources\p02494\C++\s769497894.cpp:1:1: error: 'import' does not name a type
+ import java.util.Scanner;
+ ^~~~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02494\C++\s769497894.cpp:2:1: error: expected unqualified-id before 'public'
+ public class Main {
+ ^~~~~~
+"
+s276417740,p00344,FAILED,OTHER,"r-defect-prediction\data\processed\sources\p00344\C++\s276417740.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00344\C++\s276417740.cpp:25:26: error: 'memset' was not declared in this scope
+    memset(c, 0, sizeof(c));
+                          ^
+"
+s008466363,p03760,FAILED,OTHER,"-defect-prediction\data\processed\sources\p03760\C++\s008466363.cpp:1:3: error: invalid preprocessing directive #-
+ # -*- coding: utf-8 -*-
+   ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03760\C++\s008466363.cpp:3:1: error: 'import' does not name a type
+ import sys
+ ^~~~~~
+"
+s963373881,p02370,COMPILED_CLEAN,,
+s197938713,p00477,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00477\C++\s197938713.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00477\C++\s197938713.cpp:17:9: error: expected primary-expression before '>' token
+ while(e=>60){
+         ^
+"
+s571842568,p03767,FAILED,OTHER,"rocessed\sources\p03767\C++\s571842568.cpp:35:7: error: 'ans' was not declared in this scope
+       ans+=v[i*3];
+       ^~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03767\C++\s571842568.cpp:38:9: error: 'ans' was not declared in this scope
+   cout<<ans<<endl;
+         ^~~
+"
+s865667687,p02390,FAILED,OTHER,"ransformer-defect-prediction\data\processed\sources\p02390\C++\s865667687.cpp:14:1: error: expected unqualified-id before 'return'
+ return 0;
+ ^~~~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02390\C++\s865667687.cpp:15:1: error: expected declaration before '}' token
+ }
+ ^
+"
+s082227305,p02290,FAILED,OTHER,"c\mingw32\6.3.0\include\c++\math.h:36,
+                 from D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02290\C++\s082227305.cpp:3:
+c:\mingw\include\math.h:273:24: note: previous declaration 'double y1(double)'
+ _CRTIMP double __cdecl y1 (double);
+                        ^~
+"
+s097072414,p02270,COMPILED_CLEAN,,"\processed\sources\p02270\C++\s097072414.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02270\C++\s097072414.cpp:21:20: warning: overflow in implicit constant conversion [-Woverflow]
+     int l = 0, h = 10000000000;
+                    ^~~~~~~~~~~
+"
+s384586515,p00292,FAILED,OTHER,"d\sources\p00292\C++\s384586515.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00292\C++\s384586515.cpp:9:45: error: 'b' was not declared in this scope
+     else if(k%p!=0) int b=k%p;printf(""%d\n"",b);
+                                             ^
+"
+s399040706,p03919,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03919\C++\s399040706.cpp:1:1: error: 'h' does not name a type
+ h,w = map(int, input().split())
+ ^
+"
+s174237209,p04052,COMPILED_CLEAN,,
+s114592629,p03126,FAILED,OTHER,"p:610:78: fatal error: ext/pb_ds/detail/resize_policy/hash_standard_resize_policy_imp.hpp: No such file or directory
+ #include <ext/pb_ds/detail/resize_policy/hash_standard_resize_policy_imp.hpp>
+                                                                              ^
+compilation terminated.
+"
+s506634703,p02549,FAILED,OTHER,"hub\transformer-defect-prediction\data\processed\sources\p02549\C++\s506634703.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02549\C++\s506634703.cpp:22:20: error: 'sort' was not declared in this scope
+     sort(a, a + pos);
+                    ^
+"
+s963980086,p02893,FAILED,OTHER,"s\p02893\C++\s963980086.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02893\C++\s963980086.cpp:37:26: error: 'class std::priority_queue<long long int>' has no member named 'front'
+     long long a = yakusu.front();
+                          ^~~~~
+"
+s693370901,p01315,COMPILED_CLEAN,,
+s430415780,p02543,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02543\C++\s430415780.cpp:2:23: fatal error: atcoder/all: No such file or directory
+ #include <atcoder/all>
+                       ^
+compilation terminated.
+"
+s850292420,p01672,FAILED,OTHER,"plate argument deduction/substitution failed:
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01672\C++\s850292420.cpp:48:27: note:   'comp {aka std::complex<double>}' is not derived from 'const std::valarray<_Tp>'
+ if (is_inv) zeta = 1.0l / zeta;
+                           ^~~~
+"
+s036593238,p00886,FAILED,OTHER,"mer-defect-prediction\data\processed\sources\p00886\C++\s036593238.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00886\C++\s036593238.cpp:52:25: error: 'memset' was not declared in this scope
+   memset(c, 0, sizeof(c));
+                         ^
+"
+s815175670,p03469,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03469\C++\s815175670.cpp:9:1: error: expected declaration before '}' token
+ }
+ ^
+"
+s439408875,p02900,FAILED,OTHER,"3:5: note:   template argument deduction/substitution failed:
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02900\C++\s439408875.cpp:12:27: note:   mismatched types 'std::initializer_list<_Tp>' and 'long long int'
+     for(ll i=2;i<min(c,MAX);i++){
+                           ^
+"
+s461135173,p00706,FAILED,OTHER,"defect-prediction\data\processed\sources\p00706\C++\s461135173.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00706\C++\s461135173.cpp:12:27: error: 'memset' was not declared in this scope
+     memset(f, 0, sizeof(f));
+                           ^
+"
+s069570364,p00079,COMPILED_CLEAN,,
+s051394076,p01706,COMPILED_CLEAN,,":46:41: warning: narrowing conversion of '(G[from].std::vector<_Tp, _Alloc>::size<edge, std::allocator<edge> >() - 1u)' from 'std::vector<edge>::size_type {aka unsigned int}' to 'int' inside { } [-Wnarrowing]
+   G[to].push_back({from,0,G[from].size()-1});
+                           ~~~~~~~~~~~~~~^~
+"
+s790295083,p04016,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p04016\C++\s790295083.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p04016\C++\s790295083.cpp:36:11: error: 'b' was not declared in this scope
+  ll sqr=n/b;
+           ^
+"
+s470653681,p03052,FAILED,OTHER,"653681.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03052\C++\s470653681.cpp:85:45: error: invalid types 'long long int[int]' for array subscript
+     if(dp_tms[now][e]>=mod) dp_tms[now][j][k]-=mod;
+                                             ^
+"
+s009194028,p03348,FAILED,OTHER,"d\sources\p03348\C++\s009194028.cpp:142:12: error: 'q' was not declared in this scope
+     ll d = q.first;
+            ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03348\C++\s009194028.cpp:143:12: error: 'p' was not declared in this scope
+     ll u = p.second;
+            ^
+"
+s324806016,p03589,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03589\C++\s324806016.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03589\C++\s324806016.cpp:9:2: error: expected ';' before 'h'
+  h = (int)x+1;
+  ^
+"
+s477503773,p02891,FAILED,OTHER,"ansformer-defect-prediction\data\processed\sources\p02891\C++\s477503773.cpp:83:9: error: expected ';' before '}' token
+         }
+         ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02891\C++\s477503773.cpp:91:9: error: expected ';' before '}' token
+         }
+         ^
+"
+s826249906,p03558,FAILED,OTHER,"cpp:40:12: error: 'done' was not declared in this scope
+         if(done[p.F][p.S]){continue;}
+            ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03558\C++\s826249906.cpp:41:9: error: 'done' was not declared in this scope
+         done[p.F][p.S]=true;
+         ^~~~
+"
+s639701190,p00676,COMPILED_CLEAN,,
+s689186555,p01614,COMPILED_CLEAN,,
+s385766266,p02126,COMPILED_CLEAN,,
+s348398914,p03394,FAILED,OTHER,"fore ';' token
+         printf(""%d\n"", (6-(n%6))*5;
+                                   ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03394\C++\s348398914.cpp:32:35: error: expected ')' before ';' token
+         printf(""%d\n"", (6-(n%6))*5;
+                                   ^
+"
+s587036153,p02532,FAILED,OTHER,"\processed\sources\p02532\C++\s587036153.cpp:3:1: error: 'import' does not name a type
+ import java.io.BufferedReader;
+ ^~~~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02532\C++\s587036153.cpp:5:1: error: expected unqualified-id before 'public'
+ public class Main{
+ ^~~~~~
+"
+s652054697,p03004,FAILED,OTHER,"a type
+       constexpr size_type
+                 ^~~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\initializer_list:47:11: fatal error: definition of std::initializer_list does not match #include <initializer_list>
+     class initializer_list
+           ^~~~~~~~~~~~~~~~
+compilation terminated.
+"
+s847088919,p00120,FAILED,OTHER,"_Tp (&/*__array*/)[_Nm]) noexcept
+     ^~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\range_access.h:242:5: note:                 template<class _Container> constexpr decltype (__cont.size()) std::size(const _Container&)
+     size(const _Container& __cont) -> decltype(__cont.size())
+     ^~~~
+"
+s440966444,p00087,FAILED,OTHER,"on\data\processed\sources\p00087\C++\s440966444.cpp:21:13: error: 'i' was not declared in this scope
+             i--;
+             ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00087\C++\s440966444.cpp:24:9: error: 'i' was not declared in this scope
+         i++;
+         ^
+"
+s912111578,p02725,COMPILED_CLEAN,,
+s626624171,p03091,FAILED,OTHER,"data\processed\sources\p03091\C++\s626624171.cpp:13:3: error: 'count' was not declared in this scope
+   count =0;
+   ^~~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03091\C++\s626624171.cpp:19:9: error: expected '(' before '{' token
+       if{a[i]>=6}{count+=3;}
+         ^
+"
+s452397612,p01623,COMPILED_CLEAN,,
+s527917407,p03835,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03835\C++\s527917407.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03835\C++\s527917407.cpp:11:3: error: expected ';' before '}' token
+   }
+   ^
+"
+s041164175,p01504,COMPILED_CLEAN,,
+s709350553,p00554,FAILED,OTHER,"include\c++\bits\stl_algo.h:1177:5: note:   template argument deduction/substitution failed:
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00554\C++\s709350553.cpp:27:25: note:   couldn't deduce template parameter '_BIter'
+   reverse(A.begin, A.end);
+                         ^
+"
+s387745622,p03557,FAILED,OTHER,"t*' to 'int' [-fpermissive]
+         int t = tt - b[0];
+                 ~~~^~~~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03557\C++\s387745622.cpp:30:20: error: invalid conversion from 'int*' to 'int' [-fpermissive]
+         int s = ss - c[0];
+                 ~~~^~~~~~
+"
+s622643746,p04051,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p04051\C++\s622643746.cpp:1:1: error: expected unqualified-id before numeric constant
+ 123
+ ^~~
+"
+s704520367,p02417,FAILED,OTHER,"tion\data\processed\sources\p02417\C++\s704520367.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02417\C++\s704520367.cpp:13:29: error: 'countCharacters' was not declared in this scope
+  countCharacters(text, count);
+                             ^
+"
+s729150426,p03631,FAILED,OTHER,"
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03631\C++\s729150426.cpp:8:5: error: expected '(' before 'a'
+  if a=c{
+     ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03631\C++\s729150426.cpp:11:2: error: 'else' without a previous 'if'
+  else {
+  ^~~~
+"
+s308485816,p02986,FAILED,OTHER,"former-defect-prediction\data\processed\sources\p02986\C++\s308485816.cpp:1:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_pair.h:83:11: note: declaration of 'std::iterator_traits<std::tuple<int, int, int>*>::value_type {aka class std::tuple<int, int, int>}'
+     class tuple;
+           ^~~~~
+"
+s031205923,p02648,COMPILED_CLEAN,,
+s556731070,p02371,FAILED,OTHER,".cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02371\C++\s556731070.cpp:57:48: error: expected primary-expression before '>=' token
+     for(int i = 0; i < N; i++) if(g[i].size()) >= 2) root = i;
+                                                ^~
+"
+s608126418,p00297,COMPILED_CLEAN,,
+s689079285,p01777,FAILED,OTHER,"                                        ^~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01777\C++\s689079285.cpp: At global scope:
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01777\C++\s689079285.cpp:120:3: error: expected ';' at end of input
+   }
+   ^
+"
+s096378286,p00254,COMPILED_CLEAN,,
+s963403408,p01549,COMPILED_CLEAN,,
+s442962781,p00147,FAILED,OTHER,"on\data\processed\sources\p00147\C++\s442962781.cpp:6:1: error: 'import' does not name a type
+ import java.util.List;
+ ^~~~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00147\C++\s442962781.cpp:8:1: error: expected unqualified-id before 'public'
+ public class Main {
+ ^~~~~~
+"
+s404901639,p02775,COMPILED_CLEAN,,
+s867760937,p03004,FAILED,OTHER,"defect-prediction\data\processed\sources\p03004\C++\s867760937.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03004\C++\s867760937.cpp:83:12: error: 't' was not declared in this scope
+         if(t >= 0 && flag == 0){ // t=0ã�®ã�¨ã��
+            ^
+"
+s200038435,p01839,FAILED,OTHER,"C++\s200038435.cpp:32:14: error: 'isok' was not declared in this scope
+  if(acnt!=0) isok=false;
+              ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01839\C++\s200038435.cpp:33:5: error: 'isok' was not declared in this scope
+  if(isok) cout<<""YES""<<endl;
+     ^~~~
+"
+s107747428,p03803,FAILED,OTHER,"ev\Github\transformer-defect-prediction\data\processed\sources\p03803\C++\s107747428.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03803\C++\s107747428.cpp:7:13: error: lvalue required as left operand of assignment
+   if(a=1&&b=1){
+             ^
+"
+s998562544,p02860,FAILED,OTHER," function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02860\C++\s998562544.cpp:32:1: error: expected '}' at end of input
+ }
+ ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02860\C++\s998562544.cpp:32:1: error: expected '}' at end of input
+"
+s507059589,p03046,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03046\C++\s507059589.cpp: In function 'void solve()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03046\C++\s507059589.cpp:45:8: error: 'i' was not declared in this scope
+     if(i==m && k==1)
+        ^
+"
+s180978103,p03477,FAILED,OTHER,"ment deduction/substitution failed:
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03477\C++\s180978103.cpp:17:30: note:   'std::basic_ostream<char>' is not derived from 'std::basic_istream<_CharT, _Traits>'
+   else{cout << ""Balanced"" >> endl;
+                              ^~~~
+"
+s834170219,p03759,FAILED,OTHER,"tion failed:
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03759\C++\s834170219.cpp:9:15: note:   'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' is not derived from 'const __gnu_cxx::__normal_iterator<_IteratorL, _Container>'
+   if(b-a == c-b) {
+               ^
+"
+s363457044,p02878,FAILED,OTHER,"ces\p02878\C++\s363457044.cpp:1:23: error: stray '\201' in program
+ ã�Šå‰�ã‚’è¦‹ã�¦ã�„ã‚‹ã�ž
+                       ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02878\C++\s363457044.cpp:1:24: error: stray '\236' in program
+ ã�Šå‰�ã‚’è¦‹ã�¦ã�„ã‚‹ã�ž
+                        ^
+"
+s950246470,p02510,COMPILED_CLEAN,,
+s009795633,p03240,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03240\C++\s009795633.cpp: In function 'bool check(int, int)':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03240\C++\s009795633.cpp:26:4: error: expected ';' before 'break'
+    break;
+    ^~~~~
+"
+s984098426,p03893,FAILED,OTHER,"defect-prediction\data\processed\sources\p03893\C++\s984098426.cpp:5:5: error: 'f' was not declared in this scope
+     f[0]=2;
+     ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03893\C++\s984098426.cpp:6:10: error: 'n' was not declared in this scope
+     cin>>n;
+          ^
+"
+s906094223,p03099,COMPILED_CLEAN,,
+s201459025,p02885,FAILED,OTHER,"\p02885\C++\s201459025.cpp:7:26: error: expected ';' before '}' token
+   if(A>2*B){cout << A-2*B}
+                          ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02885\C++\s201459025.cpp:8:17: error: expected ';' before '}' token
+   else{cout << 0}
+                 ^
+"
+s896714300,p02791,FAILED,OTHER,"data\processed\sources\p02791\C++\s896714300.cpp:9:10: error: 'p' was not declared in this scope
+     cin>>p[i];
+          ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02791\C++\s896714300.cpp:18:10: error: 'p' was not declared in this scope
+       if(p[i]>p[j])
+          ^
+"
+s455834621,p00921,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00921\C++\s455834621.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00921\C++\s455834621.cpp:109:3: error: expected ';' before '}' token
+   }
+   ^
+"
+s159071728,p03028,FAILED,OTHER,"9071728.cpp:29:18: error: 'A' was not declared in this scope
+     bitset<2020> A[2020];
+                  ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03028\C++\s159071728.cpp:38:18: error: 'DP' was not declared in this scope
+     bitset<2020> DP[2020];
+                  ^~
+"
+s521475137,p02917,FAILED,OTHER,"'i' was not declared in this scope
+     rep(i,n-2)ans+=min(b[i],b[i+1]);
+         ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02917\C++\s521475137.cpp:3:33: note: in definition of macro 'rep'
+ #define  rep(i,n) for(ll i = 0; i < (n); ++i)
+                                 ^
+"
+s862654799,p00324,FAILED,OTHER,"efect-prediction\data\processed\sources\p00324\C++\s862654799.cpp:7:27:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_tree.h:2250:29: error: invalid type argument of unary '*' (have 'int')
+    _M_insert_unique_(end(), *__first, __an);
+                             ^~~~~~~~
+"
+s741662615,p00340,FAILED,OTHER,"ocessed\sources\p00340\C++\s741662615.cpp:5:5: error: expected ';' before 'if'
+     if(e1==e2&&e2==e3) printf(""Yes\n"");
+     ^~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00340\C++\s741662615.cpp:11:3: error: 'returan' was not declared in this scope
+   returan 0;
+   ^~~~~~~
+"
+s538618843,p02839,FAILED,OTHER,"ssed\sources\p02839\C++\s538618843.cpp:41:4: error: 'cout' was not declared in this scope
+    cout<<i<<endl;
+    ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02839\C++\s538618843.cpp:41:13: error: 'endl' was not declared in this scope
+    cout<<i<<endl;
+             ^~~~
+"
+s088651205,p02683,FAILED,OTHER,"iction\data\processed\sources\p02683\C++\s088651205.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02683\C++\s088651205.cpp:15:26: error: 'INT_MAX' was not declared in this scope
+     long long int min1 = INT_MAX;
+                          ^~~~~~~
+"
+s301400260,p00228,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00228\C++\s301400260.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00228\C++\s301400260.cpp:59:1: error: expected '}' at end of input
+ }
+ ^
+"
+s262366300,p02950,FAILED,OTHER,"ocessed\sources\p02950\C++\s262366300.cpp: In constructor 'combination::combination(long long int)':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02950\C++\s262366300.cpp:116:23: error: 'assert' was not declared in this scope
+         assert(n < mod);
+                       ^
+"
+s017080525,p01271,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01271\C++\s017080525.cpp:1:1: error: 'from' does not name a type
+ from collections import deque
+ ^~~~
+"
+s252936692,p02687,FAILED,OTHER,"titution failed:
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02687\C++\s252936692.cpp:9:10: note:   'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' is not derived from 'const __gnu_cxx::__normal_iterator<_IteratorL, _Container>'
+  if(str=='ABC')
+          ^~~~~
+"
+s982179189,p02793,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02793\C++\s982179189.cpp:16:44: fatal error: boost/multiprecision/cpp_int.hpp: No such file or directory
+ #include <boost/multiprecision/cpp_int.hpp>
+                                            ^
+compilation terminated.
+"
+s139198924,p02588,FAILED,OTHER,"data\processed\sources\p02588\C++\s139198924.cpp:15:47: error: invalid operands of types '__gnu_cxx::__alloc_traits<std::allocator<double> >::value_type {aka double}' and 'int' to binary 'operator^'
+            double b = a[i]*10^15-floor(a[i]*10^15)
+                                                
+"
+s076910188,p00023,FAILED,OTHER,"processed\sources\p00023\C++\s076910188.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00023\C++\s076910188.cpp:14:32: error: 'else' without a previous 'if'
+   else{if(ra>rb)cout<<2<<endl;}else{cout<<-2<<endl;}
+                                ^~~~
+"
+s821366154,p03357,FAILED,OTHER,"++\map:61,
+                 from D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03357\C++\s821366154.cpp:10:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\array:90:12: note:                 template<class _Tp, unsigned int _Nm> struct std::array
+     struct array
+            ^~~~~
+"
+s182846689,p00234,FAILED,OTHER,"9.cpp:38:7: note:   crosses initialization of 'int Min'
+   int Min = INF;
+       ^~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00234\C++\s182846689.cpp:16:21: note:   crosses initialization of 'std::priority_queue<st> que'
+   priority_queue<st>que;
+                     ^~~
+"
+s421654171,p00927,FAILED,OTHER,"ransformer-defect-prediction\data\processed\sources\p00927\C++\s421654171.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00927\C++\s421654171.cpp:33:15: error: 'FLT_MAX' was not declared in this scope
+  double ans = FLT_MAX;
+               ^~~~~~~
+"
+s077209011,p03787,FAILED,OTHER,"sformer-defect-prediction\data\processed\sources\p03787\C++\s077209011.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03787\C++\s077209011.cpp:90:19: error: 'used' was not declared in this scope
+   REP(i,n) assert(used[i]==1);
+                   ^
+"
+s149003822,p03005,COMPILED_CLEAN,,
+s143734746,p01225,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01225\C++\s143734746.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01225\C++\s143734746.cpp:46:4: error: expected ';' before 'if'
+    if(color == ""G"") n[k] += 40;
+    ^~
+"
+s129528959,p02670,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02670\C++\s129528959.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02670\C++\s129528959.cpp:291:1: error: expected '}' at end of input
+ }
+ ^
+"
+s192374550,p01780,FAILED,OTHER,"\C++\s192374550.cpp: In function 'void compute()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01780\C++\s192374550.cpp:144:16: error: 'll' was not declared in this scope
+     answer += (ll)( (ll)abs(score[s]-score[node]) + (ll)abs(score[node]-score[t]) );
+                ^~
+"
+s879465307,p00767,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00767\C++\s879465307.cpp:4:20: fatal error: stdafx.h: No such file or directory
+ #include ""stdafx.h""
+                    ^
+compilation terminated.
+"
+s783213362,p00814,COMPILED_CLEAN,,
+s588760372,p00058,FAILED,OTHER,"is scope
+     if(isTyokko(a, b, c, d)) printf(""YES\n"");
+                                            ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00058\C++\s588760372.cpp:32:23: error: 'printf' was not declared in this scope
+     else printf(""NO\n"");
+                       ^
+"
+s165493714,p03203,FAILED,OTHER,"ubstitution failed:
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03203\C++\s165493714.cpp:35:53: note:   mismatched types 'std::initializer_list<_Tp>' and 'int'
+             for(int j=0;j<min(1000,h-a[i].x,w-a[i].y);++j){
+                                                     ^
+"
+s539625125,p03195,FAILED,OTHER,"Github\transformer-defect-prediction\data\processed\sources\p03195\C++\s539625125.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03195\C++\s539625125.cpp:21:18: error: 'K' was not declared in this scope
+  if (j % 2 == 0) K = 1;
+                  ^
+"
+s820192303,p03953,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03953\C++\s820192303.cpp:7:10: error: '::main' must return 'int'
+ int main()
+          ^
+"
+s046994269,p01173,COMPILED_CLEAN,,
+s073946055,p03116,FAILED,OTHER,"p:610:78: fatal error: ext/pb_ds/detail/resize_policy/hash_standard_resize_policy_imp.hpp: No such file or directory
+ #include <ext/pb_ds/detail/resize_policy/hash_standard_resize_policy_imp.hpp>
+                                                                              ^
+compilation terminated.
+"
+s113263564,p00521,FAILED,OTHER,"c++\iostream:39,
+                 from D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00521\C++\s113263564.cpp:1:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_function.h:147:12: note:                 template<class _Tp> struct std::plus
+     struct plus;
+            ^~~~
+"
+s230821716,p02950,FAILED,OTHER,"essed\sources\p02950\C++\s230821716.cpp: In function 'void div(int*, int*, int, int)':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02950\C++\s230821716.cpp:60:19: error: 'd' was not declared in this scope
+   ad(B[i-1],A[i]);d l(A[i-1],1LL*A[i]*y[0]%mod);
+                   ^
+"
+s907241357,p02697,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02697\C++\s907241357.cpp:70:1: error: expected declaration before '}' token
+ }
+ ^
+"
+s895117405,p02373,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02373\C++\s895117405.cpp:15:20: error: size of array 'seek' is too large
+ int seek[MAXN][MAXN];
+                    ^
+"
+s886994645,p00061,FAILED,OTHER,"+\s886994645.cpp:25:5: error: 'cout' was not declared in this scope
+     cout << cnt << endl;
+     ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00061\C++\s886994645.cpp:25:20: error: 'endl' was not declared in this scope
+     cout << cnt << endl;
+                    ^~~~
+"
+s207516198,p00230,COMPILED_CLEAN,,
+s092134975,p03467,FAILED,OTHER,"3: error: 'mask' was not declared in this scope
+   mask = mask << 1 | str[i] - '0';
+   ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03467\C++\s092134975.cpp:36:25: error: 'mask' was not declared in this scope
+  printf(""%d\n"", calc(n, mask));
+                         ^~~~
+"
+s347386418,p00026,COMPILED_CLEAN,,
+s863431309,p02714,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02714\C++\s863431309.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02714\C++\s863431309.cpp:23:10: error: 'rgb' was not declared in this scope
+   ll ans=rgb;
+          ^~~
+"
+s553659007,p01752,FAILED,OTHER,"er-defect-prediction\data\processed\sources\p01752\C++\s553659007.cpp:69:5: error: expected unqualified-id before 'return'
+     return 0;
+     ^~~~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01752\C++\s553659007.cpp:70:1: error: expected declaration before '}' token
+ }
+ ^
+"
+s407720076,p02749,FAILED,OTHER,".cpp:118:20: error: void value not ignored as it ought to be
+     int t = s2.pop();
+                    ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02749\C++\s407720076.cpp:122:20: error: void value not ignored as it ought to be
+     int t = s0.pop();
+                    ^
+"
+s074137598,p02285,FAILED,OTHER,"transformer-defect-prediction\data\processed\sources\p02285\C++\s074137598.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02285\C++\s074137598.cpp:128:21: error: 'sacnf' was not declared in this scope
+       sacnf(""%d"", &x);
+                     ^
+"
+s599145687,p01547,FAILED,OTHER,"transformer-defect-prediction\data\processed\sources\p01547\C++\s599145687.cpp:7:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\predefined_ops.h:43:23: note:   'std::complex<double>' is not derived from 'const std::pair<_T1, _T2>'
+       { return *__it1 < *__it2; }
+                ~~~~~~~^~~~~~~~
+"
+s233748915,p04001,FAILED,OTHER,"748915.cpp:11:14: note:   couldn't deduce template parameter '_Alloc'
+   cout<<ans<<end;:
+              ^~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p04001\C++\s233748915.cpp:11:18: error: expected primary-expression before ':' token
+   cout<<ans<<end;:
+                  ^
+"
+s328297299,p03610,FAILED,OTHER,"\data\processed\sources\p03610\C++\s328297299.cpp:8:21: error: expected ';' before '<' token
+   for (int i = 0, i < len; ++i)
+                     ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03610\C++\s328297299.cpp:8:21: error: expected primary-expression before '<' token
+"
+s565944465,p00771,COMPILED_CLEAN,,"narrowing conversion of '(& Y)->std::vector<_Tp, _Alloc>::operator[]<long long int, std::allocator<long long int> >(((std::vector<long long int>::size_type)i))' from '__gnu_cxx::__alloc_traits<std::allocator<long long int> >::value_type {aka long long int}' to 'long double' inside { } [-Wnarrowing]
+"
+s707774461,p03700,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03700\C++\s707774461.cpp:1:1: error: 'a' does not name a type
+ a
+ ^
+"
+s227212521,p00246,COMPILED_CLEAN,,
+s331985974,p02698,FAILED,OTHER,"'__gnu_cxx::__alloc_traits<std::allocator<long long int> >::value_type {aka long long int}'
+ #define PB push_back
+            ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02698\C++\s331985974.cpp:78:13: note: in expansion of macro 'PB'
+     g[n][q].PB(a[n]);
+             ^~
+"
+s774327556,p00046,COMPILED_CLEAN,,
+s021797192,p01974,COMPILED_CLEAN,,
+s883962593,p00273,FAILED,OTHER,"d operands of types 'int [365]' and 'int [365]' to binary 'operator*'
+  f=x*b+y*p;}
+    ~^~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00273\C++\s883962593.cpp:11:9: error: invalid operands of types 'int [365]' and 'int [365]' to binary 'operator*'
+  f=x*b+y*p;}
+        ~^~
+"
+s506096438,p00264,COMPILED_CLEAN,,
+s078700404,p02990,FAILED,OTHER,"rogram
+ }ã€€
+  ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02990\C++\s078700404.cpp:52:3: error: stray '\200' in program
+ }ã€€
+   ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02990\C++\s078700404.cpp:52:4: error: stray '\200' in program
+ }ã€€
+    ^
+"
+s099113353,p03746,FAILED,OTHER,"r-defect-prediction\data\processed\sources\p03746\C++\s099113353.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03746\C++\s099113353.cpp:63:26: error: 'memset' was not declared in this scope
+  memset(in, 0, sizeof(in));
+                          ^
+"
+s421766046,p03259,FAILED,OTHER,"32\bits\stdc++.h:46,
+                 from D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03259\C++\s421766046.cpp:1:
+c:\mingw\include\stdio.h:677:41: note: declared here
+ _CRTIMP __cdecl __MINGW_NOTHROW  int    puts (const char *);
+                                         ^~~~
+"
+s031558715,p02256,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02256\C++\s031558715.cpp:1:21: fatal error: iostream.h: No such file or directory
+ #include<iostream.h>
+                     ^
+compilation terminated.
+"
+s439414239,p00054,FAILED,OTHER,"data\processed\sources\p00054\C++\s439414239.cpp:1:1: error: 'import' does not name a type
+ import java.util.Scanner;
+ ^~~~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00054\C++\s439414239.cpp:3:1: error: expected unqualified-id before 'public'
+ public class Main {
+ ^~~~~~
+"
+s523824008,p03338,FAILED,OTHER,"r-defect-prediction\data\processed\sources\p03338\C++\s523824008.cpp:42:5: error: redefinition of 'int main()'
+ int main() {
+     ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03338\C++\s523824008.cpp:5:5: note: 'int main()' previously defined here
+ int main() {
+     ^~~~
+"
+s424547066,p02955,FAILED,OTHER,"ssed\sources\p02955\C++\s424547066.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02955\C++\s424547066.cpp:16:5: error: 'sort' is not a member of 'std'
+     std::sort(A_arr.begin(), A_arr.end(), [nd](int l, int r){return (l%nd)<(r%nd);});
+     ^~~
+"
+s328497307,p02982,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02982\C++\s328497307.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02982\C++\s328497307.cpp:29:13: error: 'sqrt' was not declared in this scope
+   t = sqrt(a);
+             ^
+"
+s843428349,p02885,FAILED,OTHER,"transformer-defect-prediction\data\processed\sources\p02885\C++\s843428349.cpp:4:1: error: 'fn' does not name a type
+ fn read<T: FromStr>() -> T {
+ ^~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02885\C++\s843428349.cpp:16:1: error: 'fn' does not name a type
+ fn main() {
+ ^~
+"
+s289404036,p02976,FAILED,OTHER,"t main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02976\C++\s289404036.cpp:155:68: error: 'any_of' was not declared in this scope
+   if (any_of(begin(degs), end(degs), [] (auto d) { return d == 1; }))
+                                                                    ^
+"
+s460169309,p03032,FAILED,OTHER,"p:610:78: fatal error: ext/pb_ds/detail/resize_policy/hash_standard_resize_policy_imp.hpp: No such file or directory
+ #include <ext/pb_ds/detail/resize_policy/hash_standard_resize_policy_imp.hpp>
+                                                                              ^
+compilation terminated.
+"
+s377960393,p03730,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03730\C++\s377960393.cpp: In function 'int yu(int, int)':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03730\C++\s377960393.cpp:5:9: error: expected primary-expression before ')' token
+   while() {
+         ^
+"
+s104314639,p03346,COMPILED_CLEAN,,
+s670904567,p02420,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02420\C++\s670904567.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02420\C++\s670904567.cpp:21:9: error: expected ';' before '}' token
+         }
+         ^
+"
+s590544861,p00486,FAILED,OTHER,"rmer-defect-prediction\data\processed\sources\p00486\C++\s590544861.cpp:23:31: error: could not convert '{<expression error>, <expression error>}' from '<brace-enclosed initializer list>' to 'std::pair<long long int, long long int>'
+ P ans = { LLONG_MAX,LLONG_MAX };
+                               ^
+"
+s485308934,p00138,FAILED,OTHER,"ources\p00138\C++\s485308934.cpp: In function 'void calc(std::vector<std::pair<double, int> >&)':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00138\C++\s485308934.cpp:14:26: error: 'sort' was not declared in this scope
+     sort(begin(v), end(v));
+                          ^
+"
+s850342008,p03183,FAILED,OTHER,"s = max(ans, dp[j] = max(dp[j], dp[j - a[i].w] + a[i].v));
+                                                                     ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03183\C++\s850342008.cpp:32:9: error: 'ans' was not declared in this scope
+   cout<<ans;
+         ^~~
+"
+s709961039,p03416,FAILED,OTHER," function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03416\C++\s709961039.cpp:11:1: error: expected '}' at end of input
+ }
+ ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03416\C++\s709961039.cpp:11:1: error: expected '}' at end of input
+"
+s659446546,p00273,FAILED,OTHER,":\Dev\Github\transformer-defect-prediction\data\processed\sources\p00273\C++\s659446546.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00273\C++\s659446546.cpp:14:20: error: expected '(' before '{' token
+          } else if {
+                    ^
+"
+s860172407,p03901,FAILED,OTHER,"pes 'double' and 'int' to binary 'operator%'
+   if(x%2==1) x++;
+      ~^~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03901\C++\s860172407.cpp:8:25: error: 'setprecision' was not declared in this scope
+   cout << setprecision(8) << x/(2*p) << endl;
+                         ^
+"
+s571761536,p03231,FAILED,OTHER,"+\s571761536.cpp:13:20: error: expected ')' before ';' token
+     for(int i=0;i<K;i++)
+                    ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03231\C++\s571761536.cpp:13:21: error: 'i' was not declared in this scope
+     for(int i=0;i<K;i++)
+                     ^
+"
+s596631542,p02344,FAILED,OTHER,"efect-prediction\data\processed\sources\p02344\C++\s596631542.cpp:50:74: error: 'Nil' is not a member of 'Option<int>'
+   if (!is_related(other)) return std::make_shared<Option<int>::NilClass>(Option<int>::Nil());
+                                                                          ^~~~~~~~~~~
+"
+s868613402,p03619,FAILED,OTHER,"ope
+  if(sum==abs(x-xx)+1||sum==abs(y-yy)+1)
+                                ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03619\C++\s868613402.cpp:58:34: error: 'yy' was not declared in this scope
+  if(sum==abs(x-xx)+1||sum==abs(y-yy)+1)
+                                  ^~
+"
+s319045796,p03652,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03652\C++\s319045796.cpp:1:1: error: 'ok' does not name a type
+ ok
+ ^~
+"
+s335593407,p02721,FAILED,OTHER,"ev\Github\transformer-defect-prediction\data\processed\sources\p02721\C++\s335593407.cpp: In lambda function:
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02721\C++\s335593407.cpp:18:16: error: 's' was not declared in this scope
+             if(s[i] == 'o'){
+                ^
+"
+s530866483,p01660,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01660\C++\s530866483.cpp:10:2: error: #else without #if
+ #else
+  ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01660\C++\s530866483.cpp:12:2: error: #endif without #if
+ #endif
+  ^~~~~
+"
+s571896885,p01227,FAILED,OTHER,"\Github\transformer-defect-prediction\data\processed\sources\p01227\C++\s571896885.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01227\C++\s571896885.cpp:20:18: error: 'sort' was not declared in this scope
+     sort(b, b+n-1);
+                  ^
+"
+s060050028,p00452,FAILED,OTHER,"data\processed\sources\p00452\C++\s060050028.cpp:15:3: error: 'cin' was not declared in this scope
+   cin >> n >> m;
+   ^~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00452\C++\s060050028.cpp:58:3: error: 'cout' was not declared in this scope
+   cout << Max << '\n';
+   ^~~~
+"
+s110460455,p01488,COMPILED_CLEAN,,
+s364122345,p02956,FAILED,OTHER,": 'T BIT<T>::sum(int) [with T = int]' is private within this context
+         int lowOver = tree.sum(yi);
+                                  ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02956\C++\s364122345.cpp:29:7: note: declared private here
+     T sum(int k) {
+       ^~~
+"
+s817699205,p04041,COMPILED_CLEAN,,
+s956842921,p03390,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03390\C++\s956842921.cpp:1:1: error: 'q' does not name a type
+ q=int(raw_input())
+ ^
+"
+s833320658,p03850,FAILED,OTHER,"t main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03850\C++\s833320658.cpp:26:49: error: 'min_dec' was not declared in this scope
+             if (total_minus > 0)min_minus = min(min_dec, total_minus + cur_minus);
+                                                 ^~~~~~~
+"
+s989629564,p00782,COMPILED_CLEAN,,
+s004535764,p03674,FAILED,OTHER,"4.cpp:35:14: error: 'per' was not declared in this scope
+  per (i, n, 1) ifac[i-1] = ifac[i] * i % MOD;
+              ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03674\C++\s004535764.cpp:37:16: error: 'rep' was not declared in this scope
+  rep (i, 1, n+1)
+                ^
+"
+s487980268,p03448,FAILED,OTHER,"ources\p03448\C++\s487980268.cpp:8:2: error: 'Z' was not declared in this scope
+  Z=Y/10;//ï¼•ï¼�ï¼�å††çŽ‰ã�Œæœ€å¤§ä½•å€‹ã�‹
+  ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03448\C++\s487980268.cpp:9:2: error: 'sum' was not declared in this scope
+  sum=0;//å ´å�ˆã�®æ•°
+  ^~~
+"
+s330189088,p03943,FAILED,OTHER,"43\C++\s330189088.cpp:8:13: error: expected primary-expression before '=' token
+ if((a+b+c)%==0) cout<<""Yes""<<endl;
+             ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03943\C++\s330189088.cpp:10:1: error: expected primary-expression before 'return'
+ return 0;
+ ^~~~~~
+"
+s733105184,p00630,FAILED,OTHER,"ents, 1 provided
+    for(i=s.begin();(i=find_if(i,s.end(),ptr_fun(isupper)))!=s.end();++i)
+                                                        ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00630\C++\s733105184.cpp:20:56: note:   couldn't deduce template parameter '_Arg1'
+"
+s106868742,p00654,FAILED,OTHER,"-defect-prediction\data\processed\sources\p00654\C++\s106868742.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00654\C++\s106868742.cpp:29:28: error: 'gcd' was not declared in this scope
+    temp = gcd( temp , b[i] );
+                            ^
+"
+s868026096,p03371,FAILED,OTHER,"3371\C++\s868026096.cpp:5:3: error: 'cout' was not declared in this scope
+   cout <<  ans << endl;
+   ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03371\C++\s868026096.cpp:5:19: error: 'endl' was not declared in this scope
+   cout <<  ans << endl;
+                   ^~~~
+"
+s195513502,p03593,FAILED,OTHER,"uto itr : cnt) {
+   ^~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03593\C++\s195513502.cpp:53:1: error: expected '}' at end of input
+ }
+ ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03593\C++\s195513502.cpp:53:1: error: expected '}' at end of input
+"
+s249279365,p03072,FAILED,OTHER,"\Github\transformer-defect-prediction\data\processed\sources\p03072\C++\s249279365.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03072\C++\s249279365.cpp:16:19: error: 'i' was not declared in this scope
+     int max_=yama[i];
+                   ^
+"
+s093859477,p03136,FAILED,OTHER,"\transformer-defect-prediction\data\processed\sources\p03136\C++\s093859477.cpp:20:4: error: expected unqualified-id before 'else'
+   }else{
+    ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03136\C++\s093859477.cpp:23:1: error: expected declaration before '}' token
+ }
+ ^
+"
+s179533081,p03707,FAILED,OTHER,"script
+         int edge_num_ver = ac_edge_ver[x2[i]][y2[i]] - ac_edge_ver[x2[i]][y1[i]] - ac_edge_ver[x1[i] - 1][y2[i]] + ac_edge_ver[x1[i] - 1][y1[i]];
+                                                                                                                                                ^
+"
+s041516784,p01603,FAILED,OTHER,"oken
+  }
+  ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01603\C++\s041516784.cpp:29:2: error: expected ')' before '}' token
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01603\C++\s041516784.cpp:29:2: error: expected primary-expression before '}' token
+"
+s203500032,p03586,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03586\C++\s203500032.cpp: In function 'void crt(ll&, int, int, int, int)':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03586\C++\s203500032.cpp:48:1: error: expected ';' before '}' token
+ }
+ ^
+"
+s070507298,p02659,COMPILED_CLEAN,,
+s521053339,p01304,FAILED,OTHER,"double)'
+    if(x1==x2)v[x1][max(y1,y2)]=1;
+                             ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01304\C++\s521053339.cpp:16:25: error: invalid types 'int [16][double(double)]' for array subscript
+    else h[max(x1,x2)][y1]=1;
+                         ^
+"
+s616226337,p03904,FAILED,OTHER,"904\C++\s616226337.cpp:571:5: error: 'n' was not declared in this scope
+     n = len(s);
+     ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03904\C++\s616226337.cpp:581:24: error: 'possible' was not declared in this scope
+         if(possible(mid)){
+                        ^
+"
+s603246528,p04051,FAILED,OTHER,"3246528.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p04051\C++\s603246528.cpp:1511:28: error: invalid operands of types 'double' and 'const long long int' to binary 'operator%'
+     int val = round(ab[i]) % MOD;
+               ~~~~~~~~~~~~~^~~~~
+"
+s990823387,p02506,FAILED,OTHER,"sformer-defect-prediction\data\processed\sources\p02506\C++\s990823387.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02506\C++\s990823387.cpp:11:19: error: 'w' was not declared in this scope
+  for(int i = 0; i<w.size(); i++){
+                   ^
+"
+s507658058,p03546,FAILED,OTHER,"sformer-defect-prediction\data\processed\sources\p03546\C++\s507658058.cpp:1:1: error: 'package' does not name a type
+ package main
+ ^~~~~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03546\C++\s507658058.cpp:25:4: error: expected unqualified-id before ')' token
+  }()
+    ^
+"
+s204445398,p02660,FAILED,OTHER,"
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02660\C++\s204445398.cpp:33:5: error: 'k' was not declared in this scope
+     k=1;
+     ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02660\C++\s204445398.cpp:40:1: error: expected '}' at end of input
+ }
+ ^
+"
+s017256432,p03536,FAILED,OTHER,"w]){
+                              ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03536\C++\s017256432.cpp:80:55: error: 'p' was not declared in this scope
+                 dp[next][j]=min(dp[now][j],dp[now][j]+p[now]);
+                                                       ^
+"
+s184111103,p01969,COMPILED_CLEAN,,
+s360510637,p02743,FAILED,OTHER,"ction\data\processed\sources\p02743\C++\s360510637.cpp:8:10: error: conflicting declaration 'double c'
+   double c=sqrt(c);
+          ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02743\C++\s360510637.cpp:5:11: note: previous declaration as 'int c'
+   int a,b,c;
+           ^
+"
+s660337846,p00233,FAILED,OTHER,"ocessed\sources\p00233\C++\s660337846.cpp: In function 'long long int solve(int)':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00233\C++\s660337846.cpp:11:34: error: 'abs' was not declared in this scope
+  ans[p] = abs(ans[p] - (now % 10));
+                                  ^
+"
+s038643406,p02959,FAILED,OTHER,"es\p02959\C++\s038643406.cpp:11:16: error: 'a' was not declared in this scope
+         A[i] = a[i];
+                ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02959\C++\s038643406.cpp:15:16: error: 'b' was not declared in this scope
+         B[i] = b[i];
+                ^
+"
+s790400062,p03851,FAILED,OTHER,"+\s790400062.cpp:66:98: note:   mismatched types 'std::initializer_list<_Tp>' and 'long long int'
+             answer[u.se] = max(answer[u.se] , ansPref[l - 1] + ansSuf[l + 1] + max(0ll , 1 - u.fi));
+                                                                                                  ^
+"
+s351805508,p03266,FAILED,OTHER,"66\C++\s351805508.cpp:9:17: error: 'ans' was not declared in this scope
+   if(k&1){cout<<ans;return 0;}
+                 ^~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03266\C++\s351805508.cpp:11:3: error: 'ans' was not declared in this scope
+   ans+=1ll*cnt*cnt*cnt;
+   ^~~
+"
+s282162805,p00239,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00239\C++\s282162805.cpp:24:1: error: expected ';' after class definition
+ }
+ ^
+"
+s706322110,p00708,FAILED,OTHER,"ion\data\processed\sources\p00708\C++\s706322110.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00708\C++\s706322110.cpp:93:35: error: 'sqrt' was not declared in this scope
+      (z[i] - z[j]) * (z[i] - z[j]));
+                                   ^
+"
+s383084791,p03853,FAILED,OTHER,"\s383084791.cpp:7:15: error: expected primary-expression before '>' token
+  vector<string> M(h);
+               ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03853\C++\s383084791.cpp:7:20: error: 'M' was not declared in this scope
+  vector<string> M(h);
+                    ^
+"
+s698001469,p03195,FAILED,OTHER,"01469.cpp:18:3: error: 'cout' was not declared in this scope
+   cout << ""second"" << endl;
+   ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03195\C++\s698001469.cpp:18:23: error: 'endl' was not declared in this scope
+   cout << ""second"" << endl;
+                       ^~~~
+"
+s982779099,p03062,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03062\C++\s982779099.cpp:1:25: fatal error: bits/stdc..+h: No such file or directory
+ #include <bits/stdc..+h>
+                         ^
+compilation terminated.
+"
+s716595758,p02885,FAILED,OTHER,":initializer_list<_Tp>' and 'long long int'
+   cout << max(a-2*b,0) <<endl;
+                      ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02885\C++\s716595758.cpp:10:30: error: expected '}' at end of input
+   cout << max(a-2*b,0) <<endl;
+                              ^
+"
+s144179434,p03140,COMPILED_CLEAN,,
+s471576036,p02498,FAILED,OTHER,"ared in this scope
+         else if(isupper(a[i])){
+                             ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02498\C++\s471576036.cpp:11:32: error: 'tolower' was not declared in this scope
+             a[i] = tolower(a[i]);
+                                ^
+"
+s315716477,p03125,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03125\C++\s315716477.cpp:1:22: fatal error: bits/stdc++: No such file or directory
+ #include<bits/stdc++>
+                      ^
+compilation terminated.
+"
+s523954673,p03765,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03765\C++\s523954673.cpp:123:1: error: expected ',' or ';' before 'int'
+ int main(void){
+ ^~~
+"
+s801313505,p02314,FAILED,OTHER,"a\processed\sources\p02314\C++\s801313505.cpp: In function 'int solve()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02314\C++\s801313505.cpp:12:37: error: 'memset' was not declared in this scope
+     memset(coin, MAX_N, sizeof(coin));
+                                     ^
+"
+s030325067,p00920,COMPILED_CLEAN,,
+s898836794,p00431,FAILED,OTHER,"36794.cpp:6:2: error: 'u' was not declared in this scope
+  u[pos] = 1; int ret = 0;
+  ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00431\C++\s898836794.cpp:7:21: error: 'rings' was not declared in this scope
+  for(int i = 0; i < rings[pos]; i++) {
+                     ^~~~~
+"
+s766169532,p02709,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02709\C++\s766169532.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02709\C++\s766169532.cpp:51:5: error: 'posr' was not declared in this scope
+     posr = i ;
+     ^~~~
+"
+s959496256,p03400,FAILED,OTHER,"t main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03400\C++\s959496256.cpp:48:3: error: 'co' was not declared in this scope
+   co
+   ^~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03400\C++\s959496256.cpp:48:3: error: expected '}' at end of input
+"
+s482333488,p00240,FAILED,OTHER,"r-defect-prediction\data\processed\sources\p00240\C++\s482333488.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00240\C++\s482333488.cpp:23:27: error: 'sort' was not declared in this scope
+   sort(S.rbegin(),S.rend());
+                           ^
+"
+s428691046,p03638,FAILED,OTHER,"stream:61:18: note:   'std::cout'
+   extern ostream cout;  /// Linked to standard output
+                  ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03638\C++\s428691046.cpp:23:15: error: 'c' was not declared in this scope
+    else cout<<c[i][j]<<"" "";
+               ^
+"
+s222794470,p02392,FAILED,OTHER,"\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02392\C++\s222794470.cpp:1:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:590:5: note:   'std::endl'
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^~~~
+"
+s620504562,p02771,FAILED,OTHER,"b\transformer-defect-prediction\data\processed\sources\p02771\C++\s620504562.cpp:13:1: error: expected unqualified-id before 'if'
+ if(poor)
+ ^~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02771\C++\s620504562.cpp:17:1: error: expected unqualified-id before 'else'
+ else
+ ^~~~
+"
+s953354342,p03019,FAILED,OTHER,"ction\data\processed\sources\p03019\C++\s953354342.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03019\C++\s953354342.cpp:48:31: error: expected ',' or ';' before numeric constant
+    ll how = -(origin/dif) ï¼‹ 1;
+                               ^
+"
+s358826329,p02948,FAILED,OTHER,"rces\p02948\C++\s358826329.cpp:39:5: error: expected ';' before '}' token
+     }
+     ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02948\C++\s358826329.cpp:43:35: error: expected ';' before ')' token
+             for(int j=0;j<=date[i]){
+                                   ^
+"
+s827888470,p01457,FAILED,OTHER,"d '}' at end of input
+ }
+ ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01457\C++\s827888470.cpp:104:1: error: expected '}' at end of input
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01457\C++\s827888470.cpp:104:1: error: expected '}' at end of input
+"
+s675070376,p03284,FAILED,OTHER,", _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(basic_string&& __str)
+       ^~~~~~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03284\C++\s675070376.cpp:13:3: error: expected ';' before '}' token
+   }
+   ^
+"
+s645410758,p02765,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02765\C++\s645410758.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02765\C++\s645410758.cpp:13:3: error: expected '}' at end of input
+   }
+   ^
+"
+s780379064,p03563,FAILED,OTHER,": In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03563\C++\s780379064.cpp:6:25: error: invalid operands of types 'int' and '<unresolved overloaded function type>' to binary 'operator<<'
+   cout << (a + b) * 0,5 << endl;
+                       ~~^~~~~~~
+"
+s615465828,p03909,FAILED,OTHER,"es\p03909\C++\s615465828.cpp:13:15: error: 'j' was not declared in this scope
+   REP(i,h) RE(j,w){
+               ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03909\C++\s615465828.cpp:13:18: error: 'RE' was not declared in this scope
+   REP(i,h) RE(j,w){
+                  ^
+"
+s454581177,p03534,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03534\C++\s454581177.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03534\C++\s454581177.cpp:72:1: error: expected '}' at end of input
+ }
+ ^
+"
+s132980629,p04023,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p04023\C++\s132980629.cpp:6:9: error: '::main' must return 'int'
+ ll main()
+         ^
+"
+s975504216,p00780,FAILED,OTHER,"0\C++\s975504216.cpp:26:9: error: 'scan' was not declared in this scope
+   while(scan.hasNext()){
+         ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00780\C++\s975504216.cpp:36:4: error: 'System' was not declared in this scope
+    System.out.println(count);
+    ^~~~~~
+"
+s179920724,p01810,COMPILED_CLEAN,,"r-defect-prediction\data\processed\sources\p01810\C++\s179920724.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01810\C++\s179920724.cpp:19:14: warning: overflow in implicit constant conversion [-Woverflow]
+   ll l=0LL,r=10e18;
+              ^~~~~
+"
+s958884247,p03309,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03309\C++\s958884247.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03309\C++\s958884247.cpp:29:9: error: 'k' was not declared in this scope
+         k=n-m-m;
+         ^
+"
+s599930418,p00028,FAILED,OTHER,"  ) d[buf-1]++;
+                                  ^~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00028\C++\s599930418.cpp:17:47: error: 'printf' was not declared in this scope
+         if( d[i] >= buff ) printf( ""%d\n"",i+1 );
+                                               ^
+"
+s057322959,p03266,FAILED,OTHER,"ata\processed\sources\p03266\C++\s057322959.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03266\C++\s057322959.cpp:16:32: error: expected unqualified-id before numeric constant
+        ll temp = n/(k/2)- n/k, 3);
+                                ^
+"
+s096566787,p03560,FAILED,OTHER,"substitution failed:
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03560\C++\s096566787.cpp:19:50: note:   mismatched types 'std::initializer_list<_Tp>' and 'long long int'
+  for(i=1;i<=100000;++i)ans=std::min(ans,calc(n*i));
+                                                  ^
+"
+s223494113,p00695,FAILED,OTHER,"ion\data\processed\sources\p00695\C++\s223494113.cpp:31:9: error: expected primary-expression before '==' token
+   if(not==1){
+         ^~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00695\C++\s223494113.cpp:32:5: error: 'my' was not declared in this scope
+     my=n;
+     ^~
+"
+s419025869,p04032,FAILED,OTHER,"ic_string<_CharT, _Traits, _Alloc>::length() const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type = unsigned int]' (did you forget the '&' ?)
+  if(s.length==1)cout << ""-1 -1"" << endl;
+     ~~^~~~~~
+"
+s289764727,p00469,COMPILED_CLEAN,,
+s720833990,p00806,FAILED,OTHER,"ect-prediction\data\processed\sources\p00806\C++\s720833990.cpp:40:3: error: expected unqualified-id before 'return'
+   return dp[str]=res;
+   ^~~~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00806\C++\s720833990.cpp:41:1: error: expected declaration before '}' token
+ }
+ ^
+"
+s539618261,p02293,FAILED,OTHER,"ansformer-defect-prediction\data\processed\sources\p02293\C++\s539618261.cpp:328:79: error: 'upper_bound' was not declared in this scope
+       set<int>::iterator e = upper_bound(BT.begin(),BT.end(),S[EP[i].seg].p2.x);
+                                                                               ^
+"
+s998376459,p02900,FAILED,OTHER," ':' token
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02900\C++\s998376459.cpp:33:25: error: expected ')' before ':' token
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02900\C++\s998376459.cpp:33:25: error: expected primary-expression before ':' token
+"
+s927092130,p03019,FAILED,OTHER,"rediction\data\processed\sources\p03019\C++\s927092130.cpp:76:11: error: a function-definition is not allowed here before '{' token
+ int main(){
+           ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03019\C++\s927092130.cpp:149:1: error: expected '}' at end of input
+ }
+ ^
+"
+s494939482,p03636,COMPILED_CLEAN,,
+s145955348,p04027,FAILED,OTHER,"ormer-defect-prediction\data\processed\sources\p04027\C++\s145955348.cpp: In function 'void solve()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p04027\C++\s145955348.cpp:63:23: error: 'powMod' was not declared in this scope
+     temp += powMod(x,c);
+                       ^
+"
+s767097499,p03208,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03208\C++\s767097499.cpp:1:1: error: 'n' does not name a type
+ n,k = map(int,input().split())
+ ^
+"
+s725225570,p03608,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03608\C++\s725225570.cpp:1:1: error: expected unqualified-id before numeric constant
+ 4 6 3
+ ^
+"
+s144971546,p03097,FAILED,OTHER,"ion before 'void'
+     function<void (int, vector<int> &)> dfs = [&](int u, vector<int> &trail) {
+              ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03097\C++\s144971546.cpp:60:17: error: 'dfs' was not declared in this scope
+     dfs(s, trail);
+                 ^
+"
+s287137510,p02308,COMPILED_CLEAN,,
+s198272745,p02287,FAILED,LINKER,"c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+"
+s565777753,p01521,COMPILED_CLEAN,,
+s237220706,p02314,FAILED,OTHER,"+\s237220706.cpp: In function 'int comp2(const void*, const void*)':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02314\C++\s237220706.cpp:12:27: error: 'numofbits' was not declared in this scope
+  return numofbits(*(int*)a) - numofbits(*(int*)b);
+                           ^
+"
+s680548840,p03849,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03849\C++\s680548840.cpp:9:36: fatal error: c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stack#include <algorithm: Invalid argument
+ #include <stack#include <algorithm>
+                                    ^
+compilation terminated.
+"
+s895434051,p02770,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02770\C++\s895434051.cpp:1:1: error: 'import' does not name a type
+ import numpy as np
+ ^~~~~~
+"
+s969171641,p02572,FAILED,OTHER,"+\s969171641.cpp:22:5: error: 'cout' was not declared in this scope
+     cout << res << endl;
+     ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02572\C++\s969171641.cpp:22:20: error: 'endl' was not declared in this scope
+     cout << res << endl;
+                    ^~~~
+"
+s060345808,p03065,FAILED,OTHER,"rmer-defect-prediction\data\processed\sources\p03065\C++\s060345808.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03065\C++\s060345808.cpp:101:19: error: 'p' was not declared in this scope
+         if(A[N] % p != 0) continue;
+                   ^
+"
+s079477426,p02789,FAILED,OTHER,"mer-defect-prediction\data\processed\sources\p02789\C++\s079477426.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02789\C++\s079477426.cpp:5:24: error: expected unqualified-id before '&' token
+     scanf(""%d %d"", &N. &M);
+                        ^
+"
+s751247492,p03992,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03992\C++\s751247492.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03992\C++\s751247492.cpp:12:5: error: expected ',' or ';' before 'cout'
+     cout<<a;
+     ^~~~
+"
+s933900094,p02714,FAILED,OTHER,"his scope
+                     count_[s[i]]++;
+                     ^~~~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02714\C++\s933900094.cpp:12:15: error: 'count_' was not declared in this scope
+  ll res = (ll)count_['R'] * count_['G'] * count_['B'];
+               ^~~~~~
+"
+s003335492,p02834,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02834\C++\s003335492.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02834\C++\s003335492.cpp:66:9: error: expected ';' before '}' token
+         }
+         ^
+"
+s795294780,p00475,FAILED,OTHER,"24:20: error: 'ow' was not declared in this scope
+  printf(""%d\n"",min(ow,oh));
+                    ^~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00475\C++\s795294780.cpp:24:23: error: 'oh' was not declared in this scope
+  printf(""%d\n"",min(ow,oh));
+                       ^~
+"
+s109156516,p03583,COMPILED_CLEAN,,
+s071690491,p00466,FAILED,OTHER,"Iostate, std::_Ios_Iostate)
+   operator&(_Ios_Iostate __a, _Ios_Iostate __b)
+   ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h:165:3: note:   no known conversion for argument 1 from 'std::basic_istream<char>::__istream_type {aka std::basic_istream<char>}' to 'std::_Ios_Iostate'
+"
+s189180010,p01128,FAILED,OTHER,"   t.first.second._Val[0] = gx;
+                   ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01128\C++\s189180010.cpp:106:19: error: 'struct std::complex<double>' has no member named '_Val'; did you mean 'real'?
+    t.first.second._Val[1] = gy;
+                   ^~~~
+"
+s225387848,p03569,FAILED,OTHER,"Dev\Github\transformer-defect-prediction\data\processed\sources\p03569\C++\s225387848.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03569\C++\s225387848.cpp:43:15: error: 'n' was not declared in this scope
+         if(i>=n)break;
+               ^
+"
+s197031074,p03524,FAILED,OTHER,"gw32\bits\stdc++.h:75:0,
+                 from D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03524\C++\s197031074.cpp:2:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:61:18: note:   'std::cout'
+   extern ostream cout;  /// Linked to standard output
+                  ^~~~
+"
+s103319025,p03171,FAILED,OTHER,"ransformer-defect-prediction\data\processed\sources\p03171\C++\s103319025.cpp: In function 'void topDown()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03171\C++\s103319025.cpp:27:12: error: 'dp' was not declared in this scope
+     memset(dp, -1, sizeof(dp));
+            ^~
+"
+s360565983,p03995,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03995\C++\s360565983.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03995\C++\s360565983.cpp:132:1: error: expected '}' at end of input
+ }
+ ^
+"
+s938510220,p03191,FAILED,OTHER,"transformer-defect-prediction\data\processed\sources\p03191\C++\s938510220.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03191\C++\s938510220.cpp:25:27: error: expected '}' at end of input
+  return printf(""%d"",ans),0;
+                           ^
+"
+s270633022,p03206,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03206\C++\s270633022.cpp: In function 'void solve()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03206\C++\s270633022.cpp:36:5: error: expected ';' before '}' token
+     }
+     ^
+"
+s865379504,p00195,FAILED,OTHER,"9504.cpp:25:21: error: expected ')' before ';' token
+    ll.push_back(o[0];)
+                     ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00195\C++\s865379504.cpp:25:22: error: expected primary-expression before ')' token
+    ll.push_back(o[0];)
+                      ^
+"
+s561987564,p04045,COMPILED_CLEAN,,
+s488678282,p02127,COMPILED_CLEAN,,
+s446674713,p01601,FAILED,OTHER,"ources\p01601\C++\s446674713.cpp: In function 'bool is_palindromic_number(int)':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01601\C++\s446674713.cpp:12:33: error: 'reverse' was not declared in this scope
+     reverse(s2.begin(), s2.end());
+                                 ^
+"
+s290051601,p02471,FAILED,LINKER,"c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+"
+s486772518,p00150,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00150\C++\s486772518.cpp:1:1: error: expected unqualified-id before numeric constant
+ 1
+ ^
+"
+s640302404,p00110,FAILED,OTHER,"2404.cpp: In function 'std::vector<char> splus(std::__cxx11::string, std::__cxx11::string)':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00110\C++\s640302404.cpp:27:27: error: 'reverse' was not declared in this scope
+  reverse(s.begin(),s.end());
+                           ^
+"
+s380834903,p00517,COMPILED_CLEAN,,
+s641372472,p02131,COMPILED_CLEAN,,
+s403792295,p03726,FAILED,OTHER,"transformer-defect-prediction\data\processed\sources\p03726\C++\s403792295.cpp: In function 'bool solve()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03726\C++\s403792295.cpp:86:20: error: 'a' was not declared in this scope
+   if(!used[i] && e[a]==1){
+                    ^
+"
+s906687419,p01554,FAILED,OTHER,";
+ ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01554\C++\s906687419.cpp:5:2: error: stray '\200' in program
+ ã€€int N, M;
+  ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01554\C++\s906687419.cpp:5:3: error: stray '\200' in program
+ ã€€int N, M;
+   ^
+"
+s792501736,p00644,FAILED,OTHER,"p00644\C++\s792501736.cpp: In function 'std::vector<int> topologicalSort(graph&)':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00644\C++\s792501736.cpp:28:32: error: 'reverse' was not declared in this scope
+  reverse(res.begin(), res.end());
+                                ^
+"
+s909703657,p02625,FAILED,OTHER,"er-defect-prediction\data\processed\sources\p02625\C++\s909703657.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02625\C++\s909703657.cpp:110:13: error: no 'operator--(int)' declared for postfix '--' [-fpermissive]
+         cur2--;
+         ~~~~^~
+"
+s638436350,p00574,FAILED,OTHER,"ion\data\processed\sources\p00574\C++\s638436350.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00574\C++\s638436350.cpp:98:24: error: '__popcnt' was not declared in this scope
+     if ((__popcnt(s&ma1)) % 2)ans -= dp[s];
+                        ^
+"
+s287166123,p02285,FAILED,OTHER,"\data\processed\sources\p02285\C++\s287166123.cpp:70:5: error: expected constructor, destructor, or type conversion before '(' token
+ free(y);
+     ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02285\C++\s287166123.cpp:71:1: error: expected declaration before '}' token
+ }
+ ^
+"
+s504682300,p02363,COMPILED_CLEAN,,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02363\C++\s504682300.cpp:14:58: warning: left shift count >= width of type [-Wshift-count-overflow]
+ const long long MAXN = 200, mod = 1000000007, inf = 1 << 62;
+                                                          ^~
+"
+s696968228,p03546,FAILED,OTHER,"sformer-defect-prediction\data\processed\sources\p03546\C++\s696968228.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03546\C++\s696968228.cpp:486:24: error: 'b' was not declared in this scope
+   V<V<int>> a(a,V<int>(b));
+                        ^
+"
+s773528927,p02789,FAILED,OTHER,"cessed\sources\p02789\C++\s773528927.cpp:10:9: error: 's' was not declared in this scope
+         s = ""No"";
+         ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02789\C++\s773528927.cpp:11:13: error: 's' was not declared in this scope
+     cout << s << endl;
+             ^
+"
+s605759805,p03059,FAILED,OTHER,"ources\p03059\C++\s605759805.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03059\C++\s605759805.cpp:15:30: error: 'bestval' was not declared in this scope
+             if (v[p] > c[p]) bestval += v[p] - c[p];
+                              ^~~~~~~
+"
+s761982480,p02623,FAILED,OTHER,"ion/substitution failed:
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02623\C++\s761982480.cpp:24:25: note:   mismatched types 'const __gnu_cxx::__normal_iterator<_IteratorL, _Container>' and 'll {aka long long int}'
+     while(b[j] > k - a[i]) j--;
+                         ^
+"
+s155856433,p03848,FAILED,OTHER,"ram
+ ï½�
+   ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03848\C++\s155856433.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03848\C++\s155856433.cpp:78:13: error: expected '}' at end of input
+     return 0;
+             ^
+"
+s793755106,p03573,FAILED,OTHER,"03573\C++\s793755106.cpp:8:3: error: 'else' without a previous 'if'
+   else(a == c) cout << b << endl;
+   ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03573\C++\s793755106.cpp:8:16: error: expected ';' before 'cout'
+   else(a == c) cout << b << endl;
+                ^~~~
+"
+s592473092,p03534,FAILED,OTHER,"fect-prediction\data\processed\sources\p03534\C++\s592473092.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03534\C++\s592473092.cpp:16:13: error: 'min_element' is not a member of 'std'
+   int mi = *std::min_element( cnt, cnt+3 );
+             ^~~
+"
+s547167635,p02829,FAILED,OTHER,"transformer-defect-prediction\data\processed\sources\p02829\C++\s547167635.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02829\C++\s547167635.cpp:17:23: error: 'i' was not declared in this scope
+         printf(""%d\n"",i);
+                       ^
+"
+s949249605,p00910,FAILED,OTHER,"_check_length(size_type(0), __n, ""basic_string::append"");
+  ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:1115:18: error: '_M_append' was not declared in this scope
+  return _M_append(__s, __n);
+         ~~~~~~~~~^~~~~~~~~~
+"
+s222430021,p01339,FAILED,OTHER,"tion\data\processed\sources\p01339\C++\s222430021.cpp:85:14: error: 'ancode' was not declared in this scope
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01339\C++\s222430021.cpp:85:22: error: 'p' was not declared in this scope
+ void acclear(ancode *p){
+                      ^
+"
+s740302292,p01540,COMPILED_CLEAN,,
+s758137849,p02846,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02846\C++\s758137849.cpp:1:17: fatal error: pch.h: No such file or directory
+ #include ""pch.h""
+                 ^
+compilation terminated.
+"
+s359878734,p01438,FAILED,OTHER,"             ^~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01438\C++\s359878734.cpp: In function 'void _memset()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01438\C++\s359878734.cpp:82:3: error: 'Q' was not declared in this scope
+   Q[i] = 0;
+   ^
+"
+s634326722,p03972,FAILED,OTHER,"\processed\sources\p03972\C++\s634326722.cpp:38:5: error: 'dp' was not declared in this scope
+     dp[1][1] = 2 * p[0] + q[0];
+     ^~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03972\C++\s634326722.cpp:40:3: error: 'dp' was not declared in this scope
+   dp[0][0] = 1;
+   ^~
+"
+s256982672,p03475,FAILED,OTHER,"56982672.cpp:9:20: error: expected ')' before ';' token
+ for(int j=I;j<n;j++;){
+                    ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03475\C++\s256982672.cpp:9:21: error: expected primary-expression before ')' token
+ for(int j=I;j<n;j++;){
+                     ^
+"
+s913264216,p03752,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03752\C++\s913264216.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03752\C++\s913264216.cpp:37:1: error: expected '}' at end of input
+ }
+ ^
+"
+s366797052,p03421,FAILED,OTHER,"ction\data\processed\sources\p03421\C++\s366797052.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03421\C++\s366797052.cpp:30:13: error: conversion from 'int' to non-scalar type 'std::vector<long long int>' requested
+     vi ans=-1;
+             ^
+"
+s027339361,p03995,FAILED,OTHER,"ces\p03995\C++\s027339361.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03995\C++\s027339361.cpp:9:10: error: '___map' was not declared in this scope
+   memset(___map, -1, (unsigned long long)100001 * (unsigned long long)100001);
+          ^~~~~~
+"
+s411374784,p00154,COMPILED_CLEAN,,
+s951969584,p01743,COMPILED_CLEAN,,"-defect-prediction\data\processed\sources\p01743\C++\s951969584.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01743\C++\s951969584.cpp:47:15: warning: left shift count >= width of type [-Wshift-count-overflow]
+  ll fa = 1 << 60;
+               ^~
+"
+s868685167,p02113,FAILED,OTHER,"fect-prediction\data\processed\sources\p02113\C++\s868685167.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02113\C++\s868685167.cpp:46:29: error: 'sort' was not declared in this scope
+   sort(str.begin(),str.end());
+                             ^
+"
+s480386693,p03075,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03075\C++\s480386693.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03075\C++\s480386693.cpp:19:1: error: expected ';' before '}' token
+ }
+ ^
+"
+s771232448,p00497,FAILED,LINKER,"c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+"
+s126616793,p00902,FAILED,OTHER,"red in this scope
+         assert(vcommon.size()>1);
+                                ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00902\C++\s126616793.cpp:314:30: error: 'assert' was not declared in this scope
+         assert(tangc.size()>1);
+                              ^
+"
+s174645441,p02568,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02568\C++\s174645441.cpp:5:23: fatal error: atcoder/all: No such file or directory
+ #include <atcoder/all>
+                       ^
+compilation terminated.
+"
+s890942762,p02615,FAILED,OTHER,"90942762.cpp:31:13: error: 'res' was not declared in this scope
+             res+=min(a[i-1],a[i-2]);
+             ^~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02615\C++\s890942762.cpp:34:11: error: 'res' was not declared in this scope
+     cout<<res<<endl;
+           ^~~
+"
+s194129472,p03240,FAILED,OTHER,"sformer-defect-prediction\data\processed\sources\p03240\C++\s194129472.cpp:98:85: error: expected ')' before 'break'
+         if(a[i].first != max(H-abs(i-a[k].second.first)-abs(j-a[i].second.second),0)break;
+                                                                                     ^~~~~
+"
+s145201227,p02730,FAILED,OTHER,"plate argument deduction/substitution failed:
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02730\C++\s145201227.cpp:21:30: note:   'std::basic_ostream<char>' is not derived from 'const std::pair<_T1, _T2>'
+   if(a&&b&&c) cout << ""Yes"" <endl;
+                              ^~~~
+"
+s653886675,p03841,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03841\C++\s653886675.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03841\C++\s653886675.cpp:7:3: error: 'reutrn' was not declared in this scope
+   reutrn 0;
+   ^~~~~~
+"
+s230635984,p02506,FAILED,OTHER,"ion/substitution failed:
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02506\C++\s230635984.cpp:26:60: note:   candidate expects 5 arguments, 4 provided
+   transform(line.begin(), line.end(), line.begin(), tolower);
+                                                            ^
+"
+s326924119,p02534,FAILED,OTHER,"4\C++\s326924119.cpp:44:9: error: 'st' was not declared in this scope
+         st.insert(parent[i]);
+         ^~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02534\C++\s326924119.cpp:46:11: error: 'st' was not declared in this scope
+     cout<<st.size()-1<<""\n"";
+           ^~
+"
+s453207906,p03973,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03973\C++\s453207906.cpp:1:1: error: 'ok' does not name a type
+ ok
+ ^~
+"
+s178318614,p01284,COMPILED_CLEAN,,
+s149692708,p03652,FAILED,OTHER,"rocessed\sources\p03652\C++\s149692708.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03652\C++\s149692708.cpp:29:34: error: missing template arguments before '(' token
+     vector<deque<int>> a(n, deque(m, 0));
+                                  ^
+"
+s023888064,p01286,FAILED,OTHER,"\sources\p01286\C++\s023888064.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01286\C++\s023888064.cpp:183:19: error: 'class PushRelabel<int>' has no member named 'max_flow'
+         cout << d.max_flow(al,al+1) << ""\n"";
+                   ^~~~~~~~
+"
+s801877880,p00148,FAILED,OTHER,"ithub\transformer-defect-prediction\data\processed\sources\p00148\C++\s801877880.cpp:9:44: error: invalid operands of types 'int' and '<unresolved overloaded function type>' to binary 'operator<<'
+   cout<<""3C""<<(count/10==0)?""0""+count:count<<endl;
+                                       ~~~~~^~~~~~
+"
+s144102148,p00919,COMPILED_CLEAN,,
+s354730880,p00112,FAILED,OTHER,"\processed\sources\p00112\C++\s354730880.cpp:26:4: error: 'ans' was not declared in this scope
+    ans += a;
+    ^~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00112\C++\s354730880.cpp:29:11: error: 'ans' was not declared in this scope
+   cout << ans << endl;
+           ^~~
+"
+s227393561,p02760,FAILED,OTHER,"xpected '}' at end of input
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02760\C++\s227393561.cpp:148:1: error: expected '}' at end of input
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02760\C++\s227393561.cpp:148:1: error: expected '}' at end of input
+"
+s907719758,p00711,COMPILED_CLEAN,,
+s816933284,p02372,FAILED,OTHER,"er-defect-prediction\data\processed\sources\p02372\C++\s816933284.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02372\C++\s816933284.cpp:28:25: error: void value not ignored as it ought to be
+  g.assign(n,vector<P>(0));
+                         ^
+"
+s403157064,p03028,FAILED,OTHER,"prediction\data\processed\sources\p03028\C++\s403157064.cpp:11:11: error: a function-definition is not allowed here before '{' token
+ int main(){
+           ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03028\C++\s403157064.cpp:27:1: error: expected '}' at end of input
+ }
+ ^
+"
+s230130981,p03554,FAILED,OTHER," In member function 'int SegTree::query(int, int, int, int, int)':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03554\C++\s230130981.cpp:38:34: error: 'INT_MAX' was not declared in this scope
+     if (r <= a || b <= l) return INT_MAX;
+                                  ^~~~~~~
+"
+s533591002,p01627,COMPILED_CLEAN,,
+s301557544,p01192,FAILED,OTHER,"   ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01192\C++\s301557544.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01192\C++\s301557544.cpp:22:10: error: 'whwile' was not declared in this scope
+  whwile(1){
+          ^
+"
+s676246451,p03956,FAILED,OTHER,"46451.cpp:1:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator_base_funcs.h:205:5: note:                 template<class _ForwardIterator> _ForwardIterator std::next(_ForwardIterator, typename std::iterator_traits<_Iter>::difference_type)
+     next(_ForwardIterator __x, typename
+     ^~~~
+"
+s346504270,p02233,FAILED,OTHER,":\Dev\Github\transformer-defect-prediction\data\processed\sources\p02233\C++\s346504270.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02233\C++\s346504270.cpp:14:15: error: 'a' was not declared in this scope
+ printf(""%d\n"",a[n]);
+               ^
+"
+s391527030,p04001,FAILED,LINKER,"c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+"
+s558640283,p01137,FAILED,OTHER,"\data\processed\sources\p01137\C++\s558640283.cpp:2:1: error: 'import' does not name a type
+ import java.util.Scanner;
+ ^~~~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01137\C++\s558640283.cpp:7:1: error: expected unqualified-id before 'public'
+ public class Main{
+ ^~~~~~
+"
+s251218038,p02492,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02492\C++\s251218038.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02492\C++\s251218038.cpp:5:10: error: expected unqualified-id before ';' token
+  int x,y,;
+          ^
+"
+s741856811,p00723,FAILED,OTHER,"prediction\data\processed\sources\p00723\C++\s741856811.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00723\C++\s741856811.cpp:20:30: error: 'reverse' was not declared in this scope
+     reverse(f.begin(),f.end());
+                              ^
+"
+s639932027,p02626,FAILED,OTHER,"nction returning 'void' [-fpermissive]
+         return -1;
+                 ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02626\C++\s639932027.cpp:126:17: error: return-statement with a value, in function returning 'void' [-fpermissive]
+         return -1;
+                 ^
+"
+s617259956,p03934,COMPILED_CLEAN,,
+s790533602,p02730,FAILED,OTHER,"790533602.cpp:8:3: error: expected ',' or ';' before 'for'
+   for (int i = 0; i < N - i; i++){
+   ^~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02730\C++\s790533602.cpp:8:19: error: 'i' was not declared in this scope
+   for (int i = 0; i < N - i; i++){
+                   ^
+"
+s537398805,p03454,FAILED,OTHER,"\transformer-defect-prediction\data\processed\sources\p03454\C++\s537398805.cpp: In function 'void Solve()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03454\C++\s537398805.cpp:78:9: error: 'val' was not declared in this scope
+         val = S - up * (dig + 1);
+         ^~~
+"
+s900807360,p03161,FAILED,OTHER,"er-defect-prediction\data\processed\sources\p03161\C++\s900807360.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03161\C++\s900807360.cpp:16:19: error: 'INT_MAX' was not declared in this scope
+             dp[i]=INT_MAX;
+                   ^~~~~~~
+"
+s780788386,p02024,FAILED,OTHER,":
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02024\C++\s780788386.cpp:15:37: error: expression cannot be used as a function
+  if (a%2!=0&&b%2!=0(c == 1 || d == 1) && ((c == (a + 1) / 2) || (d == (a + 1) / 2))) { cout << ""No"" << endl; }
+                                     ^
+"
+s577760386,p02874,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02874\C++\s577760386.cpp:1:17: fatal error: pch.h: No such file or directory
+ #include ""pch.h""
+                 ^
+compilation terminated.
+"
+s168727654,p00557,FAILED,OTHER,"ev\Github\transformer-defect-prediction\data\processed\sources\p00557\C++\s168727654.cpp: In function 'int dfs(int, int)':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00557\C++\s168727654.cpp:8:6: error: 'm1' was not declared in this scope
+   if(m1[y][x]>0)return 0;
+      ^~
+"
+s480621013,p01887,FAILED,OTHER,"rror: request for member 'clear' in 'dp', which is of non-class type 'int [10100]'
+  dp.clear();
+     ^~~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01887\C++\s480621013.cpp:49:18: error: 'query' was not declared in this scope
+   dp[i]=query(i-1)+v[i];
+                  ^
+"
+s957152661,p03480,FAILED,OTHER,"-defect-prediction\data\processed\sources\p03480\C++\s957152661.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03480\C++\s957152661.cpp:32:20: error: 'cnt2' was not declared in this scope
+  cout << max(cnt1, cnt2) << endl;
+                    ^~~~
+"
+s051485326,p03077,FAILED,OTHER,"nt]':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03077\C++\s051485326.cpp:10:21:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h:246:17: error: '__comp' cannot be used as a function
+       if (__comp(__b, __a))
+           ~~~~~~^~~~~~~~~~
+"
+s834670924,p03206,FAILED,OTHER,"thub\transformer-defect-prediction\data\processed\sources\p03206\C++\s834670924.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03206\C++\s834670924.cpp:23:14: error: 'a' was not declared in this scope
+     ll ans = a[k - 1] - a[0];
+              ^
+"
+s911688269,p01903,COMPILED_CLEAN,,
+s964919543,p00149,FAILED,OTHER,"ormer-defect-prediction\data\processed\sources\p00149\C++\s964919543.cpp:9:8: error: expected primary-expression before 'else'
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00149\C++\s964919543.cpp:10:2: error: 'else' without a previous 'if'
+  else if(lef<1.1)leye[2]++;
+  ^~~~
+"
+s101106143,p00788,COMPILED_CLEAN,,
+s288497861,p02399,FAILED,OTHER,"\Dev\Github\transformer-defect-prediction\data\processed\sources\p02399\C++\s288497861.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02399\C++\s288497861.cpp:8:5: error: expected ';' before 'cout'
+     cout<<x/y<<"" ""<<x%y<<"" ""<<z<<endl;
+     ^~~~
+"
+s091874264,p02125,COMPILED_CLEAN,,
+s228750889,p03235,COMPILED_CLEAN,,
+s089997585,p03812,COMPILED_CLEAN,,
+s635752510,p03335,FAILED,OTHER,"                                 ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03335\C++\s635752510.cpp:65:51: error: 'ansy' was not declared in this scope
+  for (int i=1;i<=now;i++)printf(""%d %d\n"",ansx[i],ansy[i]);
+                                                   ^~~~
+"
+s864009875,p03667,FAILED,OTHER,"thub\transformer-defect-prediction\data\processed\sources\p03667\C++\s864009875.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03667\C++\s864009875.cpp:30:15: error: 'posa' was not declared in this scope
+             b[posa]--;
+               ^~~~
+"
+s634396756,p01848,COMPILED_CLEAN,,
+s105278687,p03379,FAILED,OTHER,"efect-prediction\data\processed\sources\p03379\C++\s105278687.cpp: In function 'int main(int, char**)':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03379\C++\s105278687.cpp:15:23: error: 'sort' was not declared in this scope
+  sort(begin(X), end(X));
+                       ^
+"
+s669550330,p03021,FAILED,OTHER,"ithub\transformer-defect-prediction\data\processed\sources\p03021\C++\s669550330.cpp:52:5: error: expected ';' before 'if'
+     if (hp.size() == 2) {
+     ^~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03021\C++\s669550330.cpp:111:1: error: expected '}' at end of input
+ }
+ ^
+"
+s875857858,p02282,FAILED,OTHER,"ocessed\sources\p02282\C++\s875857858.cpp:11:63: note:   '__gnu_cxx::__normal_iterator<int*, std::vector<int> >' is not derived from 'std::istreambuf_iterator<_CharT>'
+   int m = distance(in.begin(), find(in.begin(), in.end(), root));
+                                                               ^
+"
+s065718997,p02363,COMPILED_CLEAN,,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02363\C++\s065718997.cpp:10:23: warning: overflow in implicit constant conversion [-Woverflow]
+ const int INF = 2*1e11+1;
+                 ~~~~~~^~
+"
+s268382894,p01513,FAILED,OTHER,"ion\data\processed\sources\p01513\C++\s268382894.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01513\C++\s268382894.cpp:14:34: error: 'memset' was not declared in this scope
+   memset(leak, true, sizeof(leak));
+                                  ^
+"
+s049609058,p02122,COMPILED_CLEAN,,
+s592623241,p03803,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03803\C++\s592623241.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03803\C++\s592623241.cpp:18:2: error: 'return0' was not declared in this scope
+  return0;}
+  ^~~~~~~
+"
+s025248678,p03709,COMPILED_CLEAN,,
+s209596642,p00166,FAILED,OTHER,"-prediction\data\processed\sources\p00166\C++\s209596642.cpp:27:5: error: 's1' was not declared in this scope
+     s1 += calc(c);
+     ^~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00166\C++\s209596642.cpp:30:5: error: 's' was not declared in this scope
+     s = 360;
+     ^
+"
+s458133805,p03979,FAILED,OTHER,"+\s458133805.cpp:17:15: error: expected primary-expression before '>' token
+  vector<string>v(n);
+               ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03979\C++\s458133805.cpp:17:19: error: 'v' was not declared in this scope
+  vector<string>v(n);
+                   ^
+"
+s441228448,p02756,FAILED,OTHER,"cxx::__alloc_traits<typename __gnu_cxx::__alloc_traits<_Alloc>::rebind<_CharT>::other>::const_pointer = const char*]
+       insert(__const_iterator __p, _CharT __c)
+       ^~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:1521:7: note:   candidate expects 2 arguments, 1 provided
+"
+s017759956,p02397,FAILED,OTHER,"4: error: expected ')' before ';' token
+ for(int x,y,i=0;  ; i++;){
+                        ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02397\C++\s017759956.cpp:4:25: error: expected primary-expression before ')' token
+ for(int x,y,i=0;  ; i++;){
+                         ^
+"
+s472875303,p03708,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03708\C++\s472875303.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03708\C++\s472875303.cpp:13:2: error: 'ans' was not declared in this scope
+  ans = (1ll << r+1) - a;
+  ^~~
+"
+s250114559,p00303,FAILED,OTHER,"t-prediction\data\processed\sources\p00303\C++\s250114559.cpp: In function 'int scc()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00303\C++\s250114559.cpp:58:30: error: 'memset' was not declared in this scope
+  memset(used, 0, sizeof(used));
+                              ^
+"
+s679217056,p02469,FAILED,LINKER,"pace std; main(){ int a,n,x=1; cin>>n; while(n--){ cin>>a; x=x*a/__gcd(x,a); } cout<<x<<endl; }
+                         ^~~~~
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+"
+s024143909,p03346,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03346\C++\s024143909.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03346\C++\s024143909.cpp:15:5: error: 'flag' was not declared in this scope
+     flag=1;
+     ^~~~
+"
+s702094379,p00023,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00023\C++\s702094379.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00023\C++\s702094379.cpp:31:3: error: expected '}' at end of input
+   }
+   ^
+"
+s899043954,p03507,FAILED,OTHER,"Github\transformer-defect-prediction\data\processed\sources\p03507\C++\s899043954.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03507\C++\s899043954.cpp:21:13: error: 'mid' was not declared in this scope
+     cout << mid << endl;
+             ^~~
+"
+s804867684,p00860,FAILED,OTHER,"ning: overflow in implicit constant conversion [-Woverflow]
+ #define INF (1 << 21)
+             ~~~^~~~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00860\C++\s804867684.cpp:133:25: note: in expansion of macro 'INF'
+       cost[num][i][j] = INF;
+                         ^~~
+"
+s750435306,p00492,COMPILED_CLEAN,,
+s130722274,p03166,FAILED,OTHER,"e
+         G[x].push_back(y);
+         ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03166\C++\s130722274.cpp:43:55: error: 'G' was not declared in this scope
+     for (int i = 0; i < n; i++) ans = max(ans, rec(i, G));
+                                                       ^
+"
+s360965117,p03486,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03486\C++\s360965117.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03486\C++\s360965117.cpp:8:12: error: 'i' was not declared in this scope
+   cin >> b[i];
+            ^
+"
+s102072942,p01757,FAILED,OTHER," before ';' token
+   for(int rank=n;rank>=0;rank--){
+                         ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01757\C++\s102072942.cpp:18:30: error: missing template arguments before '--' token
+   for(int rank=n;rank>=0;rank--){
+                              ^~
+"
+s826450775,p02657,FAILED,OTHER,"fect-prediction\data\processed\sources\p02657\C++\s826450775.cpp:8:3: error: 'cin' was not declared in this scope
+   cin>>a>>b;
+   ^~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02657\C++\s826450775.cpp:9:3: error: 'cout' was not declared in this scope
+   cout<<a*b;
+   ^~~~
+"
+s305536350,p00840,FAILED,OTHER,"                                          ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00840\C++\s305536350.cpp:35:23: error: request for member 'push_back' in 'res[i]', which is of non-class type 'int'
+           else res[i].push_back(pos);
+                       ^~~~~~~~~
+"
+s468229562,p02625,FAILED,OTHER,"p:610:78: fatal error: ext/pb_ds/detail/resize_policy/hash_standard_resize_policy_imp.hpp: No such file or directory
+ #include <ext/pb_ds/detail/resize_policy/hash_standard_resize_policy_imp.hpp>
+                                                                              ^
+compilation terminated.
+"
+s647544238,p00321,COMPILED_CLEAN,,
+s700010489,p02912,FAILED,OTHER,"o known conversion for argument 1 from 'int' to 'std::priority_queue<int>&&'
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02912\C++\s700010489.cpp:22:13: error: no match for 'operator[]' (operand types are 'std::priority_queue<int>' and 'int')
+     ans += A[i];
+             ^
+"
+s769163443,p02809,FAILED,OTHER,"u_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*]
+       erase(const_iterator __first, const_iterator __last)
+       ^~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:1174:7: note:   candidate expects 2 arguments, 1 provided
+"
+s444170360,p02399,FAILED,OTHER,"st wchar_t *, ...);
+                                                    ^~~~~~
+c:\mingw\include\stdio.h:1007:53: error: 'size_t' has not been declared
+ __cdecl __MINGW_NOTHROW  int vsnwprintf (wchar_t *, size_t, const wchar_t *, __VALIST);
+                                                     ^~~~~~
+"
+s730601252,p01688,FAILED,OTHER,"Github\transformer-defect-prediction\data\processed\sources\p01688\C++\s730601252.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01688\C++\s730601252.cpp:75:10: error: 'score' was not declared in this scope
+  cout << score << endl;
+          ^~~~~
+"
+s602093108,p00055,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00055\C++\s602093108.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00055\C++\s602093108.cpp:28:3: error: expected '}' at end of input
+   }
+   ^
+"
+s811946677,p02297,COMPILED_CLEAN,,
+s853999800,p01389,COMPILED_CLEAN,,
+s444953690,p03072,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03072\C++\s444953690.cpp:1:1: error: 'N' does not name a type
+ N=int(input())
+ ^
+"
+s474301070,p02363,COMPILED_CLEAN,,"ources\p02363\C++\s474301070.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02363\C++\s474301070.cpp:75:33: warning: integer overflow in expression [-Woverflow]
+       if(WF.dist[i][j]==((1<<31)-1)) cout<<""INF"";
+                          ~~~~~~~^~
+"
+s802371420,p02871,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02871\C++\s802371420.cpp:213:1: error: 'atcoder' does not name a type
+ atcoder-tools: The pre-rendered templates are not found.
+ ^~~~~~~
+"
+s445444498,p00229,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00229\C++\s445444498.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00229\C++\s445444498.cpp:6:1: error: 'point' was not declared in this scope
+ point=100;
+ ^~~~~
+"
+s239387548,p03832,COMPILED_CLEAN,,
+s096572293,p01940,FAILED,OTHER,"ormer-defect-prediction\data\processed\sources\p01940\C++\s096572293.cpp:2:11: error: missing terminating > character
+ #include <
+           ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01940\C++\s096572293.cpp:2:10: error: empty filename in #include
+ #include <
+          ^
+"
+s545808707,p03958,FAILED,OTHER,"tion\data\processed\sources\p03958\C++\s545808707.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03958\C++\s545808707.cpp:30:18: error: decrement of member 'std::pair<int, int>::first' in read-only object
+    qu.top().first--;
+                  ^~
+"
+s439977629,p00357,FAILED,OTHER,"re '}' token
+ }
+ ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00357\C++\s439977629.cpp: In function 'std::__cxx11::string check1()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00357\C++\s439977629.cpp:45:1: error: expected ';' before '}' token
+ }
+ ^
+"
+s594836639,p03303,FAILED,OTHER,"94836639.cpp:3:34: error: stray '@' in program
+ -- author: Seong Yong-ju <sei40kr@gmail.com>
+                                  ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03303\C++\s594836639.cpp:1:1: error: expected unqualified-id before '--' token
+ -- acrostic.hs ---
+ ^~
+"
+s870879513,p00357,FAILED,OTHER,"y-expression before 'break'
+         if(d[i]<10)x=1,break;
+                        ^~~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00357\C++\s870879513.cpp:12:24: error: expected primary-expression before 'break'
+         if(d[i]<10)x=1,break;
+                        ^~~~~
+"
+s793044953,p01815,FAILED,OTHER,"pp:159:12: error: template argument 3 is invalid
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01815\C++\s793044953.cpp:163:43: error: 'weight_dfs' was not declared in this scope
+     cout << weight_dfs(decomped, 0, weight) << endl;
+                                           ^
+"
+s770682140,p03220,FAILED,OTHER,"ude\c++\cstdlib:180:3: note: candidate: long long int std::abs(long long int)
+   abs(long long __x) { return __builtin_llabs (__x); }
+   ^~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdlib:172:3: note: candidate: long int std::abs(long int)
+   abs(long __i) { return __builtin_labs(__i); }
+   ^~~
+"
+s426920823,p00900,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00900\C++\s426920823.cpp:1:1: error: expected unqualified-id before numeric constant
+ 9 9
+ ^
+"
+s188797946,p01564,FAILED,OTHER,"processed\sources\p01564\C++\s188797946.cpp: In constructor 'point::point(long int, long int, long int, long int)':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01564\C++\s188797946.cpp:63:15: error: 'log2' was not declared in this scope
+   dw = log2(nw) + 1;
+               ^
+"
+s439531568,p00256,COMPILED_CLEAN,,
+s019306567,p03539,FAILED,OTHER,"ata\processed\sources\p03539\C++\s019306567.cpp:65:4: error: 'p' was not declared in this scope
+    p = 1000;
+    ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03539\C++\s019306567.cpp:67:16: error: 'p' was not declared in this scope
+   for(ll j=0;j<p;j++){
+                ^
+"
+s939632820,p02639,FAILED,OTHER,"p:610:78: fatal error: ext/pb_ds/detail/resize_policy/hash_standard_resize_policy_imp.hpp: No such file or directory
+ #include <ext/pb_ds/detail/resize_policy/hash_standard_resize_policy_imp.hpp>
+                                                                              ^
+compilation terminated.
+"
+s050945628,p03495,FAILED,OTHER,"ediction\data\processed\sources\p03495\C++\s050945628.cpp:18:9: error: redeclaration of 'int num'
+     int num = 0;
+         ^~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03495\C++\s050945628.cpp:13:9: note: 'int num' previously declared here
+     int num = 0;
+         ^~~
+"
+s256397272,p02936,FAILED,OTHER,"\include\c++\mingw32\bits\stdc++.h:41,
+                 from D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02936\C++\s256397272.cpp:1:
+c:\mingw\include\math.h:270:24: note: previous declaration 'double j1(double)'
+ _CRTIMP double __cdecl j1 (double);
+                        ^~
+"
+s185221830,p02553,FAILED,OTHER,"processed\sources\p02553\C++\s185221830.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02553\C++\s185221830.cpp:9:13: error: cannot convert 'double' to 'const char*' for argument '1' to 'int printf(const char*, ...)'
+   printf(x*y);
+             ^
+"
+s734867211,p00441,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00441\C++\s734867211.cpp:54:75: error: 'sqrt' was not declared in this scope
+  return sqrt(pow(abs(a.first-b.first),2.0)+pow(abs(a.second-b.second),2.0));
+                                                                           ^
+"
+s099157013,p01514,COMPILED_CLEAN,,
+s070823831,p03737,FAILED,OTHER,":5: note:   template argument deduction/substitution failed:
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03737\C++\s070823831.cpp:10:42: note:   candidate expects 5 arguments, 2 provided
+   string C = transform(a.begin(), toupper);
+                                          ^
+"
+s826539894,p01063,COMPILED_CLEAN,,
+s646059615,p03759,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03759\C++\s646059615.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03759\C++\s646059615.cpp:9:3: error: expected ';' before 'else'
+   else
+   ^~~~
+"
+s413288845,p03855,FAILED,OTHER," ll)':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03855\C++\s413288845.cpp:67:69: error: 'find_wat' was not declared in this scope
+  return (find_train(x) == find_train(y))&&(find_way(x) == find_wat(y));
+                                                                     ^
+"
+s492833524,p03806,FAILED,OTHER,"rmer-defect-prediction\data\processed\sources\p03806\C++\s492833524.cpp:47:30:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h:696:11: error: incompatible types in assignment of 'const long long int' to 'long long int [500]'
+  *__first = __tmp;
+  ~~~~~~~~~^~~~~~~
+"
+s889937579,p01718,FAILED,OTHER,"ed\sources\p01718\C++\s889937579.cpp: In function 'int lcm(int, int)':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01718\C++\s889937579.cpp:10:36: error: '__gcd' was not declared in this scope
+     return 1LL * a * b / __gcd(a, b) % mod;
+                                    ^
+"
+s076809661,p02745,FAILED,OTHER,"prediction\data\processed\sources\p02745\C++\s076809661.cpp:72:11: error: a function-definition is not allowed here before '{' token
+ int main(){
+           ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02745\C++\s076809661.cpp:79:1: error: expected '}' at end of input
+ }
+ ^
+"
+s901373899,p01623,FAILED,OTHER,"h:3465:5: note:   template argument deduction/substitution failed:
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01623\C++\s901373899.cpp:74:27: note:   mismatched types 'std::initializer_list<_Tp>' and 'long long int'
+   cou = max(cou,uf.size(i));
+                           ^
+"
+s312707250,p02388,FAILED,OTHER,"\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02388\C++\s312707250.cpp:1:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:590:5: note:   'std::endl'
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^~~~
+"
+s341511288,p00272,FAILED,OTHER,"Github\transformer-defect-prediction\data\processed\sources\p00272\C++\s341511288.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00272\C++\s341511288.cpp:14:2: error: 'sum' was not declared in this scope
+  sum[ind-1] = prices[ind-1] * times;
+  ^~~
+"
+s657433649,p04032,FAILED,OTHER,"\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p04032\C++\s657433649.cpp:1:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:590:5: note:   'std::endl'
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^~~~
+"
+s371359364,p02778,FAILED,OTHER,"9364.cpp:52:45: error: expected unqualified-id at end of input
+         public double ScanDouble => (double)Scan;
+                                             ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02778\C++\s371359364.cpp:52:45: error: expected '}' at end of input
+"
+s996972547,p02859,FAILED,OTHER,"9\C++\s996972547.cpp:7:19: error: expected primary-expression before ';' token
+   cout << r * r <<;
+                   ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02859\C++\s996972547.cpp:8:7: error: statement cannot resolve address of overloaded function
+   endl;
+       ^
+"
+s319374532,p00682,FAILED,OTHER,"a type
+       constexpr size_type
+                 ^~~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\initializer_list:47:11: fatal error: definition of std::initializer_list does not match #include <initializer_list>
+     class initializer_list
+           ^~~~~~~~~~~~~~~~
+compilation terminated.
+"
+s796964140,p01722,COMPILED_CLEAN,,
+s322693186,p02822,FAILED,OTHER,"fect-prediction\data\processed\sources\p02822\C++\s322693186.cpp:78:3: error: expected primary-expression before '}' token
+   }
+   ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02822\C++\s322693186.cpp:79:6: error: expected primary-expression before ']' token
+   dp[]
+      ^
+"
+s395626990,p01134,COMPILED_CLEAN,,
+s183503970,p02954,FAILED,OTHER,"thub\transformer-defect-prediction\data\processed\sources\p02954\C++\s183503970.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02954\C++\s183503970.cpp:38:7: error: 'x' was not declared in this scope
+   ans[x-1] = x-1 - e.second.first +1;
+       ^
+"
+s684456111,p01771,COMPILED_CLEAN,,
+s721606225,p03212,FAILED,OTHER,"p03212\C++\s721606225.cpp:9:9: error: 'len' was not declared in this scope
+   num+=(len-1)*(len-2)*(len-3)*pow(3,len-4);
+         ^~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03212\C++\s721606225.cpp:18:5: error: 'len' was not declared in this scope
+  if(len==3){
+     ^~~
+"
+s936811035,p03672,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03672\C++\s936811035.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03672\C++\s936811035.cpp:15:16: error: expected ';' before 's'
+   s.pop_back() s.pop_back();
+                ^
+"
+s381316099,p01732,COMPILED_CLEAN,,
+s051983631,p00885,COMPILED_CLEAN,,
+s101316664,p01767,COMPILED_CLEAN,,
+s116653237,p03643,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03643\C++\s116653237.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03643\C++\s116653237.cpp:5:1: error: expected ';' before 'cout'
+ cout<<""ABC""<<a<<endl;
+ ^~~~
+"
+s220713083,p02617,COMPILED_CLEAN,,
+s966744427,p03700,FAILED,OTHER,"a type
+       constexpr size_type
+                 ^~~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\initializer_list:47:11: fatal error: definition of std::initializer_list does not match #include <initializer_list>
+     class initializer_list
+           ^~~~~~~~~~~~~~~~
+compilation terminated.
+"
+s232124168,p02326,FAILED,OTHER,"rom D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02326\C++\s232124168.cpp:1:
+c:\mingw\include\stdio.h:677:41: note:   initializing argument 1 of 'int puts(const char*)'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int    puts (const char *);
+                                         ^~~~
+"
+s640750966,p02777,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02777\C++\s640750966.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02777\C++\s640750966.cpp:15:16: error: expected ';' before 'b'
+     cout << a  b << endl;
+                ^
+"
+s087754520,p02853,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02853\C++\s087754520.cpp:1:17: fatal error: pch.h: No such file or directory
+ #include ""pch.h""
+                 ^
+compilation terminated.
+"
+s394401682,p03168,FAILED,OTHER," was not declared in this scope
+     ans += dp[n][i];
+     ^~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03168\C++\s394401682.cpp:46:38: error: 'ans' was not declared in this scope
+   cout << fixed << setprecision(10)<<ans << endl;
+                                      ^~~
+"
+s777856809,p02678,FAILED,OTHER,"ata\processed\sources\p02678\C++\s777856809.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02678\C++\s777856809.cpp:89:21: warning: overflow in implicit constant conversion [-Woverflow]
+     vector<ll> D(N, INFINITY);
+                     ^~~~~~~~
+"
+s171086876,p03378,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03378\C++\s171086876.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03378\C++\s171086876.cpp:11:10: error: 'x' was not declared in this scope
+     if(a<x) l++;
+          ^
+"
+s277215821,p02924,FAILED,OTHER,"+\s277215821.cpp:19:5: error: 'cout' was not declared in this scope
+     cout << ans << endl;
+     ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02924\C++\s277215821.cpp:19:20: error: 'endl' was not declared in this scope
+     cout << ans << endl;
+                    ^~~~
+"
+s267448005,p03256,FAILED,OTHER," dfs(int, int, int)':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03256\C++\s267448005.cpp:37:38: error: invalid operands of types 'int' and 'int [200200]' to binary 'operator-'
+   if((lvl - used[v]) % 4 == 0 && lvl - used >= 4) {
+                                  ~~~~^~~~~~
+"
+s001736121,p01846,COMPILED_CLEAN,,
+s959758093,p01368,FAILED,OTHER,"ediction\data\processed\sources\p01368\C++\s959758093.cpp: In function 'int santas()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01368\C++\s959758093.cpp:202:30: error: 'memset' was not declared in this scope
+   memset(dist,-1,sizeof(dist));
+                              ^
+"
+s847603369,p03280,FAILED,OTHER,"ub\transformer-defect-prediction\data\processed\sources\p03280\C++\s847603369.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03280\C++\s847603369.cpp:31:22: error: '_' was not declared in this scope
+   cout << (a-1)*_(b-1);
+                      ^
+"
+s982925332,p02098,COMPILED_CLEAN,,
+s356673626,p03335,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03335\C++\s356673626.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03335\C++\s356673626.cpp:144:9: error: expected ';' before 'nx'
+         nx = par[i][nx];
+         ^~
+"
+s078438275,p03490,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03490\C++\s078438275.cpp:1:20: fatal error: stdafx.h: No such file or directory
+ #include ""stdafx.h""
+                    ^
+compilation terminated.
+"
+s788922032,p02574,COMPILED_CLEAN,,
+s635857011,p02882,FAILED,OTHER,"ansformer-defect-prediction\data\processed\sources\p02882\C++\s635857011.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02882\C++\s635857011.cpp:61:24: error: 'q' was not declared in this scope
+     double ans2 = atan(q);
+                        ^
+"
+s221135452,p00440,FAILED,OTHER,"fore ')' token
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p00440\C++\s221135452.cpp:40:38: error: label 'rennketukanouseiflag' used but not defined
+                 if(flag == true???&& rennketukanouseiflag == true){
+                                      ^~~~~~~~~~~~~~~~~~~~
+"
+s327993826,p01722,FAILED,OTHER,"essed\sources\p01722\C++\s327993826.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01722\C++\s327993826.cpp:3:20: error: 'n' was not declared in this scope
+ main(){scanf(""%d"",&n);if(n==1){a(2);}else if(n<3){a(1);}else{a(0);}}
+                    ^
+"
+s768550861,p02959,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02959\C++\s768550861.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02959\C++\s768550861.cpp:24:3: error: expected '}' at end of input
+   }
+   ^
+"
+s688898106,p03001,FAILED,OTHER,"06.cpp:15:3: error: 'cout' was not declared in this scope
+   cout << area << c << endl;
+   ^~~~
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p03001\C++\s688898106.cpp:15:24: error: 'endl' was not declared in this scope
+   cout << area << c << endl;
+                        ^~~~
+"
+s377043390,p01144,FAILED,OTHER,"pp:27:21: error: 'r' was not declared in this scope
+             if(m >= r[i])
+                     ^
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p01144\C++\s377043390.cpp:45:24: error: 'r' was not declared in this scope
+             sum += i * r[i];
+                        ^
+"
+s594228476,p02620,FAILED,OTHER,"D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02620\C++\s594228476.cpp:30:23: fatal error: atcoder/all: No such file or directory
+ #include <atcoder/all>
+                       ^
+compilation terminated.
+"
+s104617461,p02640,FAILED,OTHER,"d\sources\p02640\C++\s104617461.cpp: In function 'int main()':
+D:\Dev\Github\transformer-defect-prediction\data\processed\sources\p02640\C++\s104617461.cpp:32:26: error: expected primary-expression before '<' token
+     if ((Y - 2 * X) / 2 =< X && (Y - 2 * X) % 2 == 0) {
+                          ^
+"
