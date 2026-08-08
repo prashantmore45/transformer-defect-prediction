@@ -254,6 +254,23 @@ def test_split_summary_reports_rows_and_classes() -> None:
     assert {"A", "B"} <= set(summary.columns)
 
 
+def test_split_summary_accepts_ordered_categorical_labels() -> None:
+    """Regression: the real manifest's coarse_label is an ordered categorical.
+
+    crosstab on a categorical produces a CategoricalIndex for its columns,
+    which cannot be joined onto a plain column index. The original fixture
+    used object dtype and so never exercised the production path.
+    """
+    df = chained_frame()
+    df["split"] = problem_level_split(df["problem_id"])
+    df["label"] = pd.Categorical(["Z", "A"] * (len(df) // 2), categories=["Z", "A"], ordered=True)
+
+    summary = split_summary(df["split"], df["label"])
+    assert summary["rows"].sum() == len(df)
+    # Declared category order must survive, not collapse to alphabetical.
+    assert list(summary.columns) == ["rows", "pct", "Z", "A"]
+
+
 # --------------------------------------------------------------------------- #
 # The audit helper itself
 # --------------------------------------------------------------------------- #

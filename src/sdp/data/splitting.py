@@ -253,10 +253,31 @@ def split_summary(splits: pd.Series, labels: pd.Series | None = None) -> pd.Data
 
     Used to verify that greedy allocation hit its targets and that no class is
     starved in any split.
+
+    Both `splits` and `labels` may be categorical dtype. Categories are
+    converted to plain strings internally: crosstab on a categorical yields a
+    CategoricalIndex for its columns, which cannot be joined onto a plain
+    column index. Declared category order is preserved explicitly instead.
     """
-    counts = splits.value_counts().sort_index()
-    out = pd.DataFrame({"rows": counts, "pct": (counts / len(splits) * 100).round(2)})
+    order = [s.value for s in SPLIT_ORDER]
+    counts = splits.astype(str).value_counts().reindex(order, fill_value=0)
+
+    out = pd.DataFrame(
+        {
+            "rows": counts.to_numpy(),
+            "pct": (counts / len(splits) * 100).round(2).to_numpy(),
+        },
+        index=pd.Index(order, name="split"),
+    )
+
     if labels is not None:
-        wide = pd.crosstab(splits, labels)
-        out = out.join(wide)
+        if isinstance(labels.dtype, pd.CategoricalDtype):
+            label_order = [str(c) for c in labels.cat.categories]
+        else:
+            label_order = sorted(str(v) for v in labels.unique())
+
+        wide = pd.crosstab(splits.astype(str), labels.astype(str))
+        wide = wide.reindex(index=order, columns=label_order, fill_value=0)
+        out = pd.concat([out, wide], axis=1)
+
     return out
