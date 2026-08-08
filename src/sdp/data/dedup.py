@@ -75,12 +75,15 @@ def hash_corpus(paths: Iterable[Path], *, root: Path | None = None) -> pd.DataFr
     Returns:
         DataFrame with columns: path, sha256, bytes, exists. Always has these
         four columns, even for empty input — callers must not need to special
-        case an empty corpus.
+        case an empty corpus. `path` always uses forward slashes, regardless
+        of OS, so it can be joined against archive_path-derived columns
+        elsewhere in the codebase without a separator mismatch.
     """
     rows = []
     for p in paths:
         exists = p.exists()
         rel = str(p.relative_to(root)) if root is not None else str(p)
+        rel = rel.replace("\\", "/")
         if exists:
             rows.append(
                 {

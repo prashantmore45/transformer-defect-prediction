@@ -196,3 +196,21 @@ def test_audit_covers_all_three_split_pairs() -> None:
     df = _split_frame(["h1"], ["train"])
     overlap = cross_split_duplicate_hashes(df)
     assert set(overlap.keys()) == {"train&val", "train&test", "val&test"}
+
+
+def test_hash_corpus_paths_always_use_forward_slashes(tmp_path, corpus) -> None:
+    """Regression: on Windows, relative_to() renders paths with backslashes.
+    Joining those against archive_path-derived columns (which always use
+    forward slashes, per sampling.py) silently fails to match, producing
+    spurious NaN — this is exactly what happened during the M2 dedup audit.
+    """
+    subdir = tmp_path / "p00000" / "C++"
+    subdir.mkdir(parents=True)
+    nested = subdir / "s123.cpp"
+    nested.write_bytes(b"int main(){}\n")
+
+    result = hash_corpus([nested], root=tmp_path)
+    path = result.loc[0, "path"]
+
+    assert "\\" not in path
+    assert path == "p00000/C++/s123.cpp"
