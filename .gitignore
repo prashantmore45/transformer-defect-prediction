@@ -267,3 +267,6 @@ data/**
 !data/README.md
 !data/**/.gitkeep
 !data/processed/splits/split_config.json
+
+# Generated M3 tokenization reports
+reports/tokenization_full.csv

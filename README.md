@@ -4,8 +4,9 @@ An AI-powered software defect prediction system leveraging **transformer-based m
 with **CodeBERT** as the primary model, to classify source code into multiple software
 defect categories.
 
-> **Status:** 🚧 Early development — Milestone 0 (project skeleton).
-> Environment and structure are established. No model is trained yet.
+> **Status:** 🚧 In development — M0–M2 complete (tag `v0.3-labels`), M3
+> (tokenization & training data pipeline) in progress. Full roadmap:
+> `MASTER_IMPLEMENTATION_PLAN.md`. No model is trained yet.
 
 ---
 
@@ -82,10 +83,21 @@ pip install -e .
 
 | | Milestone | Status |
 |---|---|---|
-| M0 | Project skeleton + walking skeleton | 🚧 In progress |
-| M1 | Dataset acquisition, labelling, splits | ⏳ |
-| M2 | CodeBERT baseline + evaluation | ⏳ |
-| M4 | Label taxonomy enrichment | ⏳ |
+Full detail, rationale, and exit criteria for every milestone live in
+`MASTER_IMPLEMENTATION_PLAN.md` (current: v3). Summary:
+
+| M0 | Project skeleton + walking skeleton | ✅ `v0.1-skeleton` |
+| M1 | Dataset acquisition & EDA | ✅ `v0.2-dataset` |
+| M2 | Label engineering, dedup, leakage-safe split | ✅ `v0.3-labels` |
+| M3 | Tokenization & training data pipeline | 🚧 In progress |
+| M4 | Tier 2 label derivation (SYNTAX/SEMANTIC/LINKER) | ⏳ |
+| M5 | Tier 3 label derivation (SIGSEGV/SIGFPE/SIGABRT/NZEC) | ⏳ |
+| M6 | Unified 9-class dataset assembly | ⏳ |
+| M7 | CodeBERT fine-tuning (9-class) | ⏳ |
+| M8 | Evaluation & error analysis | ⏳ |
+| M9 | Prediction system integration | ⏳ |
+| M10 | System testing, docs, repo polish | ⏳ |
+| M11 | Report, paper draft, presentation, viva prep | ⏳ |
 | M5 | Hierarchical head + imbalance handling | ⏳ |
 | M6 | Model comparison study | ⏳ |
 | M8 | Explainability | ⏳ |
