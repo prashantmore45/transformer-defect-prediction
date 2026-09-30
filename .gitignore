@@ -270,3 +270,7 @@ data/**
 
 # Generated M3 tokenization reports
 reports/tokenization_full.csv
+
+reports/m4_full_reserve_results.csv
+reports/m4_full_reserve_results_merged.csv
+reports/m4_retry_results.csv
