@@ -1,0 +1,3 @@
+submission_id,problem_id,reason
+s363457044,p02878,"Absent from final M2 manifest; present in the pre-dedup sample but no row-level drop reason survives in dedup_report.csv or 03_labeling_and_splitting.ipynb. Untraceable exclusion — recorded as a limitation, not assumed to be dedup."
+s198272745,p02287,Confirmed cross-split content duplicate: appears in the duplicate-group listing in 03_labeling_and_splitting.ipynb. Dropped under M2's plurality-split retention rule for colliding normalized SHA-256 hashes.

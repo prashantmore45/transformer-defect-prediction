@@ -1,0 +1,255 @@
+template,count
+(empty),3188
+invalid types <Q> for array subscript,115
+conflicting declaration <Q>,83
+<Q> without a previous <Q>,82
+"return-statement with no value, in function returning <Q> [-fpermissive]",81
+template argument <N> is invalid,44
+cannot bind non-const lvalue reference of type <Q> to an rvalue of type <Q>,41
+too many decimal points in number,37
+unable to find numeric literal operator <Q>,36
+static assertion failed: hash function must be copy constructible,35
+empty character constant,33
+break statement not within loop or switch,32
+"return-statement with a value, in function returning <Q> [-fpermissive]",31
+"macro <Q> requires <N> arguments, but only <N> given",30
+cannot bind non-const lvalue reference of type <Q> {aka <Q>} to an rvalue of type <Q>,24
+<Q> specified with <Q>,24
+could not convert <Q> from <Q> to <Q>,21
+conversion from <Q> to non-scalar type <Q> requested,21
+size of array <Q> is not an integral constant-expression,20
+"found <Q> in nested-name-specifier, expected <Q>",20
+invalid type argument of unary <Q> (have <Q>),19
+narrowing conversion of <Q> from <Q> to <Q> [-Wnarrowing],19
+variable or field <Q> declared void,19
+"macro <Q> passed <N> arguments, but takes just <N>",18
+"there are no arguments to <Q> that depend on a template parameter, so a declaration of <Q> must be available [-Wtemplate-body]",17
+array must be initialized with a brace-enclosed initializer,17
+cannot bind non-const lvalue reference of type <Q> {aka <Q>} to an rvalue of type <Q> {aka <Q>},16
+initializer-string for <Q> is too long [-fpermissive],16
+two or more data types in declaration of <Q>,16
+overloaded function with no contextual type information,14
+<Q> is not a namespace-name,14
+no <Q> declared for postfix <Q> [-fpermissive],13
+cannot resolve overloaded function <Q> based on conversion to type <Q>,13
+conversion from <Q> {aka <Q>} to non-scalar type <Q> {aka <Q>} requested,13
+conversion from <Q> to <Q> in a converted constant expression,13
+<Q> expects <Q> or <Q>,13
+no type named <Q> in <Q>,12
+conversion from <Q> to non-scalar type <Q> {aka <Q>} requested,12
+use of <Q> in template argument,11
+expected class-name at end of input,10
+invalid initialization of reference of type <Q> from expression of type <Q>,10
+<Q> without <Q>,10
+invalid use of non-static member function <Q>,10
+<Q> is too long for GCC,9
+"unable to find string literal operator <Q> with <Q>, <Q> arguments",9
+expected primary-expression at end of input,8
+continue statement not within a loop,8
+unterminated argument list invoking macro <Q>,8
+cannot bind non-const lvalue reference of type <Q> to a value of type <Q>,8
+invalid digit <Q> in octal constant,8
+operands to <Q> have different types <Q> and <Q>,8
+use of an operand of type <Q> in <Q> is forbidden in C++<N>,7
+declaration of <Q> changes meaning of <Q> [-Wchanges-meaning],7
+"wrong number of template arguments (<N>, should be <N>)",7
+<Q> is not followed by a macro parameter,7
+variable <Q> has initializer but incomplete type,7
+inconsistent types <Q> and <Q> deduced for lambda return type,7
+class template argument deduction failed:,7
+multiple types in one declaration,7
+exponent has no digits,7
+extra qualification <Q> on member <Q> [-fpermissive],6
+switch quantity not an integer,6
+ambiguating new declaration of <Q>,6
+two consecutive <Q> shall only introduce an attribute before <Q> token,6
+"#error """"",6
+class <Q> does not have any field named <Q> [-Wtemplate-body],5
+use of deleted function <Q>,5
+"#error ""tsurai""",5
+declaration of <Q> shadows a parameter,5
+assignment of read-only location <Q>,5
+cast from <Q> {aka <Q>} to <Q> loses precision [-fpermissive],5
+storage size of <Q> isn’t known,5
+statement cannot resolve address of overloaded function,5
+invalid use of void expression,4
+cast from <Q> to <Q> loses precision [-fpermissive],4
+assignment of function <Q>,4
+conversion from <Q> {aka <Q>} to <Q> in a converted constant expression,4
+could not convert <Q> from <Q> {aka <Q>} to <Q>,4
+<Q> in namespace <Q> does not name a template type,4
+<Q> is not a valid filename,4
+fixed-point types not supported in C++,4
+cannot bind non-const lvalue reference of type <Q> {aka <Q>} to a value of type <Q>,4
+missing template arguments before <Q> token,4
+"wrong number of template arguments (<N>, should be at least <N>)",4
+expected <Q> at end of input,4
+"expected constructor, destructor, or type conversion at end of input",3
+initializer in range-based <Q> loop,3
+invalid cast from type <Q> to type <Q>,3
+jump to case label,3
+<Q> is not a template,3
+cannot bind rvalue reference of type <Q> to lvalue of type <Q>,3
+<Q> is not captured,3
+<Q> cannot be overloaded with <Q>,3
+narrowing conversion of <Q> from <Q> to <Q> {aka <Q>} [-Wnarrowing],3
+non-local lambda expression cannot have a capture-default,3
+need <Q> before <Q> because <Q> is a dependent scope [-Wtemplate-body],3
+<Q> cannot be used as a macro name as it is an operator in C++,3
+invalid initialization of reference of type <Q> {aka <Q>} from expression of type <Q> {aka <Q>},3
+expected initializer at end of input,3
+invalid type argument of unary <Q> (have <Q> {aka <Q>}),3
+explicit specialization of <Q> outside its namespace must use a nested-name-specifier [-fpermissive],3
+unterminated #if,3
+size <Q> of array <Q> is negative,3
+new initializer expression list treated as compound expression [-fpermissive],3
+type/value mismatch at argument <N> in template parameter list for <Q>,3
+uninitialized <Q> [-fpermissive],3
+<Q> string is badly formed,3
+a template declaration cannot appear at block scope,3
+no macro name given in <Q> directive,2
+invalid use of non-static data member <Q>,2
+assigning to an array from an initializer list,2
+data member <Q> invalidly declared function type,2
+named return values are no longer supported,2
+"expected <Q> or <Q>, found <Q>",2
+invalid declarator before <Q> token,2
+unterminated #ifdef,2
+assignment of read-only variable <Q>,2
+aggregate <Q> has incomplete type and cannot be defined,2
+abstract declarator <Q> used as declaration,2
+the value of <Q> is not usable in a constant expression,2
+scalar object <Q> requires one element in initializer,2
+declaration of <Q> has no initializer,2
+<Q> conflicts with a previous declaration,2
+"<Q> is not a class, struct, or union type",2
+passing <Q> as <Q> argument discards qualifiers [-fpermissive],2
+declaration of <Q> as multidimensional array must have bounds for all dimensions except the first,2
+<Q> loop iteration count exceeds limit of <N> (use <Q> to increase the limit),2
+expression list treated as compound expression in initializer [-fpermissive],2
+invalid cast from type <Q> {aka <Q>} to type <Q> {aka <Q>},2
+no post-increment operator for type,2
+declaration of <Q> as non-function,2
+condition declares an array,2
+cannot bind non-const lvalue reference of type <Q> to a value of type <Q> {aka <Q>},2
+use of <Q> before deduction of <Q>,2
+<Q> must have exactly one argument,2
+invalid cast from type <Q> {aka <Q>} to type <Q>,2
+invalid initialization of non-const reference of type <Q> from an rvalue of type <Q>,2
+binding reference of type <Q> {aka <Q>} to <Q> {aka <Q>} discards qualifiers,2
+static assertion failed: comparison object must be invocable as const,2
+macro names must be identifiers,2
+incomplete type <Q> used in nested name specifier,2
+use of parameter outside function body before <Q> token,2
+definition of <Q> ambiguates built-in declaration <Q>,2
+invalid declarator before <Q>,2
+inconsistent deduction for <Q>: <Q> and then <Q>,2
+base operand of <Q> has non-pointer type <Q>,2
+declaration of template parameter <Q> shadows template parameter [-Wtemplate-body],2
+"<Q> is not a class, namespace, or enumeration [-Wtemplate-body]",2
+operands to <Q> have different types <Q> and <Q> {aka <Q>},2
+structured binding declaration cannot have type <Q> {aka <Q>},2
+token <Q> is not valid in preprocessor expressions,2
+converting to <Q> from <Q> requires direct-initialization [-fpermissive],2
+comparison between distinct pointer types <Q> {aka <Q>} and <Q> lacks a cast,1
+<Q> is not a type,1
+left operand of comma operator cannot resolve address of overloaded function,1
+qualified-id in declaration before <Q> token,1
+default argument missing for parameter <N> of <Q>,1
+"#error ""AAA""",1
+"static assertion failed: std::list must have a non-const, non-volatile value_type",1
+wrong type argument to bit-complement,1
+expected identifier at end of input,1
+"#error ""X""",1
+"#error ""trurai""",1
+<Q> needed for in-class initialization of static data member <Q> of non-integral type [-fpermissive],1
+"#error ""A""",1
+static assertion failed: hash function must be invocable with an argument of key type,1
+expected primary-expression,1
+parse error in template argument list,1
+operands to <Q> have different types <Q> {aka <Q>} and <Q> {aka <Q>},1
+<Q> specifier invalid for variable <Q> declared at block scope,1
+overflow in constant expression [-fpermissive],1
+return type specification for constructor invalid [-Wtemplate-body],1
+label <Q> used but not defined,1
+#elif with no expression,1
+missing binary operator before token <Q>,1
+could not convert <Q> from <Q> to <Q> {aka <Q>},1
+cannot define member function <Q> within <Q>,1
+taking address of rvalue [-fpermissive],1
+field <Q> has incomplete type <Q>,1
+"#error ""four-t""",1
+no such file or directory: <Q>,1
+template class without a name,1
+"#error ""uku""",1
+storage size of <Q> isn’t constant,1
+"#error ""<script>alert(<Q>);</script>""",1
+"#error ""t<b>sura</b>i""",1
+"#error "" """,1
+duplicate label <Q>,1
+"second operand to the conditional operator is of type <Q>, but the third operand is neither a throw-expression nor of type <Q>",1
+binding reference of type <Q> to <Q> {aka <Q>} discards qualifiers,1
+empty filename in #include,1
+<Q> must be either a non-static member function or a non-member function,1
+"expected parameter name, found <Q>",1
+missing template arguments before <Q>,1
+static assertion failed: Wrong number of arguments for function,1
+invalid use of <Q> in non-member function,1
+qualified-id in declaration before <Q>,1
+"#error ""Never include <bits/stdlib.h> directly; use <stdlib.h> instead.""",1
+"static assertion failed: std::deque must have a non-const, non-volatile value_type",1
+assignment of read-only parameter <Q>,1
+<Q> in namespace <Q> does not name a template type [-Wtemplate-body],1
+assignment of read-only reference <Q>,1
+cannot bind rvalue reference of type <Q> {aka <Q>} to lvalue of type <Q>,1
+missing template argument list after <Q>; template placeholder not permitted in parameter [-Wtemplate-body],1
+static assertion failed: tuple index must be in range,1
+increment of read-only variable <Q>,1
+"#error ""true""",1
+inconsistent deduction for auto return type: <Q> and then <Q>,1
+need <Q> before <Q> because <Q> is a dependent scope,1
+increment of read-only location <Q>,1
+attribute <Q> argument <Q> is unknown,1
+local variable <Q> may not appear in this context,1
+<Q> evaluation operation count exceeds limit of <N> (use <Q> to increase the limit),1
+static assertion failed: std::gcd arguments must be integers,1
+structured binding declaration cannot have type <Q>,1
+<Q> {aka <Q>} is not a template,1
+expected nested-name-specifier,1
+statement cannot resolve address of overloaded function [-Wtemplate-body],1
+invalid types <Q> for array subscript [-Wtemplate-body],1
+<Q> declared as function returning a function,1
+binding reference of type <Q> to <Q> discards qualifiers [-Wtemplate-body],1
+unterminated #ifndef,1
+declaration of <Q> shadows template parameter,1
+wrong type argument to unary minus,1
+cannot bind non-const lvalue reference of type <Q> to an rvalue of type <Q> {aka <Q>},1
+static assertion failed,1
+invalid use of <Q>,1
+cannot call constructor <Q> directly,1
+<Q> needs isa option -mpclmul -msse<N>,1
+base operand of <Q> is not a pointer,1
+default arguments are only permitted for function parameters [-fpermissive],1
+right operand of shift expression <Q> is greater than or equal to the precision <N> of the left operand [-fpermissive],1
+use of undeclared identifier <Q>; did you mean,1
+unable to find numeric literal operator <Q> [-Wtemplate-body],1
+unable to find character literal operator <Q> with <Q> argument,1
+could not convert <Q> from <Q> {aka <Q>} to <Q> {aka <Q>},1
+inlining failed in call to <Q> <Q>: target specific option mismatch,1
+unable to deduce <Q> from <Q>,1
+new types may not be defined in a return type,1
+section anchors must be disabled when toplevel reorder is disabled,1
+class <Q> does not have any field named <Q>,1
+too many initializers for <Q>,1
+comparison between distinct pointer types <Q> and <Q> lacks a cast,1
+continue statement not within a loop [-Wtemplate-body],1
+using-declaration for non-member at class scope,1
+duplicate <Q> [-Wtemplate-body],1
+<Q> is not a constant expression,1
+lambda-expression in template-argument only available with <Q> or <Q>,1
+"type <Q> {aka <Q>} argument given to <Q>, expected pointer",1
+invalid initialization of reference of type <Q> from expression of type <Q> {aka <Q>},1
+decrement of member <Q> in read-only object,1
+<Q> has incomplete type,1
+specialization of <Q> in different namespace [-fpermissive],1
+invalid cast from type <Q> to type <Q> {aka <Q>},1

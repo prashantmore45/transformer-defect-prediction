@@ -1,0 +1,386 @@
+submission_id,problem_id,first_error_line,tier2_classification
+s312504681,p03269,/usr/lib/gcc/x86_64-linux-gnu/15/include/lzcntintrin.h:64:1: error: inlining failed in call to ‘always_inline’ ‘long long unsigned int _lzcnt_u64(long long unsigned int)’: target specific option mismatch,UNRECOGNIZED
+s827408217,p03543,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03543/C++/s827408217.cpp:7:21: error: ‘n’ was not declared in this scope; did you mean ‘yn’?,SEMANTIC
+s096307416,p00291,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00291/C++/s096307416.cpp:1:5: error: stray ‘#’ in program,UNRECOGNIZED
+s486132026,p00691,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00691/C++/s486132026.cpp:4:1: error: ‘テつ’ does not name a type,SEMANTIC
+s731402332,p01291,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01291/C++/s731402332.cpp:102:19: error: no matching function for call to ‘min(<brace-enclosed initializer list>)’,SEMANTIC
+s063453103,p02266,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02266/C++/s063453103.cpp:30:22: error: invalid use of member function ‘std::stack<std::pair<int, int> >::top’ (did you forget the ‘()’ ?)",SEMANTIC
+s196234627,p02978,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02978/C++/s196234627.cpp:12:23: error: ‘min’ was not declared in this scope,SEMANTIC
+s986090220,p03254,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03254/C++/s986090220.cpp:6:3: error: ‘cin’ was not declared in this scope; did you mean ‘std::cin’?,SEMANTIC
+s743005752,p02730,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02730/C++/s743005752.cpp:11:11: error: ‘sub_a’ was not declared in this scope; did you mean ‘sub_s’?,SEMANTIC
+s002849607,p02670,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02670/C++/s002849607.cpp:313:21: error: ‘sz’ was not declared in this scope; did you mean ‘sy’?,SEMANTIC
+s369071974,p02626,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02626/C++/s369071974.cpp:38:9: error: expected primary-expression before ‘if’,SYNTAX
+s669250357,p03911,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03911/C++/s669250357.cpp:30:17: error: reference to ‘rank’ is ambiguous,SEMANTIC
+s564068751,p02595,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02595/C++/s564068751.cpp:6:13: error: extended character 、 is not valid in an identifier,UNRECOGNIZED
+s633010876,p03680,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03680/C++/s633010876.cpp:20:7: error: ‘now’ was not declared in this scope; did you mean ‘pow’?,SEMANTIC
+s489320218,p02861,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02861/C++/s489320218.cpp:3:1: error: ‘typdef’ does not name a type; did you mean ‘typedef’?,SEMANTIC
+s206849027,p00496,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00496/C++/s206849027.cpp:12:38: error: ‘t’ was not declared in this scope,SEMANTIC
+s760560464,p01413,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01413/C++/s760560464.cpp:168:61: error: no matching function for call to ‘max(long long int, int)’",SEMANTIC
+s084359741,p03285,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03285/C++/s084359741.cpp:23:18: error: expected ‘}’ at end of input,UNRECOGNIZED
+s737143362,p02679,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02679/C++/s737143362.cpp:30:17: error: reference to ‘gcd’ is ambiguous,SEMANTIC
+s858158787,p00468,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00468/C++/s858158787.cpp:5:11: error: expected unqualified-id before ‘,’ token",SYNTAX
+s394722299,p03177,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03177/C++/s394722299.cpp:48:16: error: no matching function for call to ‘matrix::matrix()’,SEMANTIC
+s294730377,p03724,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03724/C++/s294730377.cpp:8:23: error: too few arguments to function ‘ssize_t read(int, void*, size_t)’",UNRECOGNIZED
+s143446320,p03986,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03986/C++/s143446320.cpp:13:9: error: expected primary-expression before ‘else’,SYNTAX
+s973969153,p00915,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00915/C++/s973969153.cpp:13:21: error: ‘i’ was not declared in this scope,SEMANTIC
+s077048229,p03182,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03182/C++/s077048229.cpp:28:19: error: ‘function’ does not name a type; did you mean ‘union’? [-Wtemplate-body],SEMANTIC
+s858831836,p03059,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03059/C++/s858831836.cpp:5:26: error: invalid operands of types ‘double’ and ‘double’ to binary ‘operator%’,SEMANTIC
+s760610113,p03723,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03723/C++/s760610113.cpp:75:5: error: ‘x’ was not declared in this scope,SEMANTIC
+s679015821,p03284,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03284/C++/s679015821.cpp:27:9: error: ‘cout’ was not declared in this scope; did you mean ‘std::cout’?,SEMANTIC
+s702703047,p02493,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02493/C++/s702703047.cpp:5:16: error: ‘n’ was not declared in this scope,SEMANTIC
+s720051996,p00483,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00483/C++/s720051996.cpp:29:114: error: ‘nums’ was not declared in this scope; did you mean ‘sums’?,SEMANTIC
+s830777336,p03472,"/usr/include/c++/15/bits/predefined_ops.h:158:30: error: no match for call to ‘(std::greater<std::pair<long long int, long long int> >) (long long int&, long long int&)’",SEMANTIC
+s273344152,p03023,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03023/C++/s273344152.cpp:23:5: error: expected ‘,’ or ‘;’ before ‘cout’",SYNTAX
+s269900901,p00685,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00685/C++/s269900901.cpp:1:10: fatal error: stdafx.h: No such file or directory,MISSING_HEADER
+s490203601,p02663,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02663/C++/s490203601.cpp:8:31: error: expected ‘:’ before ‘!’ token,SYNTAX
+s927590681,p01378,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01378/C++/s927590681.cpp:1:1: error: ‘include’ does not name a type,SEMANTIC
+s211856142,p00247,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00247/C++/s211856142.cpp:33:16: error: narrowing conversion of ‘-1’ from ‘int’ to ‘uc’ {aka ‘unsigned char’} [-Wnarrowing],UNRECOGNIZED
+s761126819,p01318,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01318/C++/s761126819.cpp:11:9: error: ‘complex’ does not name a type,SEMANTIC
+s187675723,p03104,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03104/C++/s187675723.cpp:3:1: error: ‘::main’ must return ‘int’,UNRECOGNIZED
+s769497894,p02494,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02494/C++/s769497894.cpp:1:1: error: ‘import’ does not name a type,SEMANTIC
+s276417740,p00344,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00344/C++/s276417740.cpp:25:25: error: ‘memset’ was not declared in this scope,SEMANTIC
+s008466363,p03760,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03760/C++/s008466363.cpp:1:3: error: invalid preprocessing directive #-,SYNTAX
+s197938713,p00477,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00477/C++/s197938713.cpp:17:9: error: expected primary-expression before ‘>’ token,SYNTAX
+s571842568,p03767,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03767/C++/s571842568.cpp:31:7: error: ‘ans’ was not declared in this scope; did you mean ‘abs’?,SEMANTIC
+s865667687,p02390,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02390/C++/s865667687.cpp:6:1: error: ‘cin’ does not name a type,SEMANTIC
+s082227305,p02290,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02290/C++/s082227305.cpp:9:12: error: ‘double y1’ redeclared as different kind of entity,SEMANTIC
+s384586515,p00292,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00292/C++/s384586515.cpp:9:45: error: ‘b’ was not declared in this scope,SEMANTIC
+s399040706,p03919,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03919/C++/s399040706.cpp:1:1: error: ‘h’ does not name a type,SEMANTIC
+s114592629,p03126,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03126/C++/s114592629.cpp:57:5: error: ‘vectpr’ was not declared in this scope,SEMANTIC
+s506634703,p02549,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02549/C++/s506634703.cpp:22:5: error: ‘sort’ was not declared in this scope; did you mean ‘short’?,SEMANTIC
+s963980086,p02893,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02893/C++/s963980086.cpp:37:26: error: ‘class std::priority_queue<long long int>’ has no member named ‘front’,SEMANTIC
+s430415780,p02543,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02543/C++/s430415780.cpp:2:10: fatal error: atcoder/all: No such file or directory,MISSING_HEADER
+s850292420,p01672,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01672/C++/s850292420.cpp:48:25: error: no match for ‘operator/’ (operand types are ‘long double’ and ‘comp’ {aka ‘std::complex<double>’}),SEMANTIC
+s036593238,p00886,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00886/C++/s036593238.cpp:52:17: error: ‘memset’ was not declared in this scope,SEMANTIC
+s815175670,p03469,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03469/C++/s815175670.cpp:9:1: error: expected declaration before ‘}’ token,SYNTAX
+s439408875,p02900,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02900/C++/s439408875.cpp:12:21: error: no matching function for call to ‘min(ll&, const int&)’",SEMANTIC
+s461135173,p00706,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00706/C++/s461135173.cpp:12:5: error: ‘memset’ was not declared in this scope,SEMANTIC
+s790295083,p04016,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p04016/C++/s790295083.cpp:36:18: error: ‘b’ was not declared in this scope,SEMANTIC
+s470653681,p03052,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03052/C++/s470653681.cpp:10:15: error: ‘std::pair<int, int> link [400]’ redeclared as different kind of entity",SEMANTIC
+s324806016,p03589,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03589/C++/s324806016.cpp:8:24: error: expected ‘;’ before ‘h’,SYNTAX
+s477503773,p02891,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02891/C++/s477503773.cpp:82:18: error: expected ‘;’ before ‘}’ token,SYNTAX
+s348398914,p03394,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03394/C++/s348398914.cpp:27:35: error: expected ‘)’ before ‘;’ token,SYNTAX
+s587036153,p02532,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02532/C++/s587036153.cpp:1:1: error: ‘import’ does not name a type,SEMANTIC
+s652054697,p03004,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03004/C++/s652054697.cpp:1:1: error: ‘clude’ does not name a type,SEMANTIC
+s847088919,p00120,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00120/C++/s847088919.cpp:29:20: error: reference to ‘size’ is ambiguous,SEMANTIC
+s440966444,p00087,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00087/C++/s440966444.cpp:20:35: error: ‘i’ was not declared in this scope,SEMANTIC
+s626624171,p03091,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03091/C++/s626624171.cpp:13:3: error: ‘count’ was not declared in this scope,SEMANTIC
+s527917407,p03835,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03835/C++/s527917407.cpp:10:41: error: expected ‘;’ before ‘}’ token,SYNTAX
+s709350553,p00554,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00554/C++/s709350553.cpp:26:21: error: no matching function for call to ‘sort(<unresolved overloaded function type>, <unresolved overloaded function type>)’",SEMANTIC
+s387745622,p03557,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03557/C++/s387745622.cpp:29:20: error: invalid conversion from ‘int*’ to ‘int’ [-fpermissive],SEMANTIC
+s622643746,p04051,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p04051/C++/s622643746.cpp:1:1: error: expected unqualified-id before numeric constant,SYNTAX
+s704520367,p02417,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02417/C++/s704520367.cpp:5:48: error: expected constructor, destructor, or type conversion before ‘;’ token",SYNTAX
+s729150426,p03631,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03631/C++/s729150426.cpp:5:9: error: expected initializer before ‘scanf’,SYNTAX
+s556731070,p02371,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02371/C++/s556731070.cpp:57:48: error: expected primary-expression before ‘>=’ token,SYNTAX
+s689079285,p01777,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01777/C++/s689079285.cpp:4:3: error: ‘size_t’ does not name a type,SEMANTIC
+s442962781,p00147,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00147/C++/s442962781.cpp:1:1: error: ‘import’ does not name a type,SEMANTIC
+s867760937,p03004,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03004/C++/s867760937.cpp:83:12: error: ‘t’ was not declared in this scope,SEMANTIC
+s200038435,p01839,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01839/C++/s200038435.cpp:15:33: error: ‘isok’ was not declared in this scope,SEMANTIC
+s107747428,p03803,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03803/C++/s107747428.cpp:7:9: error: lvalue required as left operand of assignment,UNRECOGNIZED
+s998562544,p02860,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02860/C++/s998562544.cpp:32:2: error: expected ‘}’ at end of input,UNRECOGNIZED
+s507059589,p03046,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03046/C++/s507059589.cpp:45:8: error: ‘i’ was not declared in this scope,SEMANTIC
+s180978103,p03477,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03477/C++/s180978103.cpp:12:10: error: no match for ‘operator>>’ (operand types are ‘std::ostream’ {aka ‘std::basic_ostream<char>’} and ‘const char [5]’),SEMANTIC
+s834170219,p03759,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03759/C++/s834170219.cpp:9:7: error: no match for ‘operator-’ (operand types are ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} and ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’}),SEMANTIC
+s009795633,p03240,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03240/C++/s009795633.cpp:25:78: error: expected ‘;’ before ‘break’,SYNTAX
+s984098426,p03893,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03893/C++/s984098426.cpp:5:5: error: ‘f’ was not declared in this scope,SEMANTIC
+s201459025,p02885,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02885/C++/s201459025.cpp:6:7: error: no match for ‘operator<<’ (operand types are ‘std::istream’ {aka ‘std::basic_istream<char>’} and ‘int’),SEMANTIC
+s896714300,p02791,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02791/C++/s896714300.cpp:3:1: error: ‘::main’ must return ‘int’,UNRECOGNIZED
+s455834621,p00921,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00921/C++/s455834621.cpp:108:44: error: expected ‘;’ before ‘}’ token,SYNTAX
+s159071728,p03028,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03028/C++/s159071728.cpp:29:5: error: ‘bitset’ was not declared in this scope,SEMANTIC
+s521475137,p02917,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02917/C++/s521475137.cpp:3:23: error: ‘ll’ was not declared in this scope,SEMANTIC
+s862654799,p00324,"/usr/include/c++/15/bits/stl_map.h:290:38: error: no matching function for call to ‘std::_Rb_tree<long long int, std::pair<const long long int, int>, std::_Select1st<std::pair<const long long int, int> >, std::less<long long int>, std::allocator<std::pair<const long long int, int> > >::_M_insert_range_unique(int&, int&)’",SEMANTIC
+s741662615,p00340,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00340/C++/s741662615.cpp:4:38: error: expected ‘;’ before ‘if’,SYNTAX
+s538618843,p02839,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02839/C++/s538618843.cpp:11:9: error: ‘cin’ was not declared in this scope,SEMANTIC
+s088651205,p02683,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02683/C++/s088651205.cpp:15:26: error: ‘INT_MAX’ was not declared in this scope,SEMANTIC
+s301400260,p00228,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00228/C++/s301400260.cpp:59:2: error: expected ‘}’ at end of input,UNRECOGNIZED
+s262366300,p02950,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02950/C++/s262366300.cpp:116:9: error: ‘assert’ was not declared in this scope,SEMANTIC
+s017080525,p01271,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01271/C++/s017080525.cpp:1:1: error: ‘from’ does not name a type,SEMANTIC
+s252936692,p02687,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02687/C++/s252936692.cpp:9:15: error: no match for ‘operator==’ (operand types are ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} and ‘int’),SEMANTIC
+s982179189,p02793,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02793/C++/s982179189.cpp:16:10: fatal error: boost/multiprecision/cpp_int.hpp: No such file or directory,MISSING_HEADER
+s139198924,p02588,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02588/C++/s139198924.cpp:15:52: error: invalid operands of types ‘__gnu_cxx::__alloc_traits<std::allocator<double>, double>::value_type’ {aka ‘double’} and ‘int’ to binary ‘operator^’",SEMANTIC
+s076910188,p00023,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00023/C++/s076910188.cpp:14:46: error: ‘else’ without a previous ‘if’,UNRECOGNIZED
+s821366154,p03357,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03357/C++/s821366154.cpp:28:74: error: reference to ‘array’ is ambiguous,SEMANTIC
+s182846689,p00234,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00234/C++/s182846689.cpp:42:9: error: jump to label ‘g’,UNRECOGNIZED
+s421654171,p00927,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00927/C++/s421654171.cpp:33:22: error: ‘FLT_MAX’ was not declared in this scope,SEMANTIC
+s077209011,p03787,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03787/C++/s077209011.cpp:90:19: error: ‘used’ was not declared in this scope,SEMANTIC
+s143734746,p01225,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01225/C++/s143734746.cpp:45:52: error: expected ‘;’ before ‘if’,SYNTAX
+s129528959,p02670,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02670/C++/s129528959.cpp:291:2: error: expected ‘}’ at end of input,UNRECOGNIZED
+s192374550,p01780,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01780/C++/s192374550.cpp:144:16: error: ‘ll’ was not declared in this scope,SEMANTIC
+s879465307,p00767,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00767/C++/s879465307.cpp:4:10: fatal error: stdafx.h: No such file or directory,MISSING_HEADER
+s588760372,p00058,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00058/C++/s588760372.cpp:1:1: error: ‘include’ does not name a type,SEMANTIC
+s165493714,p03203,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03203/C++/s165493714.cpp:35:30: error: no matching function for call to ‘min(int, ll, ll)’",SEMANTIC
+s539625125,p03195,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03195/C++/s539625125.cpp:21:25: error: ‘K’ was not declared in this scope,SEMANTIC
+s820192303,p03953,cc1plus: error: ‘::main’ must return ‘int’,UNRECOGNIZED
+s073946055,p03116,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03116/C++/s073946055.cpp:61:8: error: ‘__builtin_ia32_pclmulqdq128’ needs isa option -mpclmul -msse2,UNRECOGNIZED
+s113263564,p00521,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00521/C++/s113263564.cpp:47:9: error: reference to ‘plus’ is ambiguous,SEMANTIC
+s230821716,p02950,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02950/C++/s230821716.cpp:60:33: error: ‘d’ was not declared in this scope,SEMANTIC
+s907241357,p02697,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02697/C++/s907241357.cpp:70:1: error: expected declaration before ‘}’ token,SYNTAX
+s886994645,p00061,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00061/C++/s886994645.cpp:10:5: error: ‘cin’ was not declared in this scope,SEMANTIC
+s092134975,p03467,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03467/C++/s092134975.cpp:32:17: error: ‘strlen’ was not declared in this scope,SEMANTIC
+s863431309,p02714,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02714/C++/s863431309.cpp:23:10: error: ‘rgb’ was not declared in this scope,SEMANTIC
+s553659007,p01752,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01752/C++/s553659007.cpp:61:13: error: break statement not within loop or switch,UNRECOGNIZED
+s407720076,p02749,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02749/C++/s407720076.cpp:114:19: error: void value not ignored as it ought to be,UNRECOGNIZED
+s074137598,p02285,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02285/C++/s074137598.cpp:107:3: error: ‘preorder’ was not declared in this scope,SEMANTIC
+s233748915,p04001,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p04001/C++/s233748915.cpp:8:11: error: ‘substr’ was not declared in this scope; did you mean ‘strstr’?,SEMANTIC
+s328297299,p03610,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03610/C++/s328297299.cpp:8:34: error: expected ‘;’ before ‘<’ token,SYNTAX
+s707774461,p03700,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03700/C++/s707774461.cpp:1:1: error: ‘a’ does not name a type,SEMANTIC
+s331985974,p02698,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02698/C++/s331985974.cpp:18:12: error: request for member ‘push_back’ in ‘(& g.std::vector<std::vector<long long int> >::operator[](((std::vector<std::vector<long long int> >::size_type)n)))->std::vector<long long int>::operator[](((std::vector<long long int>::size_type)q))’, which is of non-class type ‘__gnu_cxx::__alloc_traits<std::allocator<long long int>, long long int>::value_type’ {aka ‘long long int’}",UNRECOGNIZED
+s883962593,p00273,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00273/C++/s883962593.cpp:8:14: error: ISO C++ forbids comparison between pointer and integer [-fpermissive],UNRECOGNIZED
+s078700404,p02990,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02990/C++/s078700404.cpp:52:2: error: extended character 　 is not valid in an identifier,UNRECOGNIZED
+s099113353,p03746,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03746/C++/s099113353.cpp:63:9: error: ‘memset’ was not declared in this scope,SEMANTIC
+s421766046,p03259,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03259/C++/s421766046.cpp:105:34: error: too many arguments to function ‘int puts(const char*)’,UNRECOGNIZED
+s031558715,p02256,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02256/C++/s031558715.cpp:1:9: fatal error: iostream.h: No such file or directory,MISSING_HEADER
+s439414239,p00054,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00054/C++/s439414239.cpp:1:1: error: ‘import’ does not name a type,SEMANTIC
+s523824008,p03338,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03338/C++/s523824008.cpp:42:5: error: redefinition of ‘int main()’,SEMANTIC
+s424547066,p02955,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02955/C++/s424547066.cpp:16:10: error: ‘sort’ is not a member of ‘std’; did you mean ‘qsort’?,SEMANTIC
+s328497307,p02982,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02982/C++/s328497307.cpp:29:21: error: ‘sqrt’ was not declared in this scope,SEMANTIC
+s843428349,p02885,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02885/C++/s843428349.cpp:1:1: error: ‘use’ does not name a type,SEMANTIC
+s289404036,p02976,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02976/C++/s289404036.cpp:155:7: error: ‘any_of’ was not declared in this scope,SEMANTIC
+s460169309,p03032,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03032/C++/s460169309.cpp:31:8: error: ISO C++ forbids declaration of ‘calc’ with no type [-fpermissive],UNRECOGNIZED
+s377960393,p03730,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03730/C++/s377960393.cpp:5:9: error: expected primary-expression before ‘)’ token,SYNTAX
+s670904567,p02420,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02420/C++/s670904567.cpp:20:21: error: expected ‘;’ before ‘}’ token,SYNTAX
+s590544861,p00486,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00486/C++/s590544861.cpp:22:11: error: ‘LLONG_MAX’ was not declared in this scope,SEMANTIC
+s485308934,p00138,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00138/C++/s485308934.cpp:14:5: error: ‘sort’ was not declared in this scope; did you mean ‘short’?,SEMANTIC
+s850342008,p03183,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03183/C++/s850342008.cpp:9:3: error: ‘ll’ does not name a type,SEMANTIC
+s709961039,p03416,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03416/C++/s709961039.cpp:11:2: error: expected ‘}’ at end of input,UNRECOGNIZED
+s659446546,p00273,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00273/C++/s659446546.cpp:14:20: error: expected ‘(’ before ‘{’ token,SYNTAX
+s860172407,p03901,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03901/C++/s860172407.cpp:7:7: error: invalid operands of types ‘double’ and ‘int’ to binary ‘operator%’,SEMANTIC
+s571761536,p03231,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03231/C++/s571761536.cpp:7:13: error: declaration does not declare anything [-fpermissive],UNRECOGNIZED
+s596631542,p02344,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02344/C++/s596631542.cpp:16:29: error: invalid use of incomplete type ‘class Option<int>’ [-Wtemplate-body],SEMANTIC
+s868613402,p03619,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03619/C++/s868613402.cpp:58:21: error: ‘x’ was not declared in this scope,SEMANTIC
+s319045796,p03652,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03652/C++/s319045796.cpp:1:1: error: ‘ok’ does not name a type,SEMANTIC
+s335593407,p02721,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02721/C++/s335593407.cpp:18:16: error: ‘s’ was not declared in this scope,SEMANTIC
+s530866483,p01660,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01660/C++/s530866483.cpp:10:2: error: ‘#else’ without ‘#if’,UNRECOGNIZED
+s571896885,p01227,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01227/C++/s571896885.cpp:20:5: error: ‘sort’ was not declared in this scope; did you mean ‘short’?,SEMANTIC
+s060050028,p00452,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00452/C++/s060050028.cpp:15:17: error: ‘cin’ was not declared in this scope,SEMANTIC
+s364122345,p02956,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02956/C++/s364122345.cpp:81:31: error: ‘T BIT<T>::sum(int) [with T = int]’ is private within this context,SEMANTIC
+s956842921,p03390,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03390/C++/s956842921.cpp:1:1: error: ‘q’ does not name a type,SEMANTIC
+s833320658,p03850,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03850/C++/s833320658.cpp:26:49: error: ‘min_dec’ was not declared in this scope,SEMANTIC
+s004535764,p03674,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03674/C++/s004535764.cpp:35:14: error: ‘i’ was not declared in this scope,SEMANTIC
+s487980268,p03448,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03448/C++/s487980268.cpp:6:24: error: no match for ‘operator>>’ (operand types are ‘std::basic_istream<char>::__istream_type’ {aka ‘std::basic_istream<char>’} and ‘<unresolved overloaded function type>’),SEMANTIC
+s330189088,p03943,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03943/C++/s330189088.cpp:9:12: error: missing terminating "" character",SYNTAX
+s733105184,p00630,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00630/C++/s733105184.cpp:20:69: error: no matching function for call to ‘ptr_fun(<unresolved overloaded function type>)’,SEMANTIC
+s106868742,p00654,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00654/C++/s106868742.cpp:29:32: error: ‘gcd’ was not declared in this scope; did you mean ‘kgcd’?,SEMANTIC
+s868026096,p03371,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03371/C++/s868026096.cpp:3:3: error: ‘cin’ was not declared in this scope,SEMANTIC
+s195513502,p03593,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03593/C++/s195513502.cpp:29:23: error: expected ‘;’ before ‘for’,SYNTAX
+s249279365,p03072,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03072/C++/s249279365.cpp:16:19: error: ‘i’ was not declared in this scope,SEMANTIC
+s093859477,p03136,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03136/C++/s093859477.cpp:6:5: error: cannot declare ‘::main’ to be a global variable,UNRECOGNIZED
+s179533081,p03707,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03707/C++/s179533081.cpp:30:24: error: ‘int y1 [200000]’ redeclared as different kind of entity,SEMANTIC
+s041516784,p01603,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01603/C++/s041516784.cpp:17:56: error: no matching function for call to ‘std::vector<std::vector<int> >::vector(int, int)’",SEMANTIC
+s203500032,p03586,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03586/C++/s203500032.cpp:47:26: error: expected ‘;’ before ‘}’ token,SYNTAX
+s521053339,p01304,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01304/C++/s521053339.cpp:7:19: error: ‘int y1’ redeclared as different kind of entity,SEMANTIC
+s616226337,p03904,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03904/C++/s616226337.cpp:569:12: error: ‘K’ was not declared in this scope,SEMANTIC
+s603246528,p04051,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p04051/C++/s603246528.cpp:1511:28: error: invalid operands of types ‘double’ and ‘const long long int’ to binary ‘operator%’,SEMANTIC
+s990823387,p02506,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02506/C++/s990823387.cpp:11:26: error: ‘w’ was not declared in this scope,SEMANTIC
+s507658058,p03546,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03546/C++/s507658058.cpp:1:1: error: ‘package’ does not name a type,SEMANTIC
+s204445398,p02660,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02660/C++/s204445398.cpp:33:5: error: ‘k’ was not declared in this scope,SEMANTIC
+s017256432,p03536,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03536/C++/s017256432.cpp:76:30: error: ‘h’ was not declared in this scope,SEMANTIC
+s184111103,p01969,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01969/C++/s184111103.cpp:23:39: error: use of ‘auto’ in template argument,UNRECOGNIZED
+s360510637,p02743,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02743/C++/s360510637.cpp:6:3: error: ‘cin’ was not declared in this scope; did you mean ‘std::cin’?,SEMANTIC
+s660337846,p00233,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00233/C++/s660337846.cpp:11:18: error: ‘abs’ was not declared in this scope; did you mean ‘ans’?,SEMANTIC
+s038643406,p02959,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02959/C++/s038643406.cpp:11:16: error: ‘a’ was not declared in this scope,SEMANTIC
+s790400062,p03851,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03851/C++/s790400062.cpp:66:83: error: no matching function for call to ‘max(long long int, int)’",SEMANTIC
+s351805508,p03266,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03266/C++/s351805508.cpp:7:1: error: ‘ll’ was not declared in this scope,SEMANTIC
+s282162805,p00239,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00239/C++/s282162805.cpp:24:2: error: expected ‘;’ after class definition,UNRECOGNIZED
+s706322110,p00708,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00708/C++/s706322110.cpp:91:44: error: ‘sqrt’ was not declared in this scope,SEMANTIC
+s383084791,p03853,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03853/C++/s383084791.cpp:7:2: error: ‘vector’ was not declared in this scope,SEMANTIC
+s698001469,p03195,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03195/C++/s698001469.cpp:3:9: error: ‘cin’ was not declared in this scope,SEMANTIC
+s982779099,p03062,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03062/C++/s982779099.cpp:1:10: fatal error: bits/stdc..+h: No such file or directory,MISSING_HEADER
+s716595758,p02885,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02885/C++/s716595758.cpp:10:14: error: no matching function for call to ‘max(ll, int)’",SEMANTIC
+s471576036,p02498,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02498/C++/s471576036.cpp:5:5: error: ‘gets’ was not declared in this scope; did you mean ‘getw’?,SEMANTIC
+s315716477,p03125,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03125/C++/s315716477.cpp:1:9: fatal error: bits/stdc++: No such file or directory,MISSING_HEADER
+s523954673,p03765,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03765/C++/s523954673.cpp:123:1: error: expected ‘,’ or ‘;’ before ‘int’",SYNTAX
+s801313505,p02314,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02314/C++/s801313505.cpp:12:5: error: ‘memset’ was not declared in this scope,SEMANTIC
+s898836794,p00431,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00431/C++/s898836794.cpp:6:9: error: ‘u’ was not declared in this scope,SEMANTIC
+s766169532,p02709,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02709/C++/s766169532.cpp:51:33: error: ‘posr’ was not declared in this scope; did you mean ‘pos’?,SEMANTIC
+s959496256,p03400,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03400/C++/s959496256.cpp:48:3: error: ‘co’ was not declared in this scope; did you mean ‘c’?,SEMANTIC
+s482333488,p00240,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00240/C++/s482333488.cpp:23:17: error: ‘sort’ was not declared in this scope; did you mean ‘sqrt’?,SEMANTIC
+s428691046,p03638,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03638/C++/s428691046.cpp:3:1: error: ‘usinga’ does not name a type,SEMANTIC
+s222794470,p02392,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02392/C++/s222794470.cpp:5:1: error: expected identifier before ‘int’,SYNTAX
+s620504562,p02771,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02771/C++/s620504562.cpp:2:5: error: cannot declare ‘::main’ to be a global variable,UNRECOGNIZED
+s953354342,p03019,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03019/C++/s953354342.cpp:48:34: error: expected ‘,’ or ‘;’ before ‘＋’",SYNTAX
+s358826329,p02948,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02948/C++/s358826329.cpp:10:19: error: wrong type argument to unary minus,UNRECOGNIZED
+s827888470,p01457,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01457/C++/s827888470.cpp:11:9: error: ‘statwo’ was not declared in this scope; did you mean ‘static’?,SEMANTIC
+s675070376,p03284,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03284/C++/s675070376.cpp:9:11: error: ambiguous overload for ‘operator=’ (operand types are ‘std::string’ {aka ‘std::__cxx11::basic_string<char>’} and ‘int’),SEMANTIC
+s645410758,p02765,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02765/C++/s645410758.cpp:13:4: error: expected ‘}’ at end of input,UNRECOGNIZED
+s780379064,p03563,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03563/C++/s780379064.cpp:6:25: error: invalid operands of types ‘int’ and ‘<unresolved overloaded function type>’ to binary ‘operator<<’,SEMANTIC
+s615465828,p03909,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03909/C++/s615465828.cpp:13:15: error: ‘j’ was not declared in this scope,SEMANTIC
+s454581177,p03534,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03534/C++/s454581177.cpp:72:2: error: expected ‘}’ at end of input,UNRECOGNIZED
+s132980629,p04023,cc1plus: error: ‘::main’ must return ‘int’,UNRECOGNIZED
+s975504216,p00780,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00780/C++/s975504216.cpp:1:1: error: ‘import’ does not name a type,SEMANTIC
+s958884247,p03309,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03309/C++/s958884247.cpp:29:9: error: ‘k’ was not declared in this scope,SEMANTIC
+s599930418,p00028,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00028/C++/s599930418.cpp:1:2: error: invalid preprocessing directive #inlcude; did you mean #include?,SYNTAX
+s057322959,p03266,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03266/C++/s057322959.cpp:16:33: error: expected unqualified-id before numeric constant,SYNTAX
+s096566787,p03560,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03560/C++/s096566787.cpp:19:43: error: no matching function for call to ‘min(long long int&, int)’",SEMANTIC
+s223494113,p00695,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00695/C++/s223494113.cpp:3:29: error: expected unqualified-id before ‘not’ token,SYNTAX
+s419025869,p04032,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p04032/C++/s419025869.cpp:18:14: error: invalid use of member function ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::length() const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; size_type = long unsigned int]’ (did you forget the ‘()’ ?)",SEMANTIC
+s720833990,p00806,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00806/C++/s720833990.cpp:28:7: error: expected ‘}’ before ‘else’,SYNTAX
+s539618261,p02293,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02293/C++/s539618261.cpp:250:3: error: ‘sort’ was not declared in this scope; did you mean ‘sqrt’?,SEMANTIC
+s927092130,p03019,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03019/C++/s927092130.cpp:76:11: error: a function-definition is not allowed here before ‘{’ token,UNRECOGNIZED
+s145955348,p04027,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p04027/C++/s145955348.cpp:63:41: error: ‘powMod’ was not declared in this scope,SEMANTIC
+s767097499,p03208,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03208/C++/s767097499.cpp:1:1: error: ‘n’ does not name a type,SEMANTIC
+s725225570,p03608,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03608/C++/s725225570.cpp:1:1: error: expected unqualified-id before numeric constant,SYNTAX
+s144971546,p03097,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03097/C++/s144971546.cpp:43:5: error: ‘function’ was not declared in this scope,SEMANTIC
+s237220706,p02314,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02314/C++/s237220706.cpp:12:16: error: ‘numofbits’ was not declared in this scope,SEMANTIC
+s680548840,p03849,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03849/C++/s680548840.cpp:9:10: fatal error: stack#include <algorithm: No such file or directory,MISSING_HEADER
+s895434051,p02770,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02770/C++/s895434051.cpp:1:1: error: ‘import’ does not name a type,SEMANTIC
+s969171641,p02572,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02572/C++/s969171641.cpp:3:5: error: ‘cin’ was not declared in this scope,SEMANTIC
+s060345808,p03065,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03065/C++/s060345808.cpp:101:19: error: ‘p’ was not declared in this scope,SEMANTIC
+s079477426,p02789,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02789/C++/s079477426.cpp:5:24: error: expected unqualified-id before ‘&’ token,SYNTAX
+s751247492,p03992,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03992/C++/s751247492.cpp:12:5: error: expected ‘,’ or ‘;’ before ‘cout’",SYNTAX
+s933900094,p02714,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02714/C++/s933900094.cpp:9:9: error: ‘map’ was not declared in this scope,SEMANTIC
+s003335492,p02834,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02834/C++/s003335492.cpp:65:26: error: expected ‘;’ before ‘}’ token,SYNTAX
+s795294780,p00475,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00475/C++/s795294780.cpp:8:9: error: ‘INT_MAX’ was not declared in this scope,SEMANTIC
+s071690491,p00466,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00466/C++/s071690491.cpp:7:22: error: no match for ‘operator&’ (operand types are ‘std::basic_istream<char>::__istream_type’ {aka ‘std::basic_istream<char>’} and ‘int’),SEMANTIC
+s189180010,p01128,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01128/C++/s189180010.cpp:103:39: error: ‘class std::complex<double>’ has no member named ‘_Val’,SEMANTIC
+s225387848,p03569,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03569/C++/s225387848.cpp:43:15: error: ‘n’ was not declared in this scope,SEMANTIC
+s197031074,p03524,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03524/C++/s197031074.cpp:4:9: error: ‘string’ was not declared in this scope,SEMANTIC
+s360565983,p03995,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03995/C++/s360565983.cpp:132:2: error: expected ‘}’ at end of input,UNRECOGNIZED
+s938510220,p03191,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03191/C++/s938510220.cpp:25:35: error: expected ‘}’ at end of input,UNRECOGNIZED
+s270633022,p03206,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03206/C++/s270633022.cpp:35:23: error: expected ‘;’ before ‘}’ token,SYNTAX
+s865379504,p00195,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00195/C++/s865379504.cpp:25:42: error: expected ‘)’ before ‘;’ token,SYNTAX
+s446674713,p01601,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01601/C++/s446674713.cpp:12:5: error: ‘reverse’ was not declared in this scope,SEMANTIC
+s486772518,p00150,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00150/C++/s486772518.cpp:1:1: error: expected unqualified-id before numeric constant,SYNTAX
+s640302404,p00110,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00110/C++/s640302404.cpp:27:9: error: ‘reverse’ was not declared in this scope,SEMANTIC
+s403792295,p03726,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03726/C++/s403792295.cpp:86:34: error: ‘a’ was not declared in this scope,SEMANTIC
+s906687419,p01554,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01554/C++/s906687419.cpp:5:1: error: extended character 　 is not valid in an identifier,UNRECOGNIZED
+s792501736,p00644,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00644/C++/s792501736.cpp:28:9: error: ‘reverse’ was not declared in this scope,SEMANTIC
+s909703657,p02625,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02625/C++/s909703657.cpp:110:13: error: no ‘operator--(int)’ declared for postfix ‘--’ [-fpermissive],UNRECOGNIZED
+s638436350,p00574,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00574/C++/s638436350.cpp:98:38: error: ‘__popcnt’ was not declared in this scope,SEMANTIC
+s287166123,p02285,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02285/C++/s287166123.cpp:30:18: error: lvalue required as left operand of assignment,UNRECOGNIZED
+s696968228,p03546,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03546/C++/s696968228.cpp:486:24: error: ‘b’ was not declared in this scope,SEMANTIC
+s773528927,p02789,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02789/C++/s773528927.cpp:5:19: error: expected primary-expression before ‘]’ token,SYNTAX
+s605759805,p03059,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03059/C++/s605759805.cpp:15:30: error: ‘bestval’ was not declared in this scope; did you mean ‘bestVal’?,SEMANTIC
+s761982480,p02623,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02623/C++/s761982480.cpp:15:33: error: no match for ‘operator>>’ (operand types are ‘std::istream’ {aka ‘std::basic_istream<char>’} and ‘std::vector<long long int>’),SEMANTIC
+s155856433,p03848,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03848/C++/s155856433.cpp:79:1: error: ‘｝’ was not declared in this scope,SEMANTIC
+s793755106,p03573,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03573/C++/s793755106.cpp:7:15: error: expected ‘;’ before ‘cout’,SYNTAX
+s592473092,p03534,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03534/C++/s592473092.cpp:16:18: error: ‘min_element’ is not a member of ‘std’; did you mean ‘tuple_element’?,SEMANTIC
+s547167635,p02829,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02829/C++/s547167635.cpp:17:23: error: ‘i’ was not declared in this scope,SEMANTIC
+s949249605,p00910,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00910/C++/s949249605.cpp:2:1: error: expected unqualified-id before numeric constant,SYNTAX
+s222430021,p01339,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01339/C++/s222430021.cpp:6:7: error: expected nested-name-specifier before ‘namesapce’,SYNTAX
+s758137849,p02846,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02846/C++/s758137849.cpp:1:10: fatal error: pch.h: No such file or directory,MISSING_HEADER
+s359878734,p01438,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01438/C++/s359878734.cpp:59:25: error: jump to label ‘E’,UNRECOGNIZED
+s256982672,p03475,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03475/C++/s256982672.cpp:9:11: error: ‘I’ was not declared in this scope,SEMANTIC
+s913264216,p03752,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03752/C++/s913264216.cpp:37:2: error: expected ‘}’ at end of input,UNRECOGNIZED
+s366797052,p03421,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03421/C++/s366797052.cpp:30:12: error: conversion from ‘int’ to non-scalar type ‘std::vector<long long int>’ requested,UNRECOGNIZED
+s868685167,p02113,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02113/C++/s868685167.cpp:24:3: error: ‘reverse’ was not declared in this scope,SEMANTIC
+s480386693,p03075,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03075/C++/s480386693.cpp:18:11: error: expected ‘;’ before ‘}’ token,SYNTAX
+s126616793,p00902,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00902/C++/s126616793.cpp:274:9: error: ‘assert’ was not declared in this scope,SEMANTIC
+s174645441,p02568,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02568/C++/s174645441.cpp:5:10: fatal error: atcoder/all: No such file or directory,MISSING_HEADER
+s890942762,p02615,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02615/C++/s890942762.cpp:16:5: error: ‘lln’ was not declared in this scope; did you mean ‘ll’?,SEMANTIC
+s194129472,p03240,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03240/C++/s194129472.cpp:98:29: error: no matching function for call to ‘max(ll, int)’",SEMANTIC
+s145201227,p02730,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02730/C++/s145201227.cpp:21:29: error: no match for ‘operator<’ (operand types are ‘std::basic_ostream<char>’ and ‘<unresolved overloaded function type>’),SEMANTIC
+s653886675,p03841,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03841/C++/s653886675.cpp:7:3: error: ‘reutrn’ was not declared in this scope,SEMANTIC
+s230635984,p02506,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02506/C++/s230635984.cpp:16:18: error: no matching function for call to ‘transform(std::__cxx11::basic_string<char>::iterator, std::__cxx11::basic_string<char>::iterator, std::__cxx11::basic_string<char>::iterator, <unresolved overloaded function type>)’",SEMANTIC
+s326924119,p02534,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02534/C++/s326924119.cpp:41:5: error: ‘unordered_set’ was not declared in this scope,SEMANTIC
+s453207906,p03973,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03973/C++/s453207906.cpp:1:1: error: ‘ok’ does not name a type,SEMANTIC
+s023888064,p01286,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01286/C++/s023888064.cpp:183:19: error: ‘class PushRelabel<int>’ has no member named ‘max_flow’,SEMANTIC
+s801877880,p00148,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00148/C++/s801877880.cpp:9:58: error: invalid operands of types ‘int’ and ‘<unresolved overloaded function type>’ to binary ‘operator<<’,SEMANTIC
+s354730880,p00112,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00112/C++/s354730880.cpp:13:30: error: expected initializer before ‘ans’,SYNTAX
+s227393561,p02760,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02760/C++/s227393561.cpp:23:236: error: stray ‘#’ in program,UNRECOGNIZED
+s816933284,p02372,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02372/C++/s816933284.cpp:28:17: error: void value not ignored as it ought to be,UNRECOGNIZED
+s403157064,p03028,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03028/C++/s403157064.cpp:4:11: error: size of array ‘a’ is not an integral constant-expression,UNRECOGNIZED
+s230130981,p03554,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03554/C++/s230130981.cpp:24:18: error: ‘INT_MAX’ was not declared in this scope,SEMANTIC
+s301557544,p01192,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01192/C++/s301557544.cpp:8:19: error: request for member ‘size’ in ‘c’, which is of non-class type ‘int*’",UNRECOGNIZED
+s676246451,p03956,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03956/C++/s676246451.cpp:11:29: error: reference to ‘next’ is ambiguous,SEMANTIC
+s346504270,p02233,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02233/C++/s346504270.cpp:14:15: error: ‘a’ was not declared in this scope,SEMANTIC
+s558640283,p01137,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01137/C++/s558640283.cpp:2:1: error: ‘import’ does not name a type,SEMANTIC
+s251218038,p02492,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02492/C++/s251218038.cpp:5:17: error: expected unqualified-id before ‘;’ token,SYNTAX
+s741856811,p00723,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00723/C++/s741856811.cpp:20:5: error: ‘reverse’ was not declared in this scope,SEMANTIC
+s639932027,p02626,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02626/C++/s639932027.cpp:103:16: error: return-statement with a value, in function returning ‘void’ [-fpermissive]",UNRECOGNIZED
+s790533602,p02730,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02730/C++/s790533602.cpp:8:3: error: expected ‘,’ or ‘;’ before ‘for’",SYNTAX
+s537398805,p03454,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03454/C++/s537398805.cpp:78:9: error: ‘val’ was not declared in this scope,SEMANTIC
+s900807360,p03161,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03161/C++/s900807360.cpp:16:19: error: ‘INT_MAX’ was not declared in this scope,SEMANTIC
+s780788386,p02024,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02024/C++/s780788386.cpp:15:27: error: expression cannot be used as a function,UNRECOGNIZED
+s577760386,p02874,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02874/C++/s577760386.cpp:1:10: fatal error: pch.h: No such file or directory,MISSING_HEADER
+s168727654,p00557,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00557/C++/s168727654.cpp:8:6: error: ‘m1’ was not declared in this scope; did you mean ‘m’?,SEMANTIC
+s480621013,p01887,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01887/C++/s480621013.cpp:32:11: error: request for member ‘clear’ in ‘v’, which is of non-class type ‘int [10100]’",UNRECOGNIZED
+s957152661,p03480,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03480/C++/s957152661.cpp:32:27: error: ‘cnt2’ was not declared in this scope; did you mean ‘cnt1’?,SEMANTIC
+s051485326,p03077,/usr/include/c++/15/bits/stl_algobase.h:285:17: error: ‘__comp’ cannot be used as a function,UNRECOGNIZED
+s834670924,p03206,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03206/C++/s834670924.cpp:23:14: error: ‘a’ was not declared in this scope,SEMANTIC
+s964919543,p00149,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00149/C++/s964919543.cpp:9:1: error: expected primary-expression before ‘?’ token,SYNTAX
+s288497861,p02399,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02399/C++/s288497861.cpp:7:17: error: expected ‘;’ before ‘cout’,SYNTAX
+s635752510,p03335,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03335/C++/s635752510.cpp:1:14: error: ‘N’ was not declared in this scope,SEMANTIC
+s864009875,p03667,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03667/C++/s864009875.cpp:30:15: error: ‘posa’ was not declared in this scope; did you mean ‘pos’?,SEMANTIC
+s105278687,p03379,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03379/C++/s105278687.cpp:15:9: error: ‘sort’ was not declared in this scope; did you mean ‘short’?,SEMANTIC
+s669550330,p03021,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03021/C++/s669550330.cpp:51:7: error: expected ‘;’ before ‘if’,SYNTAX
+s875857858,p02282,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02282/C++/s875857858.cpp:11:36: error: no matching function for call to ‘find(std::vector<int>::iterator, std::vector<int>::iterator, int&)’",SEMANTIC
+s268382894,p01513,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01513/C++/s268382894.cpp:14:17: error: ‘memset’ was not declared in this scope,SEMANTIC
+s592623241,p03803,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03803/C++/s592623241.cpp:18:9: error: ‘return0’ was not declared in this scope,SEMANTIC
+s209596642,p00166,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00166/C++/s209596642.cpp:20:5: error: ‘doubles1’ was not declared in this scope; did you mean ‘double_t’?,SEMANTIC
+s458133805,p03979,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03979/C++/s458133805.cpp:17:9: error: ‘vector’ was not declared in this scope,SEMANTIC
+s441228448,p02756,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02756/C++/s441228448.cpp:24:34: error: no matching function for call to ‘std::__cxx11::basic_string<char>::insert(char&)’,SEMANTIC
+s017759956,p02397,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02397/C++/s017759956.cpp:4:24: error: expected ‘)’ before ‘;’ token,SYNTAX
+s472875303,p03708,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03708/C++/s472875303.cpp:13:9: error: ‘ans’ was not declared in this scope; did you mean ‘abs’?,SEMANTIC
+s250114559,p00303,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00303/C++/s250114559.cpp:58:9: error: ‘memset’ was not declared in this scope,SEMANTIC
+s024143909,p03346,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03346/C++/s024143909.cpp:15:5: error: ‘flag’ was not declared in this scope,SEMANTIC
+s702094379,p00023,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00023/C++/s702094379.cpp:31:4: error: expected ‘}’ at end of input,UNRECOGNIZED
+s899043954,p03507,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03507/C++/s899043954.cpp:21:13: error: ‘mid’ was not declared in this scope,SEMANTIC
+s804867684,p00860,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00860/C++/s804867684.cpp:28:16: error: no matching function for call to ‘max(int&, short int&)’",SEMANTIC
+s130722274,p03166,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03166/C++/s130722274.cpp:8:17: error: ‘vector’ has not been declared,UNRECOGNIZED
+s360965117,p03486,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03486/C++/s360965117.cpp:8:12: error: ‘i’ was not declared in this scope,SEMANTIC
+s102072942,p01757,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01757/C++/s102072942.cpp:4:18: error: declaration does not declare anything [-fpermissive],UNRECOGNIZED
+s826450775,p02657,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02657/C++/s826450775.cpp:1:2: error: invalid preprocessing directive #Include; did you mean #include?,SYNTAX
+s305536350,p00840,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00840/C++/s305536350.cpp:17:14: error: template argument 1 is invalid,UNRECOGNIZED
+s468229562,p02625,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02625/C++/s468229562.cpp:51:24: error: ‘mod’ was not declared in this scope; did you mean ‘modf’?,SEMANTIC
+s700010489,p02912,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02912/C++/s700010489.cpp:8:26: error: no matching function for call to ‘std::priority_queue<int>::priority_queue(int&)’,SEMANTIC
+s769163443,p02809,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02809/C++/s769163443.cpp:64:14: error: no matching function for call to ‘std::vector<int>::erase(std::vector<int>::size_type)’,SEMANTIC
+s444170360,p02399,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02399/C++/s444170360.cpp:1:1: error: ‘include’ does not name a type,SEMANTIC
+s730601252,p01688,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01688/C++/s730601252.cpp:75:17: error: ‘score’ was not declared in this scope,SEMANTIC
+s602093108,p00055,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00055/C++/s602093108.cpp:28:4: error: expected ‘}’ at end of input,UNRECOGNIZED
+s444953690,p03072,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03072/C++/s444953690.cpp:1:1: error: ‘N’ does not name a type,SEMANTIC
+s802371420,p02871,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02871/C++/s802371420.cpp:213:1: error: ‘atcoder’ does not name a type,SEMANTIC
+s445444498,p00229,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00229/C++/s445444498.cpp:6:1: error: ‘point’ was not declared in this scope; did you mean ‘printf’?,SEMANTIC
+s096572293,p01940,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01940/C++/s096572293.cpp:2:11: error: missing terminating ‘>’ character,SYNTAX
+s545808707,p03958,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03958/C++/s545808707.cpp:30:34: error: decrement of member ‘std::pair<int, int>::first’ in read-only object",UNRECOGNIZED
+s439977629,p00357,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00357/C++/s439977629.cpp:24:14: error: expected ‘;’ before ‘}’ token,SYNTAX
+s594836639,p03303,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03303/C++/s594836639.cpp:3:34: error: stray ‘@’ in program,UNRECOGNIZED
+s870879513,p00357,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00357/C++/s870879513.cpp:8:24: error: expected primary-expression before ‘break’,SYNTAX
+s793044953,p01815,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01815/C++/s793044953.cpp:6:18: error: ‘ll’ was not declared in this scope,SEMANTIC
+s426920823,p00900,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00900/C++/s426920823.cpp:1:1: error: expected unqualified-id before numeric constant,SYNTAX
+s188797946,p01564,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01564/C++/s188797946.cpp:63:22: error: ‘log2’ was not declared in this scope,SEMANTIC
+s019306567,p03539,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03539/C++/s019306567.cpp:55:17: error: expected initializer before ‘if’,SYNTAX
+s050945628,p03495,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03495/C++/s050945628.cpp:18:9: error: redeclaration of ‘int num’,SEMANTIC
+s256397272,p02936,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02936/C++/s256397272.cpp:39:17: error: ‘int j1 [100000000]’ redeclared as different kind of entity,SEMANTIC
+s185221830,p02553,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02553/C++/s185221830.cpp:9:11: error: cannot convert ‘double’ to ‘const char*’,SEMANTIC
+s734867211,p00441,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00441/C++/s734867211.cpp:40:62: error: ‘pow’ was not declared in this scope,SEMANTIC
+s070823831,p03737,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03737/C++/s070823831.cpp:8:23: error: no matching function for call to ‘transform(std::__cxx11::basic_string<char>::iterator, <unresolved overloaded function type>)’",SEMANTIC
+s646059615,p03759,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03759/C++/s646059615.cpp:8:18: error: expected ‘;’ before ‘else’,SYNTAX
+s413288845,p03855,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03855/C++/s413288845.cpp:67:66: error: ‘find_wat’ was not declared in this scope; did you mean ‘find_way’?,SEMANTIC
+s492833524,p03806,/usr/include/c++/15/bits/stl_algobase.h:925:18: error: incompatible types in assignment of ‘const long long int’ to ‘long long int [500]’,UNRECOGNIZED
+s889937579,p01718,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01718/C++/s889937579.cpp:10:26: error: ‘__gcd’ was not declared in this scope,SEMANTIC
+s076809661,p02745,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02745/C++/s076809661.cpp:72:11: error: a function-definition is not allowed here before ‘{’ token,UNRECOGNIZED
+s901373899,p01623,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01623/C++/s901373899.cpp:74:26: error: no matching function for call to ‘max(ll&, int)’",SEMANTIC
+s312707250,p02388,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02388/C++/s312707250.cpp:2:7: error: expected nested-name-specifier before ‘nam’,SYNTAX
+s341511288,p00272,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00272/C++/s341511288.cpp:14:9: error: ‘sum’ was not declared in this scope; did you mean ‘sums’?,SEMANTIC
+s657433649,p04032,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p04032/C++/s657433649.cpp:5:35: error: ‘endl’ was not declared in this scope; did you mean ‘std::endl’?,SEMANTIC
+s371359364,p02778,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02778/C++/s371359364.cpp:1:7: error: expected nested-name-specifier before ‘System’,SYNTAX
+s996972547,p02859,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02859/C++/s996972547.cpp:7:19: error: expected primary-expression before ‘;’ token,SYNTAX
+s319374532,p00682,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00682/C++/s319374532.cpp:1:2: error: stray ‘#’ in program,UNRECOGNIZED
+s322693186,p02822,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02822/C++/s322693186.cpp:78:3: error: expected primary-expression before ‘}’ token,SYNTAX
+s183503970,p02954,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02954/C++/s183503970.cpp:38:21: error: ‘x’ was not declared in this scope,SEMANTIC
+s684456111,p01771,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01771/C++/s684456111.cpp:105:35: error: ‘int close [150010]’ redeclared as different kind of entity,SEMANTIC
+s721606225,p03212,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03212/C++/s721606225.cpp:9:23: error: ‘len’ was not declared in this scope,SEMANTIC
+s936811035,p03672,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03672/C++/s936811035.cpp:15:15: error: expected ‘;’ before ‘s’,SYNTAX
+s116653237,p03643,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03643/C++/s116653237.cpp:4:14: error: expected ‘;’ before ‘cout’,SYNTAX
+s966744427,p03700,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03700/C++/s966744427.cpp:1:1: error: stray ‘\’ in program,UNRECOGNIZED
+s232124168,p02326,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02326/C++/s232124168.cpp:13:15: error: invalid conversion from ‘int’ to ‘const char*’ [-fpermissive],SEMANTIC
+s640750966,p02777,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02777/C++/s640750966.cpp:15:14: error: expected ‘;’ before ‘b’,SYNTAX
+s087754520,p02853,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02853/C++/s087754520.cpp:1:10: fatal error: pch.h: No such file or directory,MISSING_HEADER
+s394401682,p03168,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03168/C++/s394401682.cpp:42:3: error: ‘ld’ was not declared in this scope; did you mean ‘ll’?,SEMANTIC
+s777856809,p02678,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02678/C++/s777856809.cpp:37:16: error: no matching function for call to ‘std::vector<long long int>::erase(ll&)’,SEMANTIC
+s171086876,p03378,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03378/C++/s171086876.cpp:11:10: error: ‘x’ was not declared in this scope,SEMANTIC
+s277215821,p02924,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02924/C++/s277215821.cpp:15:5: error: ‘cin’ was not declared in this scope,SEMANTIC
+s267448005,p03256,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03256/C++/s267448005.cpp:37:52: error: invalid operands of types ‘int’ and ‘int [200200]’ to binary ‘operator-’,SEMANTIC
+s959758093,p01368,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01368/C++/s959758093.cpp:112:3: error: ‘memset’ was not declared in this scope,SEMANTIC
+s847603369,p03280,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03280/C++/s847603369.cpp:31:17: error: ‘_’ was not declared in this scope,SEMANTIC
+s356673626,p03335,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03335/C++/s356673626.cpp:143:39: error: expected ‘;’ before ‘nx’,SYNTAX
+s078438275,p03490,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03490/C++/s078438275.cpp:1:10: fatal error: stdafx.h: No such file or directory,MISSING_HEADER
+s635857011,p02882,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02882/C++/s635857011.cpp:61:24: error: ‘q’ was not declared in this scope,SEMANTIC
+s221135452,p00440,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00440/C++/s221135452.cpp:40:33: error: expected primary-expression before ‘?’ token,SYNTAX
+s327993826,p01722,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01722/C++/s327993826.cpp:3:20: error: ‘n’ was not declared in this scope,SEMANTIC
+s768550861,p02959,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02959/C++/s768550861.cpp:24:4: error: expected ‘}’ at end of input,UNRECOGNIZED
+s688898106,p03001,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03001/C++/s688898106.cpp:1:1: error: ‘include’ does not name a type,SEMANTIC
+s377043390,p01144,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01144/C++/s377043390.cpp:15:9: error: ‘vector’ was not declared in this scope,SEMANTIC
+s594228476,p02620,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02620/C++/s594228476.cpp:30:10: fatal error: atcoder/all: No such file or directory,MISSING_HEADER
+s104617461,p02640,/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02640/C++/s104617461.cpp:32:26: error: expected primary-expression before ‘<’ token,SYNTAX
