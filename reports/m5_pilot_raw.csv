@@ -1,0 +1,735 @@
+submission_id,compile_ok,compile_returncode,compile_timed_out,compile_stderr_head,run_returncode,run_timed_out,run_stderr_tail,input_source,run_seconds
+s097544070,True,0,False,,0,False,,sample_verified,0.006
+s333928700,True,0,False,,0,False,,sample_verified,0.007
+s892223226,True,0,False,,0,False,,sample_verified,0.008
+s300039761,True,0,False,,-8,False,,sample_verified,0.013
+s448542509,True,0,False,,0,False,,sample_verified,0.007
+s964313425,True,0,False,,-6,False,"/usr/include/c++/15/bits/basic_string.h:1369: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::reference std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator[](size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; reference = char&; size_type = long unsigned int]: Assertion '__pos <= size()' failed.
+",sample_verified,0.007
+s024789502,True,0,False,,0,False,,sample_verified,0.006
+s298991964,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = long long int; _Alloc = std::allocator<long long int>; reference = long long int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.006
+s550456492,True,0,False,,0,False,,sample_verified,0.007
+s814587842,True,0,False,,0,False,,sample_verified,0.007
+s122012684,False,1,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00185/C++/s122012684.cpp: In function ‘vi makeEra()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00185/C++/s122012684.cpp:45:12: error: reference to ‘data’ is ambiguous
+   45 |         if(data[i]==fa",,False,,sample_verified,
+s094068711,True,0,False,,-8,False,,sample_verified,0.007
+s632415706,True,0,False,,0,False,,sample_verified,0.006
+s995055964,True,0,False,,0,False,,sample_verified,0.067
+s147409752,True,0,False,,0,False,,sample_verified,0.006
+s340176952,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02734/C++/s340176952.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02734/C++/s340176952.cpp:12:26: warning: ISO C++17 does not allow ‘register’ storage class specifier [-W",0,False,,sample_verified,0.007
+s643429165,True,0,False,,-11,False,,sample_verified,0.019
+s332564398,True,0,False,,0,False,,sample_verified,0.019
+s112602574,True,0,False,,0,False,,sample_verified,0.006
+s524300646,True,0,False,,0,False,,sample_verified,0.007
+s953202101,True,0,False,,0,False,,sample_verified,0.009
+s469541400,True,0,False,,0,False,,sample_verified,0.006
+s524819638,False,1,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00746/C++/s524819638.cpp: In function ‘void search(int, int, int, int)’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00746/C++/s524819638.cpp:13:13: error: reference to ‘data’ is ambiguous
+   13 |    ",,False,,sample_verified,
+s824445518,True,0,False,,0,False,,sample_verified,0.006
+s568153947,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00072/C++/s568153947.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00072/C++/s568153947.cpp:32:33: warning: format ‘%d’ expects argument of type ‘int*’, but argument 2 has",-11,False,,sample_verified,0.008
+s012623617,True,0,False,,-24,False,,sample_verified,5.039
+s776288828,True,0,False,,0,False,,sample_verified,0.007
+s563568974,True,0,False,,0,False,,sample_verified,0.007
+s101028881,True,0,False,,0,False,,sample_verified,0.005
+s830522383,True,0,False,,0,False,,sample_verified,0.007
+s233406570,True,0,False,,0,False,,sample_verified,0.01
+s832510462,True,0,False,,0,False,,sample_verified,0.008
+s015217886,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = long long int; _Alloc = std::allocator<long long int>; reference = long long int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.006
+s860410135,True,0,False,,0,False,,sample_verified,0.007
+s642747691,True,0,False,,0,False,,sample_verified,0.007
+s660602302,True,0,False,,0,False,,sample_verified,0.006
+s213938963,True,0,False,,0,False,,sample_verified,0.008
+s655908210,True,0,False,,0,False,,sample_verified,0.012
+s226557487,True,0,False,,-6,False,"/usr/include/c++/15/bits/basic_string.h:1369: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::reference std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator[](size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; reference = char&; size_type = long unsigned int]: Assertion '__pos <= size()' failed.
+",sample_verified,0.007
+s950083508,True,0,False,,0,False,,sample_verified,0.005
+s609630143,True,0,False,,0,False,"Time Taken: 0 ms
+",sample_verified,0.006
+s213373065,False,1,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02564/C++/s213373065.cpp:1:2: warning: ‘#import’ is a deprecated GCC extension [-Wdeprecated]
+    1 | #import<atcoder/all>
+      |  ^~~~~~
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02564/C++/s213373",,False,,sample_verified,
+s366871805,True,0,False,,0,False,,sample_verified,0.006
+s590721909,True,0,False,,0,False,,sample_verified,0.007
+s487127427,True,0,False,,0,False,,sample_verified,0.007
+s574114765,True,0,False,,0,False,,sample_verified,0.012
+s867748195,True,0,False,,0,False,,sample_verified,0.007
+s778385220,True,0,False,,-6,False,"terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoi
+",sample_verified,0.007
+s513788316,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00121/C++/s513788316.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00121/C++/s513788316.cpp:74:16: warning: format ‘%d’ expects argument of type ‘int*’, but argument 2 has",-11,False,,sample_verified,0.007
+s517058382,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = int; _Alloc = std::allocator<int>; reference = int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.006
+s595748021,True,0,False,,0,False,,sample_verified,0.006
+s076708973,True,0,False,,0,False,,sample_verified,0.008
+s028260489,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01336/C++/s028260489.cpp:5:1: warning: ISO C++ forbids declaration of ‘main’ with no type [-Wreturn-type]
+    5 | main(){
+      | ^~~~
+",-8,False,,sample_verified,0.007
+s947830008,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = long long int; _Alloc = std::allocator<long long int>; reference = long long int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.007
+s264309122,True,0,False,,0,False,,sample_verified,0.007
+s613045292,True,0,False,,0,False,,empty_stdin,0.002
+s423271890,True,0,False,,0,False,,sample_verified,0.006
+s190218840,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = int; _Alloc = std::allocator<int>; reference = int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.019
+s593923803,True,0,False,,0,False,,sample_verified,0.007
+s177302385,True,0,False,,0,False,,sample_verified,0.008
+s862985354,True,0,False,,0,False,,sample_verified,0.01
+s018635413,True,0,False,,0,False,,sample_verified,0.012
+s436343987,True,0,False,,0,False,,sample_verified,0.008
+s344331411,True,0,False,,0,False,,sample_verified,0.006
+s826676563,True,0,False,,0,False,,sample_verified,0.005
+s617733125,True,0,False,,0,False,,sample_verified,0.008
+s714475779,True,0,False,,0,False,,sample_verified,0.004
+s099887154,True,0,False,,0,False,,sample_verified,0.007
+s537991384,True,0,False,,-6,False,"/usr/include/c++/15/bits/basic_string.h:1369: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::reference std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator[](size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; reference = char&; size_type = long unsigned int]: Assertion '__pos <= size()' failed.
+",sample_verified,0.007
+s406552802,True,0,False,,0,False,,sample_verified,0.008
+s250314926,True,0,False,,-6,False,"prog.out: /mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03840/C++/s250314926.cpp:50: int main(): Assertion `0' failed.
+",sample_verified,0.008
+s283235054,True,0,False,,-6,False,"/usr/include/c++/15/bits/basic_string.h:1369: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::reference std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator[](size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; reference = char&; size_type = long unsigned int]: Assertion '__pos <= size()' failed.
+",sample_verified,0.005
+s567989782,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01465/C++/s567989782.cpp: In function ‘std::pair<long long int, long long int> fact()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01465/C++/s567989782.cpp:69:1: warning: control reaches end of non-v",0,False,,sample_verified,0.008
+s096319437,True,0,False,,-6,False,"prog.out: /mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03050/C++/s096319437.cpp:38: int main(): Assertion `false' failed.
+",sample_verified,0.007
+s173512825,False,1,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01648/C++/s173512825.cpp: In function ‘void init(int)’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01648/C++/s173512825.cpp:28:5: error: reference to ‘rank’ is ambiguous
+   28 |     rank[i] = 0;
+    ",,False,,sample_verified,
+s832561709,True,0,False,,-6,False,"terminate called after throwing an instance of 'std::out_of_range'
+  what():  vector::_M_range_check: __n (which is 0) >= this->size() (which is 0)
+",sample_verified,0.006
+s682542673,True,0,False,,0,False,,sample_verified,0.007
+s885868800,True,0,False,,0,False,,sample_verified,0.007
+s741653643,True,0,False,,-11,False,,sample_verified,0.007
+s253598252,True,0,False,,-11,False,,sample_verified,0.008
+s654425197,True,0,False,,0,False,,sample_verified,0.008
+s651852993,True,0,False,,0,False,,sample_verified,0.008
+s060184591,True,0,False,,-11,False,,sample_verified,0.005
+s345264765,True,0,False,,0,False,,sample_verified,0.008
+s600831463,True,0,False,,0,False,,sample_verified,0.004
+s112158850,True,0,False,,0,False,,sample_verified,0.007
+s797638720,True,0,False,,0,False,,sample_verified,0.068
+s417462881,True,0,False,,0,False,,sample_verified,0.008
+s699412036,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03280/C++/s699412036.cpp:61:1: warning: ISO C++ forbids declaration of ‘main’ with no type [-Wreturn-type]
+   61 | main()
+      | ^~~~
+",0,False,"I will return...
+...don't you ever hang your head.
+Time (in ms): 0
+",sample_verified,0.006
+s822663735,True,0,False,,-11,False,,sample_verified,0.034
+s703742958,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_bvector.h:1158: std::vector<bool, _Alloc>::reference std::vector<bool, _Alloc>::operator[](size_type) [with _Alloc = std::allocator<bool>; reference = std::vector<bool>::reference; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.007
+s965096882,True,0,False,,0,False,,sample_verified,0.005
+s821126704,True,0,False,,0,False,,sample_verified,0.068
+s149993381,True,0,False,,0,False,,sample_verified,0.007
+s761728500,True,0,False,,0,False,,sample_verified,0.006
+s953262260,True,0,False,,0,False,,sample_verified,0.008
+s413553412,True,0,False,,0,False,,sample_verified,0.007
+s964052437,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03367/C++/s964052437.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03367/C++/s964052437.cpp:110:18: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has",0,False,,sample_verified,0.019
+s235982303,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01207/C++/s235982303.cpp:65:1: warning: ISO C++ forbids declaration of ‘main’ with no type [-Wreturn-type]
+   65 | main(){
+      | ^~~~
+",-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = int; _Alloc = std::allocator<int>; reference = int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.019
+s018076101,True,0,False,,0,False,,sample_verified,0.006
+s445306123,True,0,False,,0,False,,sample_verified,0.006
+s657854467,True,0,False,,0,False,,sample_verified,0.01
+s372367765,True,0,False,,0,False,,sample_verified,0.118
+s130343563,True,0,False,,0,False,,sample_verified,0.007
+s851994459,True,0,False,,-11,False,,sample_verified,0.011
+s518129104,True,0,False,,0,False,,sample_verified,0.007
+s944442172,True,0,False,,0,False,,sample_verified,0.007
+s274418965,True,0,False,,-6,False,"prog.out: /mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03664/C++/s274418965.cpp:47: int main(): Assertion `meow==4' failed.
+",sample_verified,0.008
+s462688664,True,0,False,,0,False,,sample_verified,0.008
+s577477325,True,0,False,,0,False,,sample_verified,0.007
+s745179613,True,0,False,,0,False,,sample_verified,0.011
+s938622065,True,0,False,,0,False,,sample_verified,0.168
+s199674252,True,0,False,,-11,False,,sample_verified,0.007
+s547994193,True,0,False,,-6,False,"terminate called after throwing an instance of 'std::out_of_range'
+  what():  vector::_M_range_check: __n (which is 4) >= this->size() (which is 3)
+",sample_verified,0.006
+s499272225,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = int; _Alloc = std::allocator<int>; reference = int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.007
+s814207965,True,0,False,,0,False,,sample_verified,0.008
+s998367452,True,0,False,,-6,False,"prog.out: /mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03984/C++/s998367452.cpp:232: void solve(): Assertion `0' failed.
+",sample_verified,0.007
+s112220061,True,0,False,,0,False,,sample_verified,0.008
+s921685967,True,0,False,,0,False,,sample_verified,0.068
+s844616542,True,0,False,,0,False,,sample_verified,0.006
+s083328926,True,0,False,,-6,False,"terminate called after throwing an instance of 'std::out_of_range'
+  what():  vector::_M_range_check: __n (which is 0) >= this->size() (which is 0)
+",sample_verified,0.006
+s861887408,True,0,False,,0,False,,sample_verified,0.007
+s615490569,True,0,False,,0,False,,sample_verified,0.035
+s062688939,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02416/C++/s062688939.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02416/C++/s062688939.cpp:7:17: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has",-11,False,,sample_verified,0.007
+s809496811,True,0,False,,0,False,,sample_verified,0.007
+s610241081,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = long long int; _Alloc = std::allocator<long long int>; reference = long long int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.005
+s729466860,True,0,False,,1,False,,sample_verified,0.007
+s407799282,True,0,False,,0,False,,sample_verified,0.007
+s144109377,True,0,False,,0,False,,sample_verified,0.006
+s937376577,True,0,False,,0,False,,sample_verified,0.007
+s870515297,True,0,False,,0,False,,sample_verified,0.006
+s680756199,True,0,False,,255,False,,sample_verified,0.006
+s010782944,True,0,False,,0,False,,sample_verified,0.006
+s436806330,True,0,False,,0,False,,sample_verified,0.006
+s061673116,True,0,False,,0,False,,sample_verified,0.007
+s367094979,True,0,False,,0,False,,sample_verified,0.007
+s119072333,True,0,False,,-6,False,"free(): invalid pointer
+",sample_verified,0.008
+s891719273,True,0,False,,0,False,,sample_verified,0.007
+s188120589,True,0,False,,0,False,,sample_verified,0.007
+s947846183,True,0,False,,-6,False,"terminate called after throwing an instance of 'std::out_of_range'
+  what():  vector::_M_range_check: __n (which is 4) >= this->size() (which is 2)
+",sample_verified,0.006
+s468478327,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02610/C++/s468478327.cpp: In function ‘long long int union_set(long long int, long long int)’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02610/C++/s468478327.cpp:161:1: warning: no return statement ",-4,False,,sample_verified,0.007
+s705187860,True,0,False,,0,False,,sample_unverified,0.007
+s649591043,True,0,False,,0,False,,sample_verified,0.007
+s407065800,True,0,False,,0,False,,sample_verified,0.008
+s620152903,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02585/C++/s620152903.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02585/C++/s620152903.cpp:15:17: warning: format ‘%d’ expects argument of type ‘int*’, but argument 2 has",0,False,,sample_verified,0.02
+s823741161,True,0,False,,-11,False,,sample_verified,0.011
+s983562776,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03181/C++/s983562776.cpp: In function ‘ll solve2(int, ll)’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03181/C++/s983562776.cpp:57:1: warning: no return statement in function returning non-void [-Wre",-4,False,,sample_verified,0.012
+s000453461,True,0,False,,0,False,,sample_verified,0.007
+s940952725,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02389/C++/s940952725.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02389/C++/s940952725.cpp:6:17: warning: format ‘%d’ expects argument of type ‘int*’, but argument 2 has ",-11,False,,sample_verified,0.004
+s513400012,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = int; _Alloc = std::allocator<int>; reference = int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.011
+s358944838,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = int; _Alloc = std::allocator<int>; reference = int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.006
+s165898757,True,0,False,,0,False,,sample_verified,0.007
+s503026400,True,0,False,,0,False,,sample_verified,0.008
+s370660823,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = int; _Alloc = std::allocator<int>; reference = int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.005
+s579432549,True,0,False,,0,False,,sample_verified,0.068
+s116832091,True,0,False,,0,False,"3
+",sample_verified,0.006
+s787466788,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03279/C++/s787466788.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03279/C++/s787466788.cpp:63:67: warning: ignoring return value of ‘_FIter std::unique(_FIter, _FIter) [w",0,False,,sample_verified,0.019
+s525478407,True,0,False,,4,False,,sample_verified,0.006
+s137781099,True,0,False,,0,False,,sample_verified,0.007
+s991341718,True,0,False,,0,False,,sample_verified,0.008
+s783277210,True,0,False,,0,False,"
+Time elapsed: 0 ms",sample_verified,0.004
+s837184035,True,0,False,,0,False,,sample_verified,0.007
+s733904273,True,0,False,,0,False,,sample_verified,0.008
+s282088159,True,0,False,,-8,False,,sample_verified,0.008
+s229951935,True,0,False,,0,False,,sample_verified,0.011
+s109979685,True,0,False,,-6,False,"terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::at: __n (which is 1) >= this->size() (which is 1)
+",sample_verified,0.006
+s643995380,True,0,False,,0,False,,sample_verified,0.01
+s894108692,False,1,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00625/C++/s894108692.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00625/C++/s894108692.cpp:203:11: error: no match for ‘operator>>’ (operand types are ‘std::istream’ {aka",,False,,sample_verified,
+s479479533,True,0,False,,0,False,,sample_verified,0.007
+s394301968,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00236/C++/s394301968.cpp:114:1: warning: ISO C++ forbids declaration of ‘main’ with no type [-Wreturn-type]
+  114 | main(){
+      | ^~~~
+",0,False,,sample_verified,0.008
+s912889987,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02642/C++/s912889987.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02642/C++/s912889987.cpp:27:13: warning: ignoring return value of ‘std::vector<_Tp, _Alloc>::reference s",-8,False,,sample_verified,0.006
+s346166592,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02482/C++/s346166592.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02482/C++/s346166592.cpp:5:17: warning: format ‘%d’ expects argument of type ‘int*’, but argument 2 has ",0,False,,empty_stdin,0.003
+s341454805,True,0,False,,0,False,,sample_verified,0.006
+s722622967,True,0,False,,0,False,,sample_verified,0.036
+s704448998,True,0,False,,-11,False,,sample_verified,0.005
+s152329794,True,0,False,,0,False,,sample_verified,0.006
+s181667825,True,0,False,,0,False,,sample_verified,0.007
+s387709202,True,0,False,,0,False,,sample_verified,0.007
+s257255740,True,0,False,,-11,False,,sample_verified,0.007
+s303363975,True,0,False,,0,False,"3
+",sample_verified,0.008
+s747447376,True,0,False,,0,False,,sample_verified,0.007
+s504725092,True,0,False,,0,False,,sample_verified,0.006
+s673695595,True,0,False,,0,False,,sample_verified,0.02
+s155297099,True,0,False,,0,False,,sample_verified,0.007
+s635338961,True,0,False,,-8,False,,sample_verified,0.006
+s628016400,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = std::vector<int>; _Alloc = std::allocator<std::vector<int> >; reference = std::vector<int>&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.012
+s983712144,True,0,False,,0,False,,sample_verified,0.007
+s746735235,True,0,False,,0,False,,sample_verified,0.006
+s578983226,True,0,False,,0,False,,sample_verified,0.009
+s568697070,True,0,False,,0,False,,sample_verified,0.007
+s757006597,True,0,False,,-6,False,"terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoi
+",sample_verified,0.007
+s507731796,True,0,False,,-24,False,,sample_verified,5.042
+s050336863,True,0,False,,0,False,,sample_verified,0.007
+s406649586,True,0,False,,0,False,,sample_verified,0.006
+s964893874,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01514/C++/s964893874.cpp: In member function ‘bool Team::operator<(const Team&)’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01514/C++/s964893874.cpp:47:5: warning: control reaches end of non-void fu",0,False,,empty_stdin,0.003
+s886973626,True,0,False,,0,False,,sample_verified,0.007
+s233916404,True,0,False,,0,False,,sample_verified,0.008
+s057495488,True,0,False,,0,False,,sample_verified,0.009
+s969748438,True,0,False,,0,False,,sample_verified,0.007
+s402512311,True,0,False,,-6,False,"/usr/include/c++/15/bits/basic_string.h:1369: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::reference std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator[](size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; reference = char&; size_type = long unsigned int]: Assertion '__pos <= size()' failed.
+",sample_verified,0.007
+s455131822,True,0,False,,0,False,,sample_verified,0.007
+s089735552,True,0,False,,0,False,,sample_verified,0.007
+s019494515,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02482/C++/s019494515.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02482/C++/s019494515.cpp:5:17: warning: format ‘%d’ expects argument of type ‘int*’, but argument 2 has ",0,False,,empty_stdin,0.003
+s504770220,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00236/C++/s504770220.cpp:114:1: warning: ISO C++ forbids declaration of ‘main’ with no type [-Wreturn-type]
+  114 | main(){
+      | ^~~~
+",0,False,,sample_verified,0.008
+s679307710,True,0,False,,0,False,,sample_verified,0.007
+s191388569,True,0,False,,-11,False,,sample_verified,0.012
+s859440895,True,0,False,,0,False,,sample_verified,0.036
+s344412622,True,0,False,,0,False,,sample_verified,0.007
+s908068347,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = char; _Alloc = std::allocator<char>; reference = char&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.007
+s656849331,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02991/C++/s656849331.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02991/C++/s656849331.cpp:39:13: warning: format ‘%d’ expects argument of type ‘int*’, but argument 2 has",-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = std::vector<long long int>; _Alloc = std::allocator<std::vector<long long int> >; reference = std::vector<long long int>&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.006
+s845804253,True,0,False,,0,False,,sample_verified,0.004
+s702254255,True,0,False,,0,False,,sample_verified,0.006
+s757331052,True,0,False,,0,False,,sample_verified,0.007
+s216257360,True,0,False,,0,False,,sample_verified,0.012
+s552680216,True,0,False,,0,False,"1
+",sample_verified,0.007
+s311873025,True,0,False,,0,False,,sample_verified,0.007
+s203682831,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02610/C++/s203682831.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02610/C++/s203682831.cpp:68:33: warning: format ‘%d’ expects argument of type ‘int*’, but argument 2 has",-6,False,"/usr/include/c++/15/bits/stl_queue.h:825: std::priority_queue<_Tp, _Sequence, _Compare>::const_reference std::priority_queue<_Tp, _Sequence, _Compare>::top() const [with _Tp = long long int; _Sequence = std::vector<long long int, std::allocator<long long int> >; _Compare = std::less<long long int>; const_reference = const long long int&]: Assertion '!this->empty()' failed.
+",sample_verified,0.007
+s876018083,True,0,False,,0,False,,sample_verified,0.012
+s248421358,True,0,False,,0,False,,sample_verified,0.007
+s320694957,True,0,False,,0,False,,sample_unverified,0.007
+s335253562,True,0,False,,-11,False,,sample_verified,0.014
+s896793899,True,0,False,,0,False,,sample_verified,0.008
+s313805661,True,0,False,,0,False,,sample_verified,0.007
+s813319034,True,0,False,,-6,False,"/usr/include/c++/15/bits/basic_string.h:1369: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::reference std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator[](size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; reference = char&; size_type = long unsigned int]: Assertion '__pos <= size()' failed.
+",sample_verified,0.007
+s803282855,True,0,False,,0,False,,sample_verified,0.008
+s923201214,True,0,False,,0,False,,sample_verified,0.008
+s345585716,True,0,False,,-8,False,,sample_verified,0.009
+s689622836,True,0,False,,0,False,,sample_unverified,0.007
+s857324782,True,0,False,,-11,False,,sample_verified,0.007
+s204428439,True,0,False,,0,False,,sample_verified,0.007
+s814196735,True,0,False,,-11,False,,sample_verified,0.012
+s227902505,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = std::pair<long long int, long long int>; _Alloc = std::allocator<std::pair<long long int, long long int> >; reference = std::pair<long long int, long long int>&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.008
+s318903950,True,0,False,,0,False,,sample_verified,0.007
+s759072682,True,0,False,,0,False,,sample_verified,0.007
+s348191912,True,0,False,,-6,False,"prog.out: /mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03984/C++/s348191912.cpp:219: void solve(): Assertion `0' failed.
+",sample_verified,0.007
+s688847332,True,0,False,,3,False,,sample_verified,0.008
+s703713009,True,0,False,,0,False,,sample_verified,0.008
+s186500340,True,0,False,,0,False,,sample_verified,0.007
+s077257508,True,0,False,,0,False,,sample_verified,0.007
+s506119831,True,0,False,,-11,False,,sample_verified,0.007
+s607802282,True,0,False,,0,False,,sample_verified,0.007
+s403866772,True,0,False,,0,False,,sample_verified,0.008
+s935536842,True,0,False,,0,False,,sample_verified,0.007
+s115173831,True,0,False,,0,False,,sample_verified,0.036
+s367563857,True,0,False,,0,False,,sample_verified,0.007
+s840414825,True,0,False,,-11,False,,sample_verified,0.012
+s622784524,True,0,False,,0,False,,sample_verified,0.008
+s298093012,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03892/C++/s298093012.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03892/C++/s298093012.cpp:25:21: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has ",0,False,,sample_verified,0.007
+s240826491,True,0,False,,0,False,,sample_verified,0.007
+s460362748,True,0,False,,0,False,,sample_verified,0.008
+s111900465,True,0,False,,-6,False,"prog.out: /mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02869/C++/s111900465.cpp:34: void solve(): Assertion `false' failed.
+",sample_verified,0.007
+s413112355,True,0,False,,0,False,,sample_verified,0.007
+s780635828,True,0,False,,-11,False,,sample_verified,0.12
+s857360433,True,0,False,,0,False,,sample_verified,0.008
+s264836791,True,0,False,,-11,False,,sample_verified,0.008
+s182453432,True,0,False,,-6,False,"terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+",sample_verified,0.005
+s143735572,True,0,False,,0,False,,sample_verified,0.007
+s737151577,True,0,False,,0,False,,sample_verified,0.008
+s890093018,True,0,False,,0,False,,sample_verified,0.013
+s716504998,True,0,False,,0,False,,sample_verified,0.01
+s286820095,True,0,False,,0,False,,sample_verified,0.012
+s574495869,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = int; _Alloc = std::allocator<int>; reference = int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",empty_stdin,0.003
+s167676108,True,0,False,,0,False,,sample_verified,0.009
+s518265257,True,0,False,,0,False,,sample_verified,0.007
+s094069928,True,0,False,,0,False,,sample_verified,0.012
+s298082892,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02399/C++/s298082892.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02399/C++/s298082892.cpp:9:11: warning: format ‘%d’ expects argument of type ‘int*’, but argument 2 has ",-11,False,,sample_verified,0.008
+s439325803,True,0,False,,-8,False,,sample_verified,0.008
+s897893240,True,0,False,,0,False,"foo
+",sample_verified,0.007
+s559732811,True,0,False,,0,False,,sample_verified,0.006
+s349037054,True,0,False,,0,False,,sample_verified,0.007
+s914134672,True,0,False,,0,False,,sample_verified,0.008
+s115963011,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02640/C++/s115963011.cpp:10:9: warning: ‘rep’ redefined
+   10 | #define rep(j,m) for(int j=0;j<m;++j)
+      |         ^~~
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02640/C++/s115963011.cpp:9:9: note",-4,False,,sample_verified,0.008
+s586609682,True,0,False,,0,False,,sample_verified,0.007
+s703852454,True,0,False,,1,False,,sample_verified,0.007
+s951245826,True,0,False,,0,False,,sample_verified,0.007
+s248660315,True,0,False,,0,False,,sample_verified,0.008
+s493142069,True,0,False,,0,False,,sample_verified,0.007
+s728777861,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = int; _Alloc = std::allocator<int>; reference = int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.007
+s644998657,True,0,False,,0,False,,sample_verified,0.007
+s871408564,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02673/C++/s871408564.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02673/C++/s871408564.cpp:22:12: warning: ISO C++17 does not allow ‘register’ storage class specifier [-W",0,False,,sample_verified,0.007
+s329770400,True,0,False,,-11,False,,sample_verified,0.007
+s204502372,True,0,False,,0,False,,sample_verified,0.009
+s915030089,True,0,False,,-11,False,,sample_verified,0.007
+s828034700,False,1,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03890/C++/s828034700.cpp:29:16: error: ‘INT_MAX’ was not declared in this scope
+   29 | const ll inf = INT_MAX;
+      |                ^~~~~~~
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03890/C++/s82",,False,,sample_verified,
+s007030597,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02609/C++/s007030597.cpp: In function ‘ll f(ll, ll)’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02609/C++/s007030597.cpp:252:1: warning: no return statement in function returning non-void [-Wreturn-",-6,False,"prog.out: /mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02609/C++/s007030597.cpp:304: int main(): Assertion `1==2' failed.
+",sample_verified,0.011
+s686813080,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = int; _Alloc = std::allocator<int>; reference = int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.007
+s409152792,True,0,False,,0,False,,sample_verified,0.019
+s804234888,True,0,False,,-6,False,"prog.out: /mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02875/C++/s804234888.cpp:22: int main(): Assertion `false' failed.
+",sample_verified,0.008
+s597050267,True,0,False,,-6,False,"double free or corruption (out)
+",sample_verified,0.007
+s058144525,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03710/C++/s058144525.cpp: In function ‘void Main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03710/C++/s058144525.cpp:52:29: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has",0,False,,sample_verified,0.008
+s374728764,True,0,False,,0,False,,sample_verified,0.007
+s307419989,True,0,False,,0,False,,sample_verified,0.008
+s345364002,True,0,False,,0,False,,sample_verified,0.007
+s398627078,True,0,False,,0,False,,sample_verified,0.02
+s341122419,True,0,False,,0,False,,sample_verified,0.006
+s761236878,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = int; _Alloc = std::allocator<int>; reference = int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.008
+s688139364,True,0,False,,0,False,,sample_verified,0.006
+s017865422,True,0,False,,0,False,,sample_verified,0.006
+s117976703,True,0,False,,0,False,,sample_verified,0.008
+s878877221,True,0,False,,0,False,,sample_verified,0.007
+s920129225,True,0,False,,-6,False,"prog.out: /mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03218/C++/s920129225.cpp:68: int main(): Assertion `false' failed.
+",sample_verified,0.007
+s647874109,True,0,False,,0,False,,sample_verified,0.007
+s619705876,True,0,False,,0,False,,sample_verified,0.007
+s292596966,True,0,False,,0,False,,sample_verified,0.008
+s138723086,True,0,False,,0,False,,sample_verified,0.007
+s449724638,True,0,False,,0,False,,sample_verified,0.007
+s583284521,True,0,False,,-6,False,"/usr/include/c++/15/bits/basic_string.h:1369: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::reference std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator[](size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; reference = char&; size_type = long unsigned int]: Assertion '__pos <= size()' failed.
+",sample_verified,0.007
+s496320702,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = int; _Alloc = std::allocator<int>; reference = int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.008
+s684630456,True,0,False,,0,False,,sample_verified,0.007
+s874048478,False,1,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01304/C++/s874048478.cpp:2:19: warning: trigraph ‘??(’ ignored, use ‘-trigraphs’ to enable [-Wtrigraphs]
+    2 | (0,0)???????????????(1,1)?????????(=???????¶????)=?§?????????´??????(gx+1,gy+1)???
+/mnt/d/Dev/Github/transformer-de",,False,,sample_verified,
+s448757419,True,0,False,"In file included from /mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03238/C++/s448757419.cpp:17:
+/usr/include/c++/15/ccomplex:51:4: warning: #warning ""<ccomplex> is deprecated in C++17, use <complex> instead"" [-Wcpp]
+   51 | #  warning ""<ccomplex> is deprecated in C++17, us",0,False,,sample_verified,0.068
+s643350419,True,0,False,,0,False,,sample_verified,0.007
+s214333675,True,0,False,,0,False,,sample_verified,0.007
+s215916216,True,0,False,,0,False,,sample_verified,0.006
+s025056910,True,0,False,,0,False,,sample_verified,0.007
+s063709774,True,0,False,,0,False,,sample_verified,0.008
+s955600509,True,0,False,,4,False,,sample_verified,0.007
+s111709071,True,0,False,,-11,False,,sample_verified,0.007
+s514502834,True,0,False,,0,False,,sample_verified,0.008
+s762446392,True,0,False,,0,False,,sample_verified,0.007
+s033014460,True,0,False,,-11,False,,sample_verified,0.012
+s778811455,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03218/C++/s778811455.cpp:19:1: warning: ISO C++ forbids declaration of ‘main’ with no type [-Wreturn-type]
+   19 | main(){
+      | ^~~~
+",0,False,,sample_verified,0.006
+s419042880,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01919/C++/s419042880.cpp:33:1: warning: ISO C++ forbids declaration of ‘main’ with no type [-Wreturn-type]
+   33 | main(){
+      | ^~~~
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01919/C++/s419042880",-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = std::pair<long long int, long long int>; _Alloc = std::allocator<std::pair<long long int, long long int> >; reference = std::pair<long long int, long long int>&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.008
+s494928013,True,0,False,,-6,False,"terminate called after throwing an instance of 'std::out_of_range'
+  what():  vector::_M_range_check: __n (which is 0) >= this->size() (which is 0)
+",sample_verified,0.007
+s403978445,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03866/C++/s403978445.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03866/C++/s403978445.cpp:67:21: warning: format ‘%lf’ expects argument of type ‘double’, but argument 2 ",0,False,,sample_unverified,0.007
+s329315293,True,0,False,,0,False,,sample_verified,0.008
+s105994919,True,0,False,,0,False,,sample_verified,0.118
+s261626758,True,0,False,,0,False,,sample_verified,0.007
+s532000602,True,0,False,,0,False,,sample_verified,0.012
+s581577426,True,0,False,,-11,False,,sample_verified,0.007
+s878404847,True,0,False,,0,False,,sample_verified,0.007
+s851252034,True,0,False,,0,False,,sample_verified,0.021
+s803381015,True,0,False,,0,False,,sample_verified,0.007
+s864831086,True,0,False,,0,False,,sample_unverified,0.008
+s662498830,True,0,False,,0,False,"MP(n,m) = (2,3)
+",sample_verified,0.007
+s686030636,True,0,False,,0,False,,sample_verified,0.007
+s935283729,True,0,False,,255,False,,sample_verified,0.006
+s982019309,True,0,False,,-11,False,,sample_verified,0.119
+s538484715,True,0,False,,-6,False,"pure virtual method called
+terminate called without an active exception
+",sample_verified,0.035
+s179272614,True,0,False,,1,False,,sample_verified,0.007
+s974987015,True,0,False,,0,False,,sample_verified,0.007
+s312306662,True,0,False,,0,False,,sample_verified,0.008
+s396419168,True,0,False,,0,False,,sample_verified,0.007
+s805305335,True,0,False,,0,False,,sample_verified,0.006
+s731374931,True,0,False,,-6,False,"/usr/include/c++/15/bits/basic_string.h:1369: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::reference std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator[](size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; reference = char&; size_type = long unsigned int]: Assertion '__pos <= size()' failed.
+",sample_verified,0.007
+s916511988,True,0,False,,0,False,,sample_verified,0.007
+s554243796,True,0,False,,0,False,,sample_verified,0.006
+s640627193,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = int; _Alloc = std::allocator<int>; reference = int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.007
+s575544209,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = std::vector<int>; _Alloc = std::allocator<std::vector<int> >; reference = std::vector<int>&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.007
+s918882464,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = long int; _Alloc = std::allocator<long int>; reference = long int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.007
+s819117731,True,0,False,,0,False,,sample_verified,0.007
+s265666834,True,0,False,,0,False,,sample_verified,0.008
+s652979365,True,0,False,,0,False,,sample_verified,0.007
+s590872462,True,0,False,,0,False,,sample_verified,0.007
+s001096508,True,0,False,,0,False,,empty_stdin,0.003
+s422118279,False,1,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00261/C++/s422118279.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00261/C++/s422118279.cpp:28:5: error: reference to ‘size’ is ambiguous
+   28 |     size = s.size();
+    ",,False,,sample_verified,
+s328037655,True,0,False,,0,False,,sample_verified,0.007
+s537300230,True,0,False,,-6,False,"/usr/include/c++/15/bits/basic_string.h:1369: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::reference std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator[](size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; reference = char&; size_type = long unsigned int]: Assertion '__pos <= size()' failed.
+",sample_unverified,0.006
+s507042614,True,0,False,,0,False,,sample_verified,0.007
+s635066445,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1282: std::vector<_Tp, _Alloc>::const_reference std::vector<_Tp, _Alloc>::operator[](size_type) const [with _Tp = Node; _Alloc = std::allocator<Node>; const_reference = const Node&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.007
+s948357170,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = double; _Alloc = std::allocator<double>; reference = double&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.007
+s896034652,True,0,False,,0,False,,sample_verified,0.011
+s348669687,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00132/C++/s348669687.cpp:17:1: warning: ‘typedef’ was ignored in this declaration
+   17 | typedef struct Info{
+      | ^~~~~~~
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00132/C++/s348669687.cpp:143:",0,False,,sample_verified,0.012
+s261939349,True,0,False,,0,False,,sample_verified,0.011
+s500778435,True,0,False,,0,False,,sample_verified,0.008
+s076684769,True,0,False,,0,False,,sample_verified,0.008
+s194644243,True,0,False,,0,False,,sample_verified,0.007
+s083144765,True,0,False,,0,False,,sample_verified,0.012
+s101909111,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02523/C++/s101909111.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02523/C++/s101909111.cpp:19:10: warning: format ‘%lf’ expects argument of type ‘double*’, but argument 2",0,False,,empty_stdin,0.003
+s443674795,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = int; _Alloc = std::allocator<int>; reference = int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.007
+s350567832,True,0,False,,-6,False,"terminate called after throwing an instance of 'std::length_error'
+  what():  vector::_M_default_append
+",sample_verified,0.007
+s723372532,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = int; _Alloc = std::allocator<int>; reference = int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.007
+s918939320,True,0,False,,0,False,,sample_verified,0.008
+s757823317,True,0,False,,0,False,,sample_unverified,0.424
+s009477938,True,0,False,,0,False,,empty_stdin,0.003
+s983422608,True,0,False,,0,False,,sample_verified,0.006
+s763014323,True,0,False,,0,False,,sample_verified,0.008
+s225400663,True,0,False,,0,False,,sample_verified,0.007
+s593883670,True,0,False,,-11,False,,sample_verified,0.011
+s964478015,False,1,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02569/C++/s964478015.cpp:3:10: fatal error: atcoder/all: No such file or directory
+    3 | #include <atcoder/all>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+",,False,,sample_verified,
+s524892047,True,0,False,,-11,False,,sample_verified,0.007
+s468174089,True,0,False,,0,False,,sample_verified,0.008
+s343229045,True,0,False,,-11,False,,sample_verified,0.019
+s052334058,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02284/C++/s052334058.cpp: In function ‘void printInOrder(long int)’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02284/C++/s052334058.cpp:23:15: warning: format ‘%d’ expects argument of type ‘int’, bu",0,False,,sample_verified,0.007
+s360993115,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = int; _Alloc = std::allocator<int>; reference = int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.006
+s585544646,True,0,False,,0,False,,sample_verified,0.006
+s348295822,True,0,False,,0,False,,sample_verified,0.007
+s998819551,True,0,False,,0,False,,sample_verified,0.006
+s556713107,True,0,False,,0,False,,sample_verified,0.007
+s386364809,True,0,False,,0,False,,sample_verified,0.007
+s818927171,True,0,False,,0,False,,sample_verified,0.006
+s287623363,True,0,False,,-11,False,,sample_verified,0.008
+s473368749,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = std::tuple<long long int, long long int, long long int>; _Alloc = std::allocator<std::tuple<long long int, long long int, long long int> >; reference = std::tuple<long long int, long long int, long long int>&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.006
+s061673974,True,0,False,,0,False,,sample_unverified,0.006
+s018109703,True,0,False,,0,False,,sample_verified,0.008
+s877320831,True,0,False,,0,False,,sample_unverified,0.007
+s713171541,True,0,False,,0,False,,sample_verified,0.007
+s232952106,True,0,False,,-6,False,"terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+",sample_verified,2.027
+s179272981,True,0,False,,0,False,,sample_verified,0.006
+s026925317,True,0,False,,0,False,,sample_verified,0.007
+s461038016,True,0,False,,0,False,,sample_verified,0.01
+s431832512,True,0,False,,-6,False,"terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+",empty_stdin,4.336
+s999447280,True,0,False,,-24,False,,empty_stdin,5.039
+s707005161,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = d; _Alloc = std::allocator<d>; reference = d&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.008
+s784384144,True,0,False,,0,False,,sample_verified,0.007
+s853768323,True,0,False,,0,False,,sample_verified,0.007
+s536395899,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = edge; _Alloc = std::allocator<edge>; reference = edge&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.008
+s344759654,True,0,False,,-11,False,,sample_verified,0.004
+s366130787,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03466/C++/s366130787.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03466/C++/s366130787.cpp:34:29: warning: ISO C++17 does not allow ‘register’ storage class specifier [-W",0,False,,sample_verified,0.006
+s567360910,True,0,False,,0,False,,sample_verified,0.006
+s975395349,True,0,False,,-6,False,"/usr/include/c++/15/bits/basic_string.h:1369: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::reference std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator[](size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; reference = char&; size_type = long unsigned int]: Assertion '__pos <= size()' failed.
+",sample_unverified,0.007
+s791737795,True,0,False,,0,False,,sample_verified,0.007
+s339198549,True,0,False,,0,False,,sample_verified,0.007
+s526021381,True,0,False,,0,False,,sample_verified,0.007
+s490734256,True,0,False,,0,False,,sample_verified,0.006
+s233598200,False,1,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01203/C++/s233598200.cpp: In function ‘int solve(int, int)’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p01203/C++/s233598200.cpp:56:15: error: reference to ‘size’ is ambiguous
+   56 |     if ( S == s",,False,,sample_verified,
+s719429364,True,0,False,,0,False,,sample_verified,0.014
+s595856093,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02599/C++/s595856093.cpp: In function ‘int fastscan()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02599/C++/s595856093.cpp:21:18: warning: ISO C++17 does not allow ‘register’ storage class specifier",0,False,,sample_verified,0.069
+s725390879,True,0,False,,0,False,,sample_verified,0.006
+s739991960,True,0,False,,0,False,,sample_verified,0.007
+s779844387,True,0,False,,0,False,,sample_verified,0.007
+s834700262,True,0,False,,-11,False,,sample_verified,0.008
+s297242189,True,0,False,,0,False,,sample_verified,0.007
+s892780893,True,0,False,,0,False,,sample_verified,0.008
+s499717241,True,0,False,,0,False,,sample_verified,0.008
+s348424696,True,0,False,,0,False,,sample_verified,0.007
+s774700961,True,0,False,,0,False,,sample_verified,0.007
+s510890938,True,0,False,,0,False,,sample_verified,0.007
+s851565771,True,0,False,,-11,False,,sample_verified,0.012
+s316548752,True,0,False,,0,False,,sample_verified,0.008
+s778267111,True,0,False,,0,False,,sample_verified,0.007
+s835312664,True,0,False,,0,False,,sample_unverified,0.007
+s694490174,True,0,False,,0,False,,sample_verified,0.007
+s392670409,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = int; _Alloc = std::allocator<int>; reference = int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_unverified,0.007
+s373189330,True,0,False,,0,False,,sample_verified,0.019
+s634297009,True,0,False,,0,False,,sample_verified,0.012
+s034355890,True,0,False,,0,False,,sample_verified,1.122
+s161853753,True,0,False,,-6,False,"/usr/include/c++/15/bits/stl_vector.h:1263: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](size_type) [with _Tp = int; _Alloc = std::allocator<int>; reference = int&; size_type = long unsigned int]: Assertion '__n < this->size()' failed.
+",sample_verified,0.007
+s901701431,True,0,False,,0,False,,sample_verified,0.006
+s822103667,True,0,False,,0,False,,sample_verified,0.007
+s171933176,False,1,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02795/C++/s171933176.cpp:32:42: warning: declaration of ‘template<class T> constexpr decltype (t.size()) std::size(const T&)’ has a different exception specifier
+   32 |     template <typename T> constexpr auto size(const T& t) ",,False,,sample_verified,
+s649884283,True,0,False,,-11,False,,sample_verified,0.007
+s060276843,True,0,False,,0,False,,sample_verified,0.007
+s191618906,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00047/C++/s191618906.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00047/C++/s191618906.cpp:10:24: warning: format ‘%c’ expects a matching ‘char*’ argument [-Wformat=]
+   ",-11,False,,sample_verified,0.006
+s380678824,False,1,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00259/C++/s380678824.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00259/C++/s380678824.cpp:289:17: error: ‘gets’ was not declared in this scope; did you mean ‘getw’?
+  28",,False,,sample_verified,
+s624815729,True,0,False,,0,False,,sample_verified,0.01
+s761703681,True,0,False,,0,False,,sample_verified,0.008
+s837611039,True,0,False,,0,False,,sample_verified,0.008
+s533701626,True,0,False,,0,False,,sample_verified,0.007
+s092982909,True,0,False,,0,False,,sample_verified,0.012
+s903524390,True,0,False,,0,False,"d = 3
+i = 3
+j = 4
+d = 3
+i = 8
+j = 9
+d = 6
+i = 0
+j = 2
+d = 6
+i = 0
+j = 4
+d = 6
+i = 1
+j = 2
+d = 6
+i = 1
+j = 4
+d = 9
+i = 3
+j = 4
+d = 9
+i = 3
+j = 7
+d = 9
+i = 3
+j = 9
+d = 12
+i = 0
+j = 2
+d = 12
+i = 0
+j = 4
+d = 12
+i = 0
+j = 7
+d = 12
+i = 0
+j = 9
+",sample_verified,0.007
+s418563121,True,0,False,,0,False,,sample_verified,0.011
+s482261927,True,0,False,,0,False,,sample_verified,0.035
+s721082856,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03083/C++/s721082856.cpp: In function ‘void init()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03083/C++/s721082856.cpp:39:14: warning: ISO C++17 does not allow ‘register’ storage class specifier [-",0,False,,sample_verified,0.004
+s567177644,True,0,False,,0,False,,empty_stdin,0.003
+s549811038,True,0,False,,0,False,,sample_verified,0.007
+s437670880,True,0,False,,0,False,,sample_verified,0.007
+s445751987,True,0,False,,0,False,,sample_verified,0.007
+s318236309,True,0,False,,-11,False,,sample_verified,0.007
+s091092623,True,0,False,,0,False,,sample_verified,0.007
+s229984366,True,0,False,,0,False,,sample_verified,0.007
+s691610428,True,0,False,,-11,False,,sample_verified,0.01
+s387403619,True,0,False,,-11,False,,sample_verified,0.012
+s890763455,False,1,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00204/C++/s890763455.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00204/C++/s890763455.cpp:79:11: error: no match for ‘operator>>’ (operand types are ‘std::istream’ {aka ",,False,,sample_verified,
+s824855124,True,0,False,,0,False,,sample_verified,0.007
+s262782552,True,0,False,,-6,False,"free(): invalid size
+",sample_verified,0.008
+s518406486,True,0,False,,-6,False,"terminate called after throwing an instance of 'std::out_of_range'
+  what():  basic_string::at: __n (which is 3) >= this->size() (which is 3)
+",sample_verified,0.006
+s375500310,True,0,False,,0,False,,sample_verified,0.007
+s722098213,True,0,False,,0,False,,sample_verified,0.007
+s547802632,True,0,False,,0,False,,sample_verified,0.006
+s038900332,True,0,False,,0,False,,sample_verified,0.008
+s239754738,True,0,False,,0,False,,sample_verified,0.008
+s293743121,True,0,False,,0,False,,sample_verified,0.019
+s595204454,True,0,False,,-11,False,,empty_stdin,0.003
+s233706991,True,0,False,,0,False,,sample_verified,0.006
+s528390809,True,0,False,,0,False,,sample_verified,0.012
+s909690690,True,0,False,,-6,False,"prog.out: /mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p02751/C++/s909690690.cpp:10: int main(): Assertion `N==M' failed.
+",sample_verified,0.011
+s870061673,True,0,False,,-11,False,,empty_stdin,0.009
+s234307747,True,0,False,,0,False,,sample_verified,0.006
+s836609479,True,0,False,,0,False,,sample_verified,0.006
+s655082778,True,0,False,,0,False,,sample_verified,0.006
+s867150127,True,0,False,,48,False,,sample_verified,0.007
+s219645170,True,0,False,,0,False,,sample_verified,0.007
+s363429646,True,0,False,,-11,False,,sample_verified,0.012
+s528812631,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03792/C++/s528812631.cpp: In function ‘int main()’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03792/C++/s528812631.cpp:26:45: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 ha",0,False,,sample_verified,0.007
+s962183228,True,0,False,,-6,False,"prog.out: /mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03654/C++/s962183228.cpp:95: int main(): Assertion `n%2==0' failed.
+",sample_verified,0.007
+s344646364,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03845/C++/s344646364.cpp:5:9: warning: ISO C++11 requires whitespace after the macro name
+    5 | #define vector<int> vi
+      |         ^~~~~~
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p03845/C++/s3",0,False,,sample_verified,0.007
+s405948115,True,0,False,,0,False,,sample_verified,0.007
+s517586677,True,0,False,,0,False,,sample_verified,0.009
+s649683995,True,0,False,,-24,False,,sample_verified,5.041
+s389087110,True,0,False,,0,False,,sample_verified,0.007
+s224579213,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00546/C++/s224579213.cpp: In function ‘void dijkstra(int)’:
+/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00546/C++/s224579213.cpp:45:18: warning: overflow in conversion from ‘long long int’ to ‘int’ ch",0,False,,sample_verified,0.014
+s701815608,True,0,False,,0,False,,sample_verified,1.626
+s126216661,True,0,False,,0,False,,sample_verified,0.007
+s633662670,True,0,False,,0,False,"AT CG 
+",sample_verified,0.007
+s538571748,True,0,False,,0,False,,sample_verified,0.007
+s672171595,True,0,False,,0,False,,sample_verified,0.007
+s445238948,True,0,False,,0,False,,sample_verified,0.007
+s623321115,True,0,False,"/mnt/d/Dev/Github/transformer-defect-prediction/data/processed/sources/p00991/C++/s623321115.cpp:18:1: warning: ISO C++ forbids declaration of ‘main’ with no type [-Wreturn-type]
+   18 | main(){
+      | ^~~~
+",0,False,,sample_verified,0.02
+s932810501,True,0,False,,4,False,,sample_verified,0.008
