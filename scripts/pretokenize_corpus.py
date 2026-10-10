@@ -1,48 +1,50 @@
-"""Build the pre-tokenized cache and verify the DataLoader pipeline end-to-end.
+"""Build the 9-class pre-tokenized cache and verify the DataLoader pipeline end-to-end.
 
-Run locally, after `scripts/measure_tokenization.py` has already confirmed the
-corpus is reachable (not part of CI — needs the real corpus on disk and
-network access to the Hugging Face Hub on first run):
+Run locally (not part of CI: needs the real corpus on disk and, on first run,
+network access to the Hugging Face Hub):
 
     python scripts/pretokenize_corpus.py
 
-Truncation strategy: head-only, max_length=512 — an accepted, documented
-limitation given the measured 55.7% truncation rate (see
-docs/TOKENIZATION.md), not something this script tries to solve.
+Truncation strategy: head-only, max_length=512 - an accepted, documented
+limitation given the measured 55.7% truncation rate (see docs/TOKENIZATION.md).
 
 Reads:
-    data/processed/splits/sample_manifest_hashed.parquet
+    data/processed/splits/sample_manifest_9class.parquet   (M6)
     data/processed/sources/<rel_path>
+    reports/m6_class_split_counts.csv                       (verification only)
 
 Writes:
-    data/processed/tokenized/train.parquet
-    data/processed/tokenized/val.parquet
-    data/processed/tokenized/test.parquet
+    data/processed/tokenized_9class/{train,val,test}.parquet
+
+Exits non-zero if the cache's per-class, per-split counts differ from the
+committed M6 count table.
 """
 
 from __future__ import annotations
 
 import pandas as pd
 
+from sdp.config import PROJECT_ROOT
 from sdp.data.dataset import (
-    MANIFEST_PATH,
+    MANIFEST_9CLASS_PATH,
     SOURCES_DIR,
-    TOKENIZED_CACHE_DIR,
+    TOKENIZED_9CLASS_DIR,
     build_dataloaders,
     build_tokenized_cache,
     write_tokenized_cache,
 )
-from sdp.data.taxonomy import COARSE_ORDER
+from sdp.data.taxonomy import ID_TO_LEAF, LEAF_ORDER
 from sdp.data.tokenization import DEFAULT_MAX_LENGTH, load_tokenizer
+
+M6_COUNTS_CSV = PROJECT_ROOT / "reports" / "m6_class_split_counts.csv"
 
 
 def main() -> None:
-    if not MANIFEST_PATH.exists():
-        raise SystemExit(f"manifest not found: {MANIFEST_PATH}")
-    if not SOURCES_DIR.exists():
-        raise SystemExit(f"extracted sources not found: {SOURCES_DIR}")
+    for required in (MANIFEST_9CLASS_PATH, SOURCES_DIR, M6_COUNTS_CSV):
+        if not required.exists():
+            raise SystemExit(f"not found: {required}")
 
-    manifest = pd.read_parquet(MANIFEST_PATH)
+    manifest = pd.read_parquet(MANIFEST_9CLASS_PATH)
     print(f"Manifest rows: {len(manifest):,}")
 
     print("Loading microsoft/codebert-base tokenizer...")
@@ -54,18 +56,14 @@ def main() -> None:
     )
     cache_df = build_tokenized_cache(tokenizer, manifest)
 
-    paths = write_tokenized_cache(cache_df, TOKENIZED_CACHE_DIR)
+    paths = write_tokenized_cache(cache_df, TOKENIZED_9CLASS_DIR)
     print("\nWrote per-split tokenized caches:")
     for split, path in paths.items():
         n = (cache_df["split"] == split).sum()
         print(f"  {split:6} {path}  ({n:,} rows)")
 
-    # --- End-to-end sanity check: build the real DataLoaders and pull one
-    # batch from each, so this single script run is the evidence for M3's
-    # exit criteria ("a DataLoader for each split produces correctly shaped,
-    # correctly labelled batches"), not just the cache files existing.
     print(f"\npad_token_id: {tokenizer.pad_token_id}")
-    loaders = build_dataloaders(TOKENIZED_CACHE_DIR, pad_token_id=tokenizer.pad_token_id)
+    loaders = build_dataloaders(TOKENIZED_9CLASS_DIR, pad_token_id=tokenizer.pad_token_id)
 
     print("\n=== DataLoader sanity check (one batch per split) ===")
     for split, loader in loaders.items():
@@ -76,10 +74,27 @@ def main() -> None:
             f"labels={batch['labels'].tolist()}"
         )
 
-    print("\n=== Per-split, per-class row counts (Tier-1) ===")
-    counts = cache_df.groupby(["split", "label"]).size().unstack(fill_value=0)
-    counts.columns = [COARSE_ORDER[i] for i in counts.columns]
-    print(counts.to_string())
+    print("\n=== Per-split, per-class row counts (9-class) ===")
+    named = cache_df.assign(leaf=cache_df["label"].map(lambda i: ID_TO_LEAF[i].value))
+    actual = (
+        named.groupby(["leaf", "split"])
+        .size()
+        .unstack(fill_value=0)
+        .reindex(
+            index=[c.value for c in LEAF_ORDER],
+            columns=["train", "val", "test"],
+            fill_value=0,
+        )
+    )
+    print(actual.to_string())
+    print(f"total rows: {len(cache_df):,}")
+
+    expected = pd.read_csv(M6_COUNTS_CSV, index_col=0).drop(index="TOTAL", columns="total")
+    expected = expected.reindex(index=actual.index, columns=actual.columns)
+    ok = bool((actual.to_numpy() == expected.to_numpy()).all())
+    print(f"\n[{'PASS' if ok else 'FAIL'}] cache counts match {M6_COUNTS_CSV.name}")
+    if not ok:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

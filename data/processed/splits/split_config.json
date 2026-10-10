@@ -48,7 +48,18 @@
     "linker_pilot_note": "lower bound; re-measure with modern GCC at Tier 2"
   },
   "artifact_hashes": {
-    "sample_manifest_hashed.parquet": "5d86743bd387b529d6a638191bc22e60b8e2ca7d9c70c0acb1cdab8de9b07d59"
+    "sample_manifest_hashed.parquet": "5d86743bd387b529d6a638191bc22e60b8e2ca7d9c70c0acb1cdab8de9b07d59",
+    "sample_manifest_9class.parquet": "ea8b94c84618af17dbf58e79d49b28ddadffe47de6d76d010e2ead2b0aab0b8a"
   },
-  "environment_note": "Windows Defender real-time scanning must be excluded from data/ and the CodeNet archive directory, or per-file hashing and extraction throughput degrades by ~40x after the on-access scan cache fills (observed: 2,780 files/sec -> 70 files/sec)."
+  "environment_note": "Windows Defender real-time scanning must be excluded from data/ and the CodeNet archive directory, or per-file hashing and extraction throughput degrades by ~40x after the on-access scan cache fills (observed: 2,780 files/sec -> 70 files/sec).",
+  "m6_assembly": {
+    "milestone": "M6",
+    "generated_at_utc": "2026-10-08T11:17:35.685647+00:00",
+    "taxonomy_version": "1.0",
+    "manifest": "sample_manifest_9class.parquet",
+    "rows_retained": 46594,
+    "labelled_before_conflict_rule": 46731,
+    "conflicting_duplicate_removed": 137,
+    "cross_split_sha256_collisions": 0
+  }
 }

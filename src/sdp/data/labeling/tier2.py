@@ -284,6 +284,24 @@ def _first_error_line(stderr: str) -> str:
     return stderr.strip().splitlines()[0]
 
 
+_LOCATION_RE: Final[re.Pattern[str]] = re.compile(r":(\d+):(\d+): (?:fatal )?error:")
+
+
+def first_error_line_number(submission_id: str, stderr: str) -> int | None:
+    """1-based line number of the first diagnostic, if it is in the submission's own file.
+
+    Returns None when stderr is empty, when the first diagnostic comes from a
+    different file (e.g. a system header, whose line numbers say nothing about
+    the submission), or when the line carries no source location. Used only
+    for measurement (M6.5); it plays no part in classification.
+    """
+    line = _first_error_line(stderr)
+    if submission_id not in line:
+        return None
+    match = _LOCATION_RE.search(line)
+    return int(match.group(1)) if match else None
+
+
 # --------------------------------------------------------------------------- #
 # Accessor
 # --------------------------------------------------------------------------- #

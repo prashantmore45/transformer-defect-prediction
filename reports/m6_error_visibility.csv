@@ -1,0 +1,5 @@
+stratum,n,short_file,no_error_line,measured,fully_visible,fully_visible_pct,partly_visible,partly_visible_pct,not_visible,not_visible_pct,echo_no_snippet,echo_mismatch
+SYNTAX (all),6693,165,9,6519,5408,83.0,37,0.6,1074,16.5,5,10
+SYNTAX (missing-include only),573,15,2,556,547,98.4,1,0.2,8,1.4,0,0
+SYNTAX (excl. missing-include),6120,150,7,5963,4861,81.5,36,0.6,1066,17.9,5,10
+SEMANTIC,15281,292,313,14676,11383,77.6,122,0.8,3171,21.6,5,0

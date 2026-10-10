@@ -21,6 +21,7 @@ from sdp.data.dataset import (
     tokenize_example,
     write_tokenized_cache,
 )
+from sdp.data.taxonomy import NUM_LEAVES, leaf_id
 
 
 class StubTokenizer:
@@ -57,17 +58,17 @@ def _write_corpus(tmp_path: Path) -> tuple[pd.DataFrame, Path]:
     rows = [
         ("s1", "ERROR_FREE", "s1.cpp", "int main() { return 0; }", "train"),
         ("s2", "LOGICAL", "s2.cpp", "int main() { return 1; }", "train"),
-        ("s3", "COMPILE_ERROR", "s3.cpp", "int main() { return", "val"),
-        ("s4", "RUNTIME_ERROR", "s4.cpp", "int main() { int *p=0; return *p; }", "val"),
+        ("s3", "SYNTAX", "s3.cpp", "int main() { return", "val"),
+        ("s4", "SIGSEGV", "s4.cpp", "int main() { int *p=0; return *p; }", "val"),
         ("s5", "ERROR_FREE", "s5.cpp", "int main() { return 0; }", "test"),
     ]
     manifest_rows = []
-    for submission_id, coarse_label, filename, code, split in rows:
+    for submission_id, leaf_label, filename, code, split in rows:
         (sources / filename).write_text(code)
         manifest_rows.append(
             {
                 "submission_id": submission_id,
-                "coarse_label": coarse_label,
+                "leaf_id": leaf_id(leaf_label),
                 "rel_path": filename,
                 "split": split,
             }
@@ -75,17 +76,18 @@ def _write_corpus(tmp_path: Path) -> tuple[pd.DataFrame, Path]:
     return pd.DataFrame(manifest_rows), sources
 
 
-def test_tokenize_example_maps_coarse_label_to_id(tokenizer: StubTokenizer) -> None:
-    example = tokenize_example(tokenizer, "s1", "int main() { return 0; }", "ERROR_FREE")
+def test_tokenize_example_keeps_the_given_integer_label(tokenizer: StubTokenizer) -> None:
+    example = tokenize_example(tokenizer, "s1", "int main() { return 0; }", 4)
     assert example.submission_id == "s1"
     assert example.input_ids[0] == StubTokenizer.CLS_ID
     assert example.input_ids[-1] == StubTokenizer.SEP_ID
+    assert example.label == 4
     assert isinstance(example.label, int)
 
 
 def test_tokenize_example_applies_head_truncation(tokenizer: StubTokenizer) -> None:
     long_code = " ".join(f"tok{i}" for i in range(1000))
-    example = tokenize_example(tokenizer, "s1", long_code, "ERROR_FREE", max_length=10)
+    example = tokenize_example(tokenizer, "s1", long_code, 0, max_length=10)
     assert len(example.input_ids) == 10
     assert example.input_ids[-1] == StubTokenizer.SEP_ID  # forced SEP on cut
 
@@ -176,3 +178,33 @@ def test_build_dataloaders_respects_frozen_split(tmp_path: Path, tokenizer: Stub
 def test_build_dataloaders_missing_cache_raises(tmp_path: Path, tokenizer: StubTokenizer) -> None:
     with pytest.raises(FileNotFoundError):
         build_dataloaders(tmp_path / "does_not_exist", pad_token_id=tokenizer.pad_token_id)
+
+
+def test_build_tokenized_cache_emits_leaf_ids(tmp_path: Path, tokenizer: StubTokenizer) -> None:
+    manifest, sources = _write_corpus(tmp_path)
+    cache_df = build_tokenized_cache(tokenizer, manifest, sources_dir=sources)
+    labels = dict(zip(cache_df["submission_id"], cache_df["label"]))
+    assert labels == {
+        "s1": leaf_id("ERROR_FREE"),
+        "s2": leaf_id("LOGICAL"),
+        "s3": leaf_id("SYNTAX"),
+        "s4": leaf_id("SIGSEGV"),
+        "s5": leaf_id("ERROR_FREE"),
+    }
+
+
+def test_build_tokenized_cache_rejects_out_of_range_labels(
+    tmp_path: Path, tokenizer: StubTokenizer
+) -> None:
+    manifest, sources = _write_corpus(tmp_path)
+    manifest.loc[0, "leaf_id"] = NUM_LEAVES
+    with pytest.raises(ValueError):
+        build_tokenized_cache(tokenizer, manifest, sources_dir=sources)
+
+
+def test_build_tokenized_cache_requires_leaf_id_column(
+    tmp_path: Path, tokenizer: StubTokenizer
+) -> None:
+    manifest, sources = _write_corpus(tmp_path)
+    with pytest.raises(KeyError):
+        build_tokenized_cache(tokenizer, manifest.drop(columns="leaf_id"), sources_dir=sources)

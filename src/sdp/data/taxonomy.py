@@ -9,9 +9,11 @@ Two levels are defined:
     Coarse (Tier 1) — derived from CodeNet judge verdicts alone. 4 classes.
     Leaf  (Tiers 1-3) — the full nine-class taxonomy from the base paper.
 
-Only the coarse level is populated as of Milestone 2. The leaf level is declared
-now so that no downstream module needs refactoring when Tier 2 (compiler
-diagnostic parsing) and Tier 3 (sandboxed execution) are implemented.
+Both levels are populated as of Milestone 6: Tier 1 in M2, Tier 2 (compiler
+diagnostic parsing) in M4, Tier 3 (sandboxed execution) in M5, and the three
+assembled into one 9-class manifest in M6. The leaf level was declared up
+front so that no downstream module needed refactoring when Tiers 2 and 3
+arrived.
 
 Ordering rationale
 ------------------

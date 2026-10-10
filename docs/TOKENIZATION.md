@@ -1,4 +1,4 @@
-# Tokenization & Training Data Pipeline (M3)
+# Tokenization & Training Data Pipeline (M3, updated in M6)
 
 ## Tokenizer
 
@@ -45,6 +45,12 @@ or highly repetitive. It doesn't affect the pipeline (anything over 512 is
 truncated identically regardless of how far over it is) but is worth a
 one-line EDA mention if raised at viva.
 
+**Update (M6):** the figures above describe the 74,850-file working corpus.
+The 9-class training corpus is the 46,594 files retained by M6, where
+49.6% of files exceed 512 tokens. The rate differs a lot between classes
+(23.6% for SIGFPE to 61.3% for ERROR_FREE); the per-class table is in
+`docs/ASSEMBLY.md`.
+
 ## Decision: truncation strategy — head-only, kept
 
 **Decided 2026-09-25, with the 55.7% truncation-rate measurement in hand —
@@ -72,10 +78,17 @@ logic — and the actual bug — lives.
   head+tail. Deciding this from evidence rather than upfront applies the same
   discipline the Master Plan already applies to the classification-head
   decision (§1, guardrail 3).
+- **Update (M6):** M6 measured how often a compile error's first line lies
+  outside the 510 content tokens the model sees: about 18% of SYNTAX files
+  (excluding the missing-include branch) and 22% of SEMANTIC files
+  (`docs/ASSEMBLY.md`). These numbers are the reference for testing the
+  revisit trigger in M8. The strategy itself is unchanged.
 
 Implementation: `sdp.data.tokenization.head_truncate` — keeps the first
 `max_length` tokens of the `[CLS] ... [SEP]`-wrapped sequence; if cut, forces
-the final kept token to `[SEP]`.
+the final kept token to `[SEP]`. A sequence of at most `max_length` tokens is
+returned unchanged, so a cached length of exactly 512 does not by itself mean
+the file was truncated; M3's truncation rate is defined as `token_length > 512`.
 
 ## Decision: comment/whitespace preprocessing — not applied
 
@@ -95,34 +108,40 @@ not before.
 
 - `scripts/measure_tokenization.py` — one-shot measurement (produced the
   table above); not part of the training pipeline itself.
-- `scripts/pretokenize_corpus.py` — tokenizes the full corpus once
+- `scripts/pretokenize_corpus.py` — tokenizes the 9-class manifest once
   (head-only truncation, `max_length=512`) and writes a per-split cache:
-  `data/processed/tokenized/{train,val,test}.parquet`
+  `data/processed/tokenized_9class/{train,val,test}.parquet`
   (`submission_id, input_ids, label`). Pre-tokenizing once — rather than
   tokenizing in `Dataset.__getitem__` or once per epoch — avoids repeating
-  ~75,000 BPE tokenization calls for ids that never change between epochs;
-  only the sampling order does.
+  tens of thousands of BPE tokenization calls for ids that never change
+  between epochs; only the sampling order does. The 4-class cache that M3
+  wrote to `data/processed/tokenized/` is superseded.
 - `sdp.data.dataset.SourceCodeDataset` — reads one split's cache; emits
   `{submission_id, input_ids, label}` per row.
 - `sdp.data.dataset.collate_batch` — dynamic padding to the batch's own
-  longest sequence, not a fixed 512. Given 55.7% of files already hit the
-  512 cap after truncation, many batches need close-to-full-length padding
-  regardless — but for the remaining ~44% of files (all shorter, some far
-  shorter), padding to the batch max still avoids wasted compute versus
-  always padding to 512. It costs nothing extra to include.
+  longest sequence, not a fixed 512. About half of the files (49.6% of the
+  9-class corpus) already hit the 512 cap after truncation, so many batches
+  need close-to-full-length padding regardless — but for the remaining ~50%
+  of files (all shorter, some far shorter), padding to the batch max still
+  avoids wasted compute versus always padding to 512. It costs nothing extra
+  to include.
 - `sdp.data.dataset.build_dataloaders` — wires the three frozen M2 splits
   into `DataLoader`s; `train` shuffles per epoch, `val`/`test` do not. No
   split is recomputed anywhere in this module — membership is entirely
   inherited from the M2-frozen `split` column.
-- Labels emitted are **Tier-1** (`ERROR_FREE`/`COMPILE_ERROR`/`RUNTIME_ERROR`/
-  `LOGICAL`, via `sdp.data.taxonomy.COARSE_TO_ID`). The 9-class leaf labels
-  don't exist yet — M6 extends this same pipeline to emit them once M4
-  (Tier 2) and M5 (Tier 3) produce the leaf-level labels.
+- Labels emitted (as of M6) are the **9-class leaf IDs** from the 9-class
+  manifest's `leaf_id` column (`sdp.data.taxonomy.leaf_id`), validated to lie
+  in `[0, 9)` before tokenization starts. `tokenize_example` takes a
+  ready-made integer label and knows nothing about any taxonomy. M3 emitted
+  the 4 Tier-1 coarse IDs; see `docs/ASSEMBLY.md` for how the 9-class
+  manifest was assembled.
 
 ## Verification
 
 `scripts/pretokenize_corpus.py` ends with an end-to-end sanity check: it
-builds the real `DataLoader`s and pulls one batch from each split, printing
-tensor shapes and the per-split/per-class row counts. This is the evidence
-for M3's exit criterion — a `DataLoader` per split producing correctly
-shaped, correctly labelled batches — not just the cache files existing.
+builds the real `DataLoader`s, pulls one batch from each split, prints tensor
+shapes and the per-split/per-class row counts, and exits non-zero unless those
+counts equal the committed `reports/m6_class_split_counts.csv`. This is the
+evidence for the exit criterion — a `DataLoader` per split producing
+correctly shaped, correctly labelled batches that match the frozen manifest —
+not just the cache files existing.
