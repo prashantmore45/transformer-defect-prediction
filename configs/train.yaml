@@ -1,0 +1,37 @@
+# Fine-tuning configuration for the 9-class CodeBERT classifier (Milestone 7).
+#
+# This file is the single place every training value lives. TrainConfig
+# (src/sdp/training/config.py) requires exactly these keys: a missing or
+# misspelled key is an error, never a silent default.
+#
+# YAML gotcha: write floats with a decimal point (2.0e-5). PyYAML reads 2e-5 as TEXT.
+
+# --- Run identity and paths ---
+run_name: codebert-9class-v1
+seed: 42
+output_root: runs                           # git-ignored; checkpoints and logs go here
+cache_dir: data/processed/tokenized_9class  # frozen M6 token cache (head-truncated at 512)
+
+# --- Model ---
+model_name: microsoft/codebert-base
+dropout: 0.1                                # on the [CLS] vector, before the linear head
+
+# --- Optimization ---
+learning_rate: 2.0e-5
+weight_decay: 0.01
+warmup_ratio: 0.1                           # fraction of total steps spent warming up
+max_epochs: 3
+patience: 2                                 # stop after this many epochs without val macro-F1 gain
+max_grad_norm: 1.0
+
+# --- Batching (starting values; the local GPU benchmark confirms or changes them) ---
+micro_batch_size: 2                         # sequences per forward/backward pass
+grad_accum_steps: 8                         # micro-batches summed per optimizer step (2 x 8 = 16)
+eval_batch_size: 8
+
+# --- Precision and memory ---
+precision: bf16                             # bf16 | fp16 | fp32
+gradient_checkpointing: false
+
+# --- Loss ---
+class_weight_power: 0.5                     # weight ~ count^-power: 0 none, 0.5 sqrt, 1 full inverse
