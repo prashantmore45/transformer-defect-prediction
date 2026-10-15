@@ -1,0 +1,13 @@
+{
+  "python": "3.12.10",
+  "torch": "2.5.1+cu124",
+  "cuda_build": "12.4",
+  "transformers": "4.46.3",
+  "gpu": "NVIDIA GeForce RTX 3050 A Laptop GPU",
+  "total_vram_mb": 4093.5,
+  "free_vram_mb_at_start": 3234.2,
+  "bf16_supported": true,
+  "precision": "bf16",
+  "effective_batch_size": 16,
+  "headroom_target_mb": 400.0
+}

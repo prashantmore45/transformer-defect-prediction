@@ -1,0 +1,5 @@
+trial,micro_batch_size,checkpointing,accum,minutes_requested,status,windows,steady_samples_per_sec,loss_finite,temp_max_c,sm_clock_first_mhz,sm_clock_last_mhz,power_median_w,mem_used_max_mb,eval_samples_per_sec,projected_train_min,projected_val_min,projected_epoch_min,gate
+mb2_plain_short,2,False,8,3.0,ok,6,23.582,True,80.0,2475.0,2460.0,45.29,2907.0,,,,,
+mb16_ckpt_short,16,True,1,3.0,ok,6,20.359,True,82.0,2415.0,2415.0,48.94,2569.0,,,,,
+mb4_ckpt_short,4,True,4,3.0,ok,6,19.944,True,85.0,2430.0,2385.0,49.33,2591.0,,,,,
+mb2_plain_long,2,False,8,10.0,ok,20,23.566,True,86.0,2460.0,2460.0,47.39,2925.0,102.88,20.127,1.458,21.584,"<= 2 h/epoch: up to 5 epochs, early stopping; extra seeds realistic"

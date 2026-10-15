@@ -1,0 +1,10 @@
+mode,checkpointing,micro_batch_size,accum,status,fits,samples_per_sec,peak_allocated_mb,peak_reserved_mb,free_after_mb,attn
+train,False,1,16,ok,True,18.08,2331.22,2530.0,682.2,sdpa
+train,False,2,8,ok,True,22.92,2548.6,2716.0,496.2,sdpa
+train,False,4,4,ok,False,25.78,2965.13,3138.0,74.2,sdpa
+train,True,4,4,ok,True,20.47,2267.81,2456.0,756.2,sdpa
+train,True,8,2,ok,True,20.11,2351.39,2560.0,652.2,sdpa
+train,True,16,1,ok,True,21.08,2158.8,2464.0,748.2,sdpa
+eval,False,8,0,ok,True,110.46,767.27,806.0,2406.2,sdpa
+eval,False,16,0,ok,True,106.4,853.24,938.0,2274.2,sdpa
+eval,False,32,0,ok,True,108.11,1030.42,1154.0,2058.2,sdpa

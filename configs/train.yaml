@@ -20,11 +20,13 @@ dropout: 0.1                                # on the [CLS] vector, before the li
 learning_rate: 2.0e-5
 weight_decay: 0.01
 warmup_ratio: 0.1                           # fraction of total steps spent warming up
-max_epochs: 3
+max_epochs: 5                               # early stopping usually ends sooner (~22 min/epoch)
 patience: 2                                 # stop after this many epochs without val macro-F1 gain
 max_grad_norm: 1.0
 
-# --- Batching (starting values; the local GPU benchmark confirms or changes them) ---
+# --- Batching (confirmed by the local GPU benchmark, RTX 3050 Laptop 4 GB) ---
+# mb2 without checkpointing sustained 23.6 samples/s over 10 minutes; worst-case free
+# VRAM was 496 MB (target >= 400 MB). See reports/m7_gpu_sustain_summary.csv.
 micro_batch_size: 2                         # sequences per forward/backward pass
 grad_accum_steps: 8                         # micro-batches summed per optimizer step (2 x 8 = 16)
 eval_batch_size: 8
