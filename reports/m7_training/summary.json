@@ -1,0 +1,7 @@
+{
+  "epochs_run": 5,
+  "best_epoch": 4,
+  "best_val_macro_f1": 0.35420059842439877,
+  "stopped_early": false,
+  "finished": true
+}
