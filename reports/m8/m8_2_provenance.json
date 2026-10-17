@@ -1,0 +1,25 @@
+{
+  "milestone": "M8.2",
+  "written_at_utc": "2026-10-17T17:12:47Z",
+  "bootstrap": {
+    "unit": "problem",
+    "n_boot": 2000,
+    "seed": 42,
+    "level": 0.95,
+    "method": "percentile"
+  },
+  "manifest_sha256": "ea8b94c84618af17dbf58e79d49b28ddadffe47de6d76d010e2ead2b0aab0b8a",
+  "dump_sha256": {
+    "test_predictions.parquet": "4a537063ba351948ed24dc2e5b26c28515273abcb56b9199e0490e74ad6e443a",
+    "val_predictions.parquet": "1d7c736eae3a1be9cda26300934d04c223cb0eb270c24609fc3afc903826c046"
+  },
+  "m8_1_best_pt_sha256": "a8eb6254c41536b99d32c3e921f1bab53f3d07a183b6a58a916c7af719aafddd",
+  "rows": {
+    "test": 9139,
+    "val": 8997
+  },
+  "problems": {
+    "test": 1251,
+    "val": 1251
+  }
+}

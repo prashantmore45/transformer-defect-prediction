@@ -1,0 +1,5 @@
+metric,value,ci_low,ci_high
+parent_accuracy,0.422913,0.412412,0.433554
+parent_macro_f1,0.39613,0.384237,0.408323
+within_parent_error_share,0.072459,0.065724,0.079653
+within_parent_error_share_if_uniform,0.158459,0.155416,0.16162
