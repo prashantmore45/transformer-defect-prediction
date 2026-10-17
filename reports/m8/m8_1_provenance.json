@@ -1,0 +1,29 @@
+{
+  "milestone": "M8.1",
+  "written_at_utc": "2026-10-17T16:09:42Z",
+  "best_pt_sha256": "a8eb6254c41536b99d32c3e921f1bab53f3d07a183b6a58a916c7af719aafddd",
+  "manifest_sha256": "ea8b94c84618af17dbf58e79d49b28ddadffe47de6d76d010e2ead2b0aab0b8a",
+  "best_epoch": 4,
+  "stored_val_macro_f1": 0.35420059842439877,
+  "validation_gate": {
+    "macro_f1": 0.35420059842439877,
+    "accuracy": 0.3810158941869512,
+    "expected_macro_f1": 0.35420059842439877,
+    "abs_difference": 0.0,
+    "tolerance": 0.002,
+    "passed": true
+  },
+  "precision": "bf16",
+  "eval_batch_size": 8,
+  "device": "NVIDIA GeForce RTX 3050 A Laptop GPU",
+  "torch": "2.5.1+cu124",
+  "transformers": "4.46.3",
+  "rows": {
+    "val": 8997,
+    "test": 9139
+  },
+  "dump_sha256": {
+    "val_predictions.parquet": "1d7c736eae3a1be9cda26300934d04c223cb0eb270c24609fc3afc903826c046",
+    "test_predictions.parquet": "4a537063ba351948ed24dc2e5b26c28515273abcb56b9199e0490e74ad6e443a"
+  }
+}
