@@ -68,11 +68,11 @@ from sdp.evaluation.metrics import macro_f1
 BASELINE_COLUMNS: tuple[str, ...] = ("submission_id", "y_true", "y_pred")
 
 #: Regularisation strengths tried for logistic regression (smaller C = stronger penalty).
-DEFAULT_C_GRID: tuple[float, ...] = (0.1, 1.0, 10.0)
+DEFAULT_C_GRID: tuple[float, ...] = (0.1, 1.0, 10.0, 100.0)
 TFIDF_NGRAM_RANGE: tuple[int, int] = (1, 2)
 TFIDF_MIN_DF = 2
 TFIDF_MAX_FEATURES = 300_000
-LOGREG_MAX_ITER = 300
+LOGREG_MAX_ITER = 1000
 
 
 def token_lengths(input_ids: Iterable[Sequence[int]]) -> np.ndarray:
@@ -205,6 +205,7 @@ class TfidfLogisticBaseline:
         self._model: LogisticRegression | None = None
         self.best_c: float | None = None
         self.validation_scores: dict[float, float] = {}
+        self.n_iter_by_c: dict[float, int] = {}
 
     def fit(
         self,
@@ -233,15 +234,18 @@ class TfidfLogisticBaseline:
         best_model: LogisticRegression | None = None
         best_score = float("-inf")
         scores: dict[float, float] = {}
+        n_iters: dict[float, int] = {}
         for c in self._c_grid:
             model = LogisticRegression(C=c, class_weight="balanced", max_iter=self._max_iter)
             model.fit(x_train, y_train)
+            n_iters[c] = int(np.max(model.n_iter_))
             score = macro_f1(y_val, model.predict(x_val).astype(np.int64))
             scores[c] = score
             if best_model is None or score > best_score:  # strict: a tie keeps the earliest C
                 best_model, best_score, self.best_c = model, score, c
         self._model = best_model
         self.validation_scores = scores
+        self.n_iter_by_c = n_iters
         return self
 
     def _require_fitted(self) -> tuple[TfidfVectorizer, LogisticRegression]:

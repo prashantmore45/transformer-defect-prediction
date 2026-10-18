@@ -153,6 +153,8 @@ def test_tfidf_logistic_recovers_the_signal_token():
     assert model.best_c in model.validation_scores
     assert model.n_features > 0
     assert model.converged
+    assert set(model.n_iter_by_c) == {0.5, 5.0}
+    assert all(count >= 1 for count in model.n_iter_by_c.values())
 
 
 def test_a_tie_between_c_values_keeps_the_earliest():
