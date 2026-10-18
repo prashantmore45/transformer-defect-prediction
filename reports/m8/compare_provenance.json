@@ -1,0 +1,33 @@
+{
+  "milestone": "M8.3",
+  "written_at_utc": "2026-10-18T10:37:57Z",
+  "reference": "codebert",
+  "bootstrap": {
+    "unit": "problem",
+    "n_boot": 2000,
+    "seed": 42,
+    "level": 0.95,
+    "method": "percentile, paired (same draws for every system)"
+  },
+  "manifest_sha256": "ea8b94c84618af17dbf58e79d49b28ddadffe47de6d76d010e2ead2b0aab0b8a",
+  "verified_input_sha256": {
+    "val_predictions.parquet": "1d7c736eae3a1be9cda26300934d04c223cb0eb270c24609fc3afc903826c046",
+    "baseline_tfidf_logreg_val.parquet": "5b689d70a8ae115047a4c000790ee2f417586d05e31d6600570fde66bf333b8a",
+    "baseline_length_only_val.parquet": "c8d782b0b73d572197f11ee3f50986415aed44341c20c2e85548133defc24740",
+    "baseline_stratified_random_val.parquet": "33390d0f5d1618c587e69e1a2fe4b49220133e40d263380c60447abe19ec241d",
+    "baseline_majority_val.parquet": "1c1995dcfd0f03c5850297f3a95b683ebc26980d57faaeaf7e909651920dc70e",
+    "test_predictions.parquet": "4a537063ba351948ed24dc2e5b26c28515273abcb56b9199e0490e74ad6e443a",
+    "baseline_tfidf_logreg_test.parquet": "48d9a4ad9eb8e9528a13aee139abf2667b6aff9b83b62f6a0caa471be57aa401",
+    "baseline_length_only_test.parquet": "1d44cdea2f3fd35e937a8620418a8e0c8b0c55ceb0c3d7af35e0cf3766af4c43",
+    "baseline_stratified_random_test.parquet": "814b6fa732d8615f1d92fa7231b35dc3b22196f58739ffb0f98ffdb06e852b6e",
+    "baseline_majority_test.parquet": "d196c70223d7782f47ead9ef2fd068f97004d200273b4b4c9e09ad1d82ec8f31"
+  },
+  "rows": {
+    "val": 8997,
+    "test": 9139
+  },
+  "problems": {
+    "val": 1251,
+    "test": 1251
+  }
+}

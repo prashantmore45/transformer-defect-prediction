@@ -1,0 +1,9 @@
+versus,metric,value,ci_low,ci_high,frac_draws_not_ahead
+tfidf_logreg,accuracy,0.034139,0.022272,0.046672,0.0
+tfidf_logreg,macro_f1,0.091164,0.063161,0.11784,0.0
+length_only,accuracy,0.204836,0.192407,0.217985,0.0
+length_only,macro_f1,0.278316,0.257273,0.297996,0.0
+stratified_random,accuracy,0.151111,0.138181,0.164518,0.0
+stratified_random,macro_f1,0.241939,0.218556,0.263452,0.0
+majority,accuracy,0.050115,0.036956,0.063672,0.0
+majority,macro_f1,0.300271,0.277156,0.320671,0.0

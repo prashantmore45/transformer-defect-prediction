@@ -1,0 +1,11 @@
+system,metric,value,ci_low,ci_high
+codebert,accuracy,0.377831,0.367894,0.388579
+codebert,macro_f1,0.355121,0.332192,0.375407
+tfidf_logreg,accuracy,0.343692,0.333877,0.353563
+tfidf_logreg,macro_f1,0.263957,0.240419,0.288232
+length_only,accuracy,0.172995,0.165868,0.180175
+length_only,macro_f1,0.076805,0.070425,0.084097
+stratified_random,accuracy,0.226721,0.218556,0.235379
+stratified_random,macro_f1,0.113182,0.107051,0.119496
+majority,accuracy,0.327716,0.318469,0.3368
+majority,macro_f1,0.05485,0.053677,0.055988
