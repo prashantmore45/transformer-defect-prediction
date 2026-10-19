@@ -1,0 +1,5 @@
+system,slice,n_files,n_problems,accuracy,accuracy_lo,accuracy_hi,macro_recall,macro_recall_lo,macro_recall_hi,n_classes_scored
+codebert,seen_user,6867,1226,0.372215,0.360676,0.384494,0.320786,0.29255,0.350486,9
+codebert,unseen_user,2272,731,0.394806,0.376118,0.414302,0.429346,0.39315,0.464432,9
+tfidf_logreg,seen_user,6867,1226,0.342362,0.331377,0.353773,0.244357,0.22029,0.268582,9
+tfidf_logreg,unseen_user,2272,731,0.347711,0.327034,0.367518,0.287523,0.245285,0.331432,9

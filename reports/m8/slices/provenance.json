@@ -1,0 +1,101 @@
+{
+  "milestone": "M8.4",
+  "written_at_utc": "2026-10-19T12:41:56Z",
+  "bootstrap": {
+    "unit": "problem",
+    "n_boot": 2000,
+    "seed": 42,
+    "level": 0.95,
+    "method": "percentile; shared draws across all slices and systems"
+  },
+  "min_class_support": 20,
+  "input_sha256": {
+    "manifest": "ea8b94c84618af17dbf58e79d49b28ddadffe47de6d76d010e2ead2b0aab0b8a",
+    "test_predictions.parquet": "4a537063ba351948ed24dc2e5b26c28515273abcb56b9199e0490e74ad6e443a",
+    "baseline_tfidf_logreg_test.parquet": "48d9a4ad9eb8e9528a13aee139abf2667b6aff9b83b62f6a0caa471be57aa401"
+  },
+  "macro_recall_classes": {
+    "length": [
+      "ERROR_FREE",
+      "SYNTAX",
+      "SEMANTIC",
+      "SIGSEGV",
+      "LOGICAL"
+    ],
+    "confidence": [
+      "ERROR_FREE",
+      "SYNTAX",
+      "SEMANTIC",
+      "SIGSEGV",
+      "SIGABRT",
+      "LOGICAL"
+    ],
+    "user_overlap": [
+      "ERROR_FREE",
+      "SYNTAX",
+      "SEMANTIC",
+      "LINKER",
+      "SIGSEGV",
+      "SIGFPE",
+      "SIGABRT",
+      "NZEC",
+      "LOGICAL"
+    ],
+    "runtime_input": [
+      "SIGSEGV",
+      "SIGFPE",
+      "SIGABRT",
+      "NZEC"
+    ],
+    "visibility": [
+      "SYNTAX",
+      "SEMANTIC"
+    ]
+  },
+  "slice_sizes_files": {
+    "length": {
+      "<=128": 686,
+      "129-256": 1290,
+      "257-512": 2105,
+      "513-1024": 2540,
+      ">1024": 2518
+    },
+    "confidence": {
+      "Q1 (lowest)": 1828,
+      "Q2": 1828,
+      "Q3": 1827,
+      "Q4": 1828,
+      "Q5 (highest)": 1828
+    },
+    "user_overlap": {
+      "seen_user": 6867,
+      "unseen_user": 2272
+    },
+    "runtime_input": {
+      "runtime_all": 839,
+      "runtime_verified_only": 744,
+      "runtime_empty_stdin": 65
+    },
+    "visibility": {
+      "visible_untruncated": 2035,
+      "visible_truncated": 1064,
+      "not_fully_visible": 992
+    }
+  },
+  "notes": {
+    "length": {},
+    "confidence": {
+      "quintile_cuts": [
+        0.3462293151210672,
+        0.3926798440279334,
+        0.44278554490522143,
+        0.5419163969794758
+      ]
+    },
+    "user_overlap": {},
+    "runtime_input": {},
+    "visibility": {
+      "hidden_error_but_untruncated": 0
+    }
+  }
+}

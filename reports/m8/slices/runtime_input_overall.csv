@@ -1,0 +1,7 @@
+system,slice,n_files,n_problems,accuracy,accuracy_lo,accuracy_hi,macro_recall,macro_recall_lo,macro_recall_hi,n_classes_scored
+codebert,runtime_all,839,454,0.33969,0.298994,0.382256,0.419722,0.368339,0.471579,4
+codebert,runtime_verified_only,744,409,0.340054,0.298773,0.384515,0.41562,0.362577,0.470233,4
+codebert,runtime_empty_stdin,65,31,0.292308,0.142857,0.44186,0.543572,0.228409,0.65955,4
+tfidf_logreg,runtime_all,839,454,0.194279,0.161935,0.226859,0.199014,0.155945,0.239424,4
+tfidf_logreg,runtime_verified_only,744,409,0.198925,0.165348,0.232222,0.205839,0.160994,0.248116,4
+tfidf_logreg,runtime_empty_stdin,65,31,0.107692,0.029851,0.212121,0.05221,0.014685,0.129411,4

@@ -1,0 +1,7 @@
+system,slice,n_files,pred_ERROR_FREE,pred_COMPILE_ERROR,pred_RUNTIME_ERROR,pred_LOGICAL
+codebert,visible_untruncated,2035,0.073219,0.571499,0.100737,0.254545
+codebert,visible_truncated,1064,0.180451,0.425752,0.071429,0.322368
+codebert,not_fully_visible,992,0.326613,0.166331,0.061492,0.445565
+tfidf_logreg,visible_untruncated,2035,0.123342,0.639803,0.096806,0.140049
+tfidf_logreg,visible_truncated,1064,0.219925,0.478383,0.058271,0.243421
+tfidf_logreg,not_fully_visible,992,0.354839,0.28629,0.082661,0.27621

@@ -1,0 +1,7 @@
+system,slice,n_files,n_problems,accuracy,accuracy_lo,accuracy_hi,macro_recall,macro_recall_lo,macro_recall_hi,n_classes_scored
+codebert,visible_untruncated,2035,614,0.464865,0.441446,0.489022,0.443653,0.421056,0.467102,2
+codebert,visible_truncated,1064,587,0.353383,0.321889,0.385652,0.328609,0.293932,0.362501,2
+codebert,not_fully_visible,992,557,0.118952,0.098059,0.14099,0.084538,0.069481,0.100137,2
+tfidf_logreg,visible_untruncated,2035,614,0.447666,0.426211,0.470282,0.443921,0.420818,0.468561,2
+tfidf_logreg,visible_truncated,1064,587,0.361842,0.330533,0.393658,0.338024,0.303813,0.372165,2
+tfidf_logreg,not_fully_visible,992,557,0.184476,0.160231,0.210983,0.159436,0.13485,0.187088,2

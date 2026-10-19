@@ -1,0 +1,13 @@
+system,slice,class,support,recall,recall_lo,recall_hi
+codebert,visible_untruncated,SYNTAX,719,0.371349,0.336605,0.409267
+codebert,visible_untruncated,SEMANTIC,1316,0.515957,0.485348,0.547257
+codebert,visible_truncated,SYNTAX,265,0.279245,0.222222,0.335696
+codebert,visible_truncated,SEMANTIC,799,0.377972,0.340116,0.417258
+codebert,not_fully_visible,SYNTAX,246,0.01626,0.003759,0.033476
+codebert,not_fully_visible,SEMANTIC,746,0.152815,0.126184,0.181956
+tfidf_logreg,visible_untruncated,SYNTAX,719,0.431154,0.392183,0.470282
+tfidf_logreg,visible_untruncated,SEMANTIC,1316,0.456687,0.428783,0.485842
+tfidf_logreg,visible_truncated,SYNTAX,265,0.290566,0.230488,0.350598
+tfidf_logreg,visible_truncated,SEMANTIC,799,0.385482,0.348623,0.424507
+tfidf_logreg,not_fully_visible,SYNTAX,246,0.109756,0.071999,0.152256
+tfidf_logreg,not_fully_visible,SEMANTIC,746,0.209115,0.179485,0.240123
