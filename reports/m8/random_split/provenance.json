@@ -1,0 +1,36 @@
+{
+  "milestone": "M8.5",
+  "written_at_utc": "2026-10-20T10:59:19Z",
+  "split_column": "random_split",
+  "run_name": "codebert-9class-random-split-v1",
+  "best_pt_sha256": "9f9e30691e4f63b64b1002073d84503925d90cfde31b0b1c708db61905982300",
+  "manifest_sha256": "ea8b94c84618af17dbf58e79d49b28ddadffe47de6d76d010e2ead2b0aab0b8a",
+  "token_cache_sha256": {
+    "train.parquet": "ee971d5caac22053f1529a980ef77b4e1be494b8888deffa266a8171935a3d44",
+    "val.parquet": "03bf46cc86a6073a9c06d759a82f870f9621612fc4e8e89665954e8a8bdbba3a",
+    "test.parquet": "c9c35417db805d365b56856612cdd4aa419b1b3de1618498e38306b7db4805c6"
+  },
+  "best_epoch": 5,
+  "stored_val_macro_f1": 0.4064022467017681,
+  "validation_gate": {
+    "macro_f1": 0.4064022467017681,
+    "accuracy": 0.3969100206723969,
+    "expected_macro_f1": 0.4064022467017681,
+    "abs_difference": 0.0,
+    "tolerance": 0.002,
+    "passed": true
+  },
+  "precision": "bf16",
+  "eval_batch_size": 8,
+  "device": "NVIDIA GeForce RTX 3050 A Laptop GPU",
+  "torch": "2.5.1+cu124",
+  "transformers": "4.46.3",
+  "rows": {
+    "val": 9191,
+    "test": 9195
+  },
+  "dump_sha256": {
+    "val_predictions.parquet": "93099f64e7576157ae61d2ae61271bfec6f3d972b7f208333b9dd0c763edf2c0",
+    "test_predictions.parquet": "b6789df193f943f3c31d0949d0933bc02b5a6d392a19f7083c984b9b1dcd27cc"
+  }
+}

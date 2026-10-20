@@ -1,0 +1,48 @@
+{
+  "config": {
+    "run_name": "codebert-9class-random-split-v1",
+    "seed": 42,
+    "output_root": "runs",
+    "cache_dir": "data/processed/tokenized_9class_random",
+    "model_name": "microsoft/codebert-base",
+    "dropout": 0.1,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "max_epochs": 5,
+    "patience": 2,
+    "max_grad_norm": 1.0,
+    "micro_batch_size": 2,
+    "grad_accum_steps": 8,
+    "eval_batch_size": 8,
+    "precision": "bf16",
+    "gradient_checkpointing": false,
+    "class_weight_power": 0.5
+  },
+  "class_counts": [
+    6023,
+    4069,
+    9251,
+    214,
+    1291,
+    341,
+    702,
+    276,
+    6041
+  ],
+  "class_weights": [
+    0.8503429889678955,
+    1.0345624685287476,
+    0.6861296892166138,
+    4.511216640472412,
+    1.8366966247558594,
+    3.5737433433532715,
+    2.490760564804077,
+    3.9723362922668457,
+    0.8490751385688782
+  ],
+  "taxonomy_version": "1.0",
+  "steps_per_epoch": 1763,
+  "total_steps": 8815,
+  "warmup_steps": 881
+}
