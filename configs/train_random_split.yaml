@@ -1,0 +1,39 @@
+# Fine-tuning configuration for the M8.5 comparison model (random-split training).
+#
+# IDENTICAL to configs/train.yaml except run_name and cache_dir. The only intended difference
+# between the two runs is WHICH files are in train/val/test: this model uses the deliberately
+# unsafe submission-level split (manifest column random_split), so the gap between the two
+# models measures the effect of leakage. Keep every other value in sync with train.yaml
+# (tests/test_random_split_config.py fails if they drift).
+#
+# YAML gotcha: write floats with a decimal point (2.0e-5). PyYAML reads 2e-5 as TEXT.
+
+# --- Run identity and paths ---
+run_name: codebert-9class-random-split-v1
+seed: 42
+output_root: runs                                    # git-ignored
+cache_dir: data/processed/tokenized_9class_random    # built by scripts/build_random_split_cache.py
+
+# --- Model ---
+model_name: microsoft/codebert-base
+dropout: 0.1
+
+# --- Optimization ---
+learning_rate: 2.0e-5
+weight_decay: 0.01
+warmup_ratio: 0.1
+max_epochs: 5
+patience: 2
+max_grad_norm: 1.0
+
+# --- Batching ---
+micro_batch_size: 2
+grad_accum_steps: 8
+eval_batch_size: 8
+
+# --- Precision and memory ---
+precision: bf16
+gradient_checkpointing: false
+
+# --- Loss ---
+class_weight_power: 0.5
