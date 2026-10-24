@@ -175,3 +175,103 @@ def compare_systems(
         n_files=int(np.asarray(y_true).shape[0]),
         n_problems=int(n_groups),
     )
+
+
+@dataclass(frozen=True)
+class IndependentComparison:
+    """Result of ``compare_independent``."""
+
+    systems: pd.DataFrame  # system, metric, value, ci_low, ci_high
+    differences: pd.DataFrame  # first, second, metric, value, ci_low, ci_high, frac_draws_not_ahead
+    per_class_differences: pd.DataFrame  # first, second, class, f1_difference, ci_low, ci_high, ...
+    n_files: dict[str, int]
+    n_problems: dict[str, int]
+
+
+def compare_independent(
+    first: tuple[object, object, object],
+    second: tuple[object, object, object],
+    *,
+    names: tuple[str, str] = ("first", "second"),
+    seeds: tuple[int, int] = (DEFAULT_SEED + 1, DEFAULT_SEED),
+    n_boot: int = DEFAULT_N_BOOT,
+    level: float = DEFAULT_LEVEL,
+    label_names: tuple[str, ...] = LEAF_NAMES,
+) -> IndependentComparison:
+    """Difference 'first minus second' between systems scored on DIFFERENT test sets.
+
+    ``first`` and ``second`` are (y_true, y_pred, problem ids) triples, one per test set; the
+    two sets may differ in size and files. Each is bootstrapped over its own problems with its
+    own seed, so the draws are independent. Where the two sets overlap or share problems the
+    true uncertainty of the difference is smaller than this reports, so the interval is
+    conservative. With the default seeds the second system's own interval equals what
+    ``summarize_bootstrap`` gives with ``DEFAULT_SEED`` (the M8.2 interval).
+    """
+    if names[0] == names[1]:
+        raise ValueError("the two systems need different names")
+    num_classes = len(label_names)
+    point: dict[str, dict[str, np.ndarray]] = {}
+    boot: dict[str, dict[str, np.ndarray]] = {}
+    n_files: dict[str, int] = {}
+    n_problems: dict[str, int] = {}
+    for name, (y_true, y_pred, groups), seed in zip(names, (first, second), seeds, strict=True):
+        matrices = group_confusions(y_true, y_pred, groups, num_classes)
+        counts = draw_group_counts(matrices.shape[0], n_boot, seed)
+        point[name] = metrics_from_confusion(matrices.sum(axis=0))
+        boot[name] = metrics_from_confusion(resample_confusions(counts, matrices))
+        n_files[name] = int(np.asarray(y_true).shape[0])
+        n_problems[name] = int(matrices.shape[0])
+
+    system_rows: list[dict[str, object]] = []
+    for name in names:
+        for metric in HEADLINE_METRICS:
+            low, high = interval(boot[name][metric], level)
+            system_rows.append(
+                {
+                    "system": name,
+                    "metric": metric,
+                    "value": float(point[name][metric]),
+                    "ci_low": float(low),
+                    "ci_high": float(high),
+                }
+            )
+
+    a, b = names
+    difference_rows: list[dict[str, object]] = []
+    for metric in HEADLINE_METRICS:
+        draws = boot[a][metric] - boot[b][metric]
+        low, high = interval(draws, level)
+        difference_rows.append(
+            {
+                "first": a,
+                "second": b,
+                "metric": metric,
+                "value": float(point[a][metric] - point[b][metric]),
+                "ci_low": float(low),
+                "ci_high": float(high),
+                "frac_draws_not_ahead": float((draws <= 0).mean()),
+            }
+        )
+    class_draws = boot[a]["f1"] - boot[b]["f1"]
+    class_low, class_high = interval(class_draws, level)
+    class_values = point[a]["f1"] - point[b]["f1"]
+    class_not_ahead = (class_draws <= 0).mean(axis=0)
+    per_class_rows = [
+        {
+            "first": a,
+            "second": b,
+            "class": label,
+            "f1_difference": float(class_values[index]),
+            "ci_low": float(class_low[index]),
+            "ci_high": float(class_high[index]),
+            "frac_draws_not_ahead": float(class_not_ahead[index]),
+        }
+        for index, label in enumerate(label_names)
+    ]
+    return IndependentComparison(
+        systems=pd.DataFrame(system_rows),
+        differences=pd.DataFrame(difference_rows),
+        per_class_differences=pd.DataFrame(per_class_rows),
+        n_files=n_files,
+        n_problems=n_problems,
+    )

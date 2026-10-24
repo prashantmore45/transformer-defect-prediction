@@ -7,7 +7,7 @@ import pytest
 from sdp.data.taxonomy import NUM_LEAVES
 from sdp.evaluation.bootstrap import summarize_bootstrap
 from sdp.evaluation.metrics import LEAF_NAMES, accuracy, macro_f1
-from sdp.evaluation.paired import align_systems, compare_systems
+from sdp.evaluation.paired import align_systems, compare_independent, compare_systems
 
 K = NUM_LEAVES
 
@@ -176,3 +176,111 @@ def test_compare_systems_is_deterministic() -> None:
     pd.testing.assert_frame_equal(first.systems, again.systems)
     pd.testing.assert_frame_equal(first.differences, again.differences)
     pd.testing.assert_frame_equal(first.per_class_differences, again.per_class_differences)
+
+
+# --------------------------------------------------------------------------- #
+# compare_independent (M8.5)
+# --------------------------------------------------------------------------- #
+
+
+def test_independent_second_system_interval_matches_summarize_bootstrap() -> None:
+    y_a, groups_a = make_truth(seed=1)
+    y_b, groups_b = make_truth(n=400, n_groups=40, seed=2)
+    pred_a, pred_b = corrupt(y_a, 0.4, 1), corrupt(y_b, 0.5, 2)
+    result = compare_independent(
+        (y_a, pred_a, groups_a),
+        (y_b, pred_b, groups_b),
+        names=("a", "b"),
+        seeds=(5, 7),
+        n_boot=200,
+    )
+    overall, _ = summarize_bootstrap(y_b, pred_b, groups_b, n_boot=200, seed=7)
+    mine = result.systems[result.systems["system"] == "b"].set_index("metric")
+    theirs = overall.set_index("metric")
+    for metric in ("accuracy", "macro_f1"):
+        for column in ("value", "ci_low", "ci_high"):
+            assert mine.loc[metric, column] == pytest.approx(theirs.loc[metric, column])
+    assert result.n_files == {"a": 600, "b": 400}
+    assert result.n_problems["b"] == len(np.unique(groups_b))
+
+
+def test_independent_difference_values_equal_the_point_differences() -> None:
+    y_a, groups_a = make_truth(seed=1)
+    y_b, groups_b = make_truth(n=400, n_groups=40, seed=2)
+    pred_a, pred_b = corrupt(y_a, 0.3, 1), corrupt(y_b, 0.6, 2)
+    result = compare_independent(
+        (y_a, pred_a, groups_a), (y_b, pred_b, groups_b), names=("a", "b"), n_boot=100
+    )
+    table = result.differences.set_index("metric")
+    assert table.loc["accuracy", "value"] == pytest.approx(
+        accuracy(y_a, pred_a) - accuracy(y_b, pred_b)
+    )
+    assert table.loc["macro_f1", "value"] == pytest.approx(
+        macro_f1(y_a, pred_a) - macro_f1(y_b, pred_b)
+    )
+    assert (result.differences["first"] == "a").all()
+    assert (table["ci_low"] <= table["ci_high"]).all()
+
+
+def test_a_clearly_better_first_system_has_an_interval_above_zero() -> None:
+    y_true, groups = make_truth()
+    result = compare_independent(
+        (y_true, y_true.copy(), groups),
+        (y_true, np.zeros_like(y_true), groups),
+        names=("perfect", "constant"),
+    )
+    for _, row in result.differences.iterrows():
+        assert row["value"] > 0
+        assert row["ci_low"] > 0
+        assert row["frac_draws_not_ahead"] == 0.0
+
+
+def test_same_seed_and_same_data_give_an_exactly_zero_difference() -> None:
+    y_true, groups = make_truth()
+    pred = corrupt(y_true, 0.4, 1)
+    result = compare_independent(
+        (y_true, pred, groups), (y_true, pred.copy(), groups), seeds=(3, 3), n_boot=100
+    )
+    for _, row in result.differences.iterrows():
+        assert (row["value"], row["ci_low"], row["ci_high"]) == (0.0, 0.0, 0.0)
+
+
+def test_independent_draws_make_identical_systems_look_uncertain() -> None:
+    # Unlike a paired comparison (exactly 0 above), independent draws on identical data give
+    # a difference interval that straddles zero: this is why the interval is conservative.
+    y_true, groups = make_truth()
+    pred = corrupt(y_true, 0.4, 1)
+    result = compare_independent(
+        (y_true, pred, groups), (y_true, pred.copy(), groups), seeds=(3, 4), n_boot=300
+    )
+    row = result.differences[result.differences["metric"] == "accuracy"].iloc[0]
+    assert row["ci_low"] < 0 < row["ci_high"]
+
+
+def test_independent_per_class_rows_cover_every_class_in_order() -> None:
+    y_true, groups = make_truth()
+    result = compare_independent(
+        (y_true, corrupt(y_true, 0.3, 1), groups),
+        (y_true, corrupt(y_true, 0.6, 2), groups),
+        n_boot=100,
+    )
+    assert result.per_class_differences["class"].tolist() == list(LEAF_NAMES)
+    assert (result.per_class_differences["ci_low"] <= result.per_class_differences["ci_high"]).all()
+
+
+def test_compare_independent_rejects_identical_names() -> None:
+    y_true, groups = make_truth()
+    triple = (y_true, corrupt(y_true, 0.4, 1), groups)
+    with pytest.raises(ValueError, match="different names"):
+        compare_independent(triple, triple, names=("x", "x"))
+
+
+def test_compare_independent_is_deterministic() -> None:
+    y_true, groups = make_truth()
+    first = (y_true, corrupt(y_true, 0.3, 1), groups)
+    second = (y_true, corrupt(y_true, 0.6, 2), groups)
+    one = compare_independent(first, second, n_boot=100)
+    two = compare_independent(first, second, n_boot=100)
+    pd.testing.assert_frame_equal(one.systems, two.systems)
+    pd.testing.assert_frame_equal(one.differences, two.differences)
+    pd.testing.assert_frame_equal(one.per_class_differences, two.per_class_differences)
