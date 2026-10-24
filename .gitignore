@@ -277,3 +277,5 @@ reports/m4_retry_results.csv
 reports/m6_excluded_rows.csv
 
 build_scratch_linux/
+
+reports/m8_examples/
