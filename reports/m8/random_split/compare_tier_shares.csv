@@ -1,0 +1,5 @@
+tier,n_files,share
+exact_twin,148,0.016096
+same_problem_and_user,1074,0.116803
+same_problem_other_user,7849,0.853616
+problem_not_in_train,124,0.013486

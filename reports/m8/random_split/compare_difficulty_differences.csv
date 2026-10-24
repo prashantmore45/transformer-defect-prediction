@@ -1,0 +1,12 @@
+first,second,metric,value,ci_low,ci_high,min_files,low_support
+shared_with_problem_test,rest_of_random_test,accuracy,-0.020106,-0.047956,0.006595,,False
+shared_with_problem_test,rest_of_random_test,macro_recall,-0.046382,-0.091255,-0.002061,,False
+shared_with_problem_test,rest_of_random_test,recall:ERROR_FREE,-0.026467,-0.082999,0.030598,384.0,False
+shared_with_problem_test,rest_of_random_test,recall:SYNTAX,0.03473,-0.033857,0.103307,235.0,False
+shared_with_problem_test,rest_of_random_test,recall:SEMANTIC,-0.018979,-0.067128,0.028293,560.0,False
+shared_with_problem_test,rest_of_random_test,recall:LINKER,-0.282452,-0.457645,-0.055525,13.0,True
+shared_with_problem_test,rest_of_random_test,recall:SIGSEGV,-0.125773,-0.252298,-0.001184,86.0,False
+shared_with_problem_test,rest_of_random_test,recall:SIGFPE,-0.07049,-0.27779,0.129413,27.0,False
+shared_with_problem_test,rest_of_random_test,recall:SIGABRT,-0.112092,-0.278943,0.053832,46.0,False
+shared_with_problem_test,rest_of_random_test,recall:NZEC,-0.142857,-0.447929,0.164189,14.0,True
+shared_with_problem_test,rest_of_random_test,recall:LOGICAL,-0.005604,-0.061691,0.045743,374.0,False

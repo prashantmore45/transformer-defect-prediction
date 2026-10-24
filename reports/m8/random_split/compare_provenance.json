@@ -1,0 +1,32 @@
+{
+  "milestone": "M8.5",
+  "written_at_utc": "2026-10-24T10:53:03Z",
+  "bootstrap": {
+    "n_boot": 2000,
+    "seed": 42,
+    "level": 0.95,
+    "headline": "independent bootstraps, seeds (43 for R, 42 for P)",
+    "paired": "shared draws over the problems of the shared files"
+  },
+  "input_sha256": {
+    "manifest": "ea8b94c84618af17dbf58e79d49b28ddadffe47de6d76d010e2ead2b0aab0b8a",
+    "problem_split/test_predictions.parquet": "4a537063ba351948ed24dc2e5b26c28515273abcb56b9199e0490e74ad6e443a",
+    "random_split/test_predictions.parquet": "b6789df193f943f3c31d0949d0933bc02b5a6d392a19f7083c984b9b1dcd27cc"
+  },
+  "files": {
+    "random_test": 9195,
+    "problem_test": 9139,
+    "shared": 1739
+  },
+  "problems": {
+    "random_test": 3201,
+    "problem_test": 1251,
+    "shared": 895
+  },
+  "tier_counts": {
+    "exact_twin": 148,
+    "same_problem_and_user": 1074,
+    "same_problem_other_user": 7849,
+    "problem_not_in_train": 124
+  }
+}

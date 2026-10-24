@@ -1,0 +1,10 @@
+first,second,class,f1_difference,ci_low,ci_high,frac_draws_not_ahead
+random_split_model,problem_split_model,ERROR_FREE,0.060843,0.036578,0.085677,0.0
+random_split_model,problem_split_model,SYNTAX,0.079812,0.039143,0.120448,0.0005
+random_split_model,problem_split_model,SEMANTIC,0.011481,-0.014322,0.0364,0.1805
+random_split_model,problem_split_model,LINKER,0.293281,0.151758,0.419863,0.0
+random_split_model,problem_split_model,SIGSEGV,0.126961,0.067188,0.186727,0.0
+random_split_model,problem_split_model,SIGFPE,0.131976,0.000684,0.254123,0.0245
+random_split_model,problem_split_model,SIGABRT,0.064868,-0.01992,0.150966,0.068
+random_split_model,problem_split_model,NZEC,0.067609,-0.051043,0.205403,0.141
+random_split_model,problem_split_model,LOGICAL,-0.046809,-0.069606,-0.024104,1.0

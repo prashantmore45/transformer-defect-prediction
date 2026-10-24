@@ -1,0 +1,5 @@
+system,metric,value,ci_low,ci_high
+random_split_model,accuracy,0.392179,0.369862,0.416765
+random_split_model,macro_f1,0.391028,0.341969,0.436549
+problem_split_model,accuracy,0.377803,0.355734,0.400236
+problem_split_model,macro_f1,0.371434,0.321664,0.417829

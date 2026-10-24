@@ -1,0 +1,5 @@
+slice,n_files,n_problems,accuracy,accuracy_lo,accuracy_hi,macro_recall,macro_recall_lo,macro_recall_hi,n_classes_scored
+exact_twin,148,133,0.702703,0.622374,0.780308,0.612637,0.488608,0.725054,2
+same_problem_and_user,1074,821,0.429236,0.398692,0.460191,0.542486,0.496466,0.585864,8
+same_problem_other_user,7849,2878,0.398522,0.387718,0.409409,0.419007,0.396645,0.443088,9
+problem_not_in_train,124,94,0.508065,0.420525,0.593106,0.483796,0.385461,0.586878,2

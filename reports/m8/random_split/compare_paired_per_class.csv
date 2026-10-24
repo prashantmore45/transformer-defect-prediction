@@ -1,0 +1,10 @@
+versus,class,f1_difference,ci_low,ci_high,frac_draws_not_ahead,n_files,low_support
+problem_split_model,ERROR_FREE,0.051038,0.008994,0.092305,0.007,384,False
+problem_split_model,SYNTAX,0.057804,0.008613,0.108332,0.0125,235,False
+problem_split_model,SEMANTIC,0.019136,-0.019182,0.061339,0.1685,560,False
+problem_split_model,LINKER,0.007353,-0.027778,0.047619,0.616,13,True
+problem_split_model,SIGSEGV,0.079749,0.000558,0.158986,0.025,86,False
+problem_split_model,SIGFPE,-0.033738,-0.173927,0.122231,0.674,27,False
+problem_split_model,SIGABRT,0.035101,-0.066574,0.131482,0.268,46,False
+problem_split_model,NZEC,0.022989,-0.179351,0.244255,0.424,14,True
+problem_split_model,LOGICAL,-0.063089,-0.103221,-0.022094,0.9985,374,False
