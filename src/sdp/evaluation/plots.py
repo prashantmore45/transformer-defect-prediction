@@ -17,7 +17,7 @@ Design notes
 
 from __future__ import annotations
 
-from collections.abc import Sequence
+from collections.abc import Mapping, Sequence
 from pathlib import Path
 
 import numpy as np
@@ -158,3 +158,144 @@ def save_figure(figure: Figure, path: Path, dpi: int = 150) -> Path:
     path.parent.mkdir(parents=True, exist_ok=True)
     figure.savefig(path, dpi=dpi, bbox_inches="tight")
     return path
+
+
+BAR_COLORS = ("#4C78A8", "#F58518", "#54A24B", "#B279A2")
+
+
+def _interval_arrays(
+    labels: Sequence[str], values: object, lows: object, highs: object
+) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    """Validate parallel label / value / interval sequences and return the numeric arrays."""
+    if len(labels) == 0 or not (len(values) == len(lows) == len(highs) == len(labels)):
+        raise ValueError("labels, values, lows and highs must be non-empty and the same length")
+    return (
+        np.asarray(values, dtype=float),
+        np.asarray(lows, dtype=float),
+        np.asarray(highs, dtype=float),
+    )
+
+
+def build_interval_bars_figure(
+    labels: Sequence[str],
+    values: object,
+    lows: object,
+    highs: object,
+    *,
+    title: str,
+    xlabel: str,
+    reference: float | None = None,
+    reference_label: str | None = None,
+    xlim: tuple[float, float] = (0.0, 1.0),
+) -> Figure:
+    """Horizontal bars with interval whiskers, first row on top, optional vertical reference line.
+
+    Whiskers are clipped to zero length where an interval does not contain its estimate, which
+    can happen with percentile intervals on thin data.
+    """
+    value, low, high = _interval_arrays(labels, values, lows, highs)
+    figure = Figure(figsize=(8.5, 0.6 * len(labels) + 2.0))
+    axes = figure.subplots()
+    positions = np.arange(len(labels))
+    lower = np.clip(value - low, 0.0, None)
+    upper = np.clip(high - value, 0.0, None)
+    axes.barh(positions, value, xerr=[lower, upper], color=BAR_COLORS[0], ecolor="black", capsize=3)
+    axes.set_yticks(positions)
+    axes.set_yticklabels(list(labels))
+    axes.invert_yaxis()
+    axes.set_xlim(*xlim)
+    axes.set_xlabel(xlabel)
+    axes.set_title(title)
+    for position, estimate, extra in zip(positions, value, upper, strict=True):
+        axes.text(
+            estimate + extra + 0.01,
+            position,
+            f"{estimate:.3f}",
+            va="center",
+            fontsize=9,
+            bbox={"facecolor": "white", "edgecolor": "none", "pad": 1.0},
+        )
+    if reference is not None:
+        axes.axvline(
+            reference, color="#E45756", linestyle="--", linewidth=1.2, label=reference_label
+        )
+        if reference_label:
+            axes.legend(loc="lower right", fontsize=9)
+    figure.tight_layout()
+    return figure
+
+
+def build_forest_figure(
+    labels: Sequence[str], values: object, lows: object, highs: object, *, title: str, xlabel: str
+) -> Figure:
+    """Forest plot of differences: a filled marker means the interval excludes zero.
+
+    A solid marker and line in blue mark an interval entirely above or below zero; a hollow
+    marker in grey means it includes zero. The zero line is drawn in black.
+    """
+    value, low, high = _interval_arrays(labels, values, lows, highs)
+    figure = Figure(figsize=(8.5, 0.5 * len(labels) + 2.0))
+    axes = figure.subplots()
+    for position, (estimate, lo, hi) in enumerate(zip(value, low, high, strict=True)):
+        decisive = bool(lo > 0 or hi < 0)
+        color = BAR_COLORS[0] if decisive else "#9AA0A6"
+        axes.plot([lo, hi], [position, position], color=color, linewidth=2)
+        axes.plot(
+            [estimate],
+            [position],
+            marker="o",
+            markersize=7,
+            color=color,
+            markerfacecolor=color if decisive else "white",
+            linestyle="none",
+        )
+    axes.axvline(0.0, color="black", linewidth=1.0)
+    axes.set_yticks(range(len(labels)))
+    axes.set_yticklabels(list(labels))
+    axes.invert_yaxis()
+    axes.set_xlabel(xlabel)
+    axes.set_title(title)
+    figure.tight_layout()
+    return figure
+
+
+def build_grouped_bars_figure(
+    categories: Sequence[str],
+    series: Mapping[str, tuple[Sequence[float], Sequence[float], Sequence[float]]],
+    *,
+    title: str,
+    ylabel: str,
+    ylim: tuple[float, float] | None = None,
+) -> Figure:
+    """Vertical bars grouped by category, one bar per series, each with interval whiskers.
+
+    ``series`` maps a legend name to (values, lows, highs), each one entry per category.
+    """
+    if len(categories) == 0 or not series:
+        raise ValueError("need at least one category and one series")
+    figure = Figure(figsize=(max(7.0, 1.4 * len(categories) + 3.0), 5.0))
+    axes = figure.subplots()
+    positions = np.arange(len(categories))
+    width = 0.8 / len(series)
+    for index, (name, (values, lows, highs)) in enumerate(series.items()):
+        value, low, high = _interval_arrays(categories, values, lows, highs)
+        offset = (index - (len(series) - 1) / 2) * width
+        axes.bar(
+            positions + offset,
+            value,
+            width=width * 0.95,
+            yerr=[np.clip(value - low, 0.0, None), np.clip(high - value, 0.0, None)],
+            capsize=3,
+            label=name,
+            color=BAR_COLORS[index % len(BAR_COLORS)],
+            ecolor="black",
+        )
+    axes.set_xticks(positions)
+    axes.set_xticklabels(list(categories))
+    axes.set_ylabel(ylabel)
+    axes.set_title(title)
+    axes.legend(fontsize=9)
+    if ylim is not None:
+        axes.set_ylim(*ylim)
+    figure.tight_layout()
+    return figure

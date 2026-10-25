@@ -1,0 +1,26 @@
+{
+  "milestone": "M8.6",
+  "written_at_utc": "2026-10-25T17:36:09Z",
+  "matplotlib": "3.11.1",
+  "inputs_sha256": {
+    "reports/m8/compare_test_systems.csv": "ab7ccb8b6f9ee7804e892faebd7aff8328278082ffbb302fb37f2439aac3b2c7",
+    "reports/m8/compare_test_per_class_differences.csv": "d81d2b3f6be09fd78b1a18b2bb2861c37b55cb1512240628d9a1846edc249f15",
+    "reports/m8/test_per_class.csv": "03e204f82ffa3fd414514b96d2060ab88ca9001ce4bdec3c03fa0cf88fcc2d67",
+    "reports/m8/slices/length_overall.csv": "e6c97525158fe7e544118e917cb501736b914a5dce70efdd0a2c1d7dde5092ef",
+    "reports/m8/slices/visibility_per_class.csv": "cea1a9284f5fa830552683dc634929589c66094798a894869c19bff40347a593",
+    "reports/m8/random_split/compare_headline_systems.csv": "559540581ec1d1e7e900f56e2c734aaa9b42b2936e795db52d7caf55e42d5e57",
+    "reports/m8/random_split/compare_paired_systems.csv": "e169f76f498a71666765d61c5b65d11cfd5f75f3b51cb8d99249d5f07ee31516",
+    "reports/m8/random_split/compare_tiers_overall.csv": "fabcb52d5fac91b646e31646bc1e48aaa5d20769aecfaf35566f8363a4e30cd1",
+    "reports/m8/random_split/compare_provenance.json": "08ff201040c3e8e43106c5955e85fd6b8e567b2aeb8036f6ad2e4f983e3e555d"
+  },
+  "outputs": [
+    "m8_codebert_vs_tfidf_per_class.png",
+    "m8_leakage_headline_vs_paired.png",
+    "m8_leakage_tiers.png",
+    "m8_length_accuracy.png",
+    "m8_systems_accuracy.png",
+    "m8_systems_macro_f1.png",
+    "m8_visibility_recall_codebert.png",
+    "m8_visibility_recall_tfidf_logreg.png"
+  ]
+}

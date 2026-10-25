@@ -15,6 +15,9 @@ from sdp.evaluation.hierarchy import parent_blocks
 from sdp.evaluation.metrics import LEAF_NAMES
 from sdp.evaluation.plots import (
     build_confusion_figure,
+    build_forest_figure,
+    build_grouped_bars_figure,
+    build_interval_bars_figure,
     build_per_class_f1_figure,
     row_normalize,
     save_figure,
@@ -168,3 +171,89 @@ def test_save_figure_may_overwrite(tmp_path: Path) -> None:
     save_figure(figure, target, dpi=50)
     save_figure(figure, target, dpi=50)  # regenerable output: must not raise
     assert target.exists()
+
+
+# --------------------------------------------------------------------------- #
+# interval bars, forest and grouped bars (M8.6)
+# --------------------------------------------------------------------------- #
+
+
+def test_interval_bars_have_one_bar_and_one_value_label_per_row() -> None:
+    figure = build_interval_bars_figure(
+        ["a", "b", "c"], [0.2, 0.5, 0.8], [0.1, 0.4, 0.7], [0.3, 0.6, 0.9], title="t", xlabel="x"
+    )
+    axes = main_axes(figure)
+    assert len(axes.patches) == 3
+    assert sorted(text.get_text() for text in axes.texts) == ["0.200", "0.500", "0.800"]
+    assert [label.get_text() for label in axes.get_yticklabels()] == ["a", "b", "c"]
+
+
+def test_interval_bars_reference_adds_exactly_one_line() -> None:
+    args = (["a", "b"], [0.2, 0.5], [0.1, 0.4], [0.3, 0.6])
+    plain = build_interval_bars_figure(*args, title="t", xlabel="x")
+    marked = build_interval_bars_figure(
+        *args, title="t", xlabel="x", reference=0.111, reference_label="chance"
+    )
+    assert len(main_axes(marked).lines) == len(main_axes(plain).lines) + 1
+
+
+def test_interval_bars_survive_an_interval_that_misses_the_estimate() -> None:
+    figure = build_interval_bars_figure(["a"], [0.5], [0.6], [0.4], title="t", xlabel="x")
+    assert len(main_axes(figure).patches) == 1
+
+
+def test_interval_bars_reject_mismatched_or_empty_input() -> None:
+    with pytest.raises(ValueError, match="same length"):
+        build_interval_bars_figure(["a", "b"], [0.5], [0.4], [0.6], title="t", xlabel="x")
+    with pytest.raises(ValueError, match="non-empty"):
+        build_interval_bars_figure([], [], [], [], title="t", xlabel="x")
+
+
+def test_forest_figure_hollows_markers_whose_interval_includes_zero() -> None:
+    figure = build_forest_figure(
+        ["up", "spans", "down"],
+        [0.2, 0.0, -0.2],
+        [0.1, -0.1, -0.3],
+        [0.3, 0.1, -0.1],
+        title="t",
+        xlabel="x",
+    )
+    axes = main_axes(figure)
+    assert len(axes.lines) == 2 * 3 + 1  # an interval and a marker per row, plus the zero line
+    markers = [line for line in axes.lines if line.get_marker() == "o"]
+    assert [marker.get_markerfacecolor() == "white" for marker in markers] == [False, True, False]
+    assert [label.get_text() for label in axes.get_yticklabels()] == ["up", "spans", "down"]
+
+
+def test_forest_figure_rejects_mismatched_input() -> None:
+    with pytest.raises(ValueError, match="same length"):
+        build_forest_figure(["a"], [0.1, 0.2], [0.0], [0.3], title="t", xlabel="x")
+
+
+def test_grouped_bars_have_one_bar_per_category_and_series() -> None:
+    series = {
+        "first": ([0.1, 0.2], [0.0, 0.1], [0.2, 0.3]),
+        "second": ([0.3, 0.4], [0.2, 0.3], [0.4, 0.5]),
+        "third": ([0.5, 0.6], [0.4, 0.5], [0.6, 0.7]),
+    }
+    figure = build_grouped_bars_figure(["x", "y"], series, title="t", ylabel="v")
+    axes = main_axes(figure)
+    assert len(axes.patches) == 6
+    legend = axes.get_legend()
+    assert [text.get_text() for text in legend.get_texts()] == ["first", "second", "third"]
+    assert [label.get_text() for label in axes.get_xticklabels()] == ["x", "y"]
+
+
+def test_grouped_bars_apply_the_requested_y_limits() -> None:
+    series = {"only": ([0.1], [0.0], [0.2])}
+    figure = build_grouped_bars_figure(["x"], series, title="t", ylabel="v", ylim=(0.0, 0.8))
+    assert main_axes(figure).get_ylim() == (0.0, 0.8)
+
+
+def test_grouped_bars_reject_bad_input() -> None:
+    with pytest.raises(ValueError, match="at least one"):
+        build_grouped_bars_figure([], {"s": ([], [], [])}, title="t", ylabel="v")
+    with pytest.raises(ValueError, match="at least one"):
+        build_grouped_bars_figure(["x"], {}, title="t", ylabel="v")
+    with pytest.raises(ValueError, match="same length"):
+        build_grouped_bars_figure(["x", "y"], {"s": ([0.1], [0.0], [0.2])}, title="t", ylabel="v")
